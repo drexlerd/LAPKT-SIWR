@@ -170,6 +170,7 @@ public:
 	virtual bool  is_goal( Search_Node* n ) {
 		State* s = n->state();
 		assert(s != NULL);
+		// TODO: think about removing this statement.
         /* if goal state is closed then don't waste time with expensive computation. */
 		if( is_goal_state_closed( n ) )
 			return false;
