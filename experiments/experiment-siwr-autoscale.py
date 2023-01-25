@@ -57,13 +57,13 @@ DIR = Path(__file__).resolve().parent
 BENCHMARKS_DIR = DIR.parent / "benchmarks" / "autoscale-21.10-agile-strips"
 print(BENCHMARKS_DIR)
 if project.REMOTE:
-    SUITE = ["barman", "childsnack", "driverlog", "floortile", "grid", "schedule", "tpp"]
+    SUITE = ["barman", "childsnack", "driverlog", "floortile", "grid", "tpp"]
     ENV = project.TetralithEnvironment(
         email="dominik.drexler@liu.se",
         extra_options="#SBATCH --account=snic2022-5-341",
         memory_per_cpu="8G")
 else:
-    SUITE = ["barman:p01.pddl", "childsnack:p01.pddl", "driverlog:p01.pddl", "floortile:p01.pddl", "grid:p01.pddl", "schedule:p01.pddl", "tpp:p01.pddl"]
+    SUITE = ["barman:p01.pddl", "childsnack:p01.pddl", "driverlog:p01.pddl", "floortile:p01.pddl", "grid:p01.pddl", "tpp:p01.pddl"]
     ENV = project.LocalEnvironment(processes=4)
 
 SKETCHES_DIR = DIR.parent / "sketches" / "sketches_kr2021"
