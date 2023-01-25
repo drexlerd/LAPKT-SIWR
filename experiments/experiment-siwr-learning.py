@@ -40,23 +40,21 @@ class BaseReport(AbsoluteReport):
 
 ATTRIBUTES = [
     "run_dir",
-    "length",
     "cost",
     Attribute(name="coverage", absolute=True, min_wins=False),
-    Attribute(name="valid_plan_value", absolute=True, min_wins=False),
     "error",
     "expanded",
     "generated",
-    Attribute("maximum_effective_width", function=max),
-    Attribute("average_effective_width", function=arithmetic_mean),
-    Attribute("total_time_feature_evaluation", function=sum),
-    Attribute(name="total_time", absolute=True, function=max),
+    "pruned",
+    Attribute(name="total_time", absolute=True),
+    Attribute(name="width_average", absolute=True, function=arithmetic_mean),
+    Attribute(name="width_maximum", absolute=True),
+    Attribute(name="not_i_reachable", absolute=True),
 ]
 
 
 DIR = Path(__file__).resolve().parent
-BENCHMARKS_DIR = DIR.parent.parent / "testing"/ "benchmarks"
-print(BENCHMARKS_DIR)
+BENCHMARKS_DIR = DIR.parent / "benchmarks" / "learning"
 if project.REMOTE:
     SUITE = ["blocks_4_clear", "blocks_4_on", "delivery", "gripper", "miconic", "reward", "spanner", "visitall"]
     ENV = project.TetralithEnvironment(
@@ -68,8 +66,7 @@ else:
     #SUITE = ["blocks_4_on"]
 
     ENV = project.LocalEnvironment(processes=4)
-SKETCHES_DIR = DIR.parent.parent / "testing" / "sketches_icaps2023"
-print(SKETCHES_DIR)
+SKETCHES_DIR = DIR.parent / "sketches" / "sketches_icaps2023"
 
 exp = Experiment(environment=ENV)
 exp.add_step("build", exp.build)
@@ -78,9 +75,7 @@ exp.add_parse_again_step()
 exp.add_fetcher(name="fetch")
 exp.add_parser("parser-singularity-iw.py")
 
-IMAGES_DIR = DIR.parent.parent / "testing" / "planners"
-print(IMAGES_DIR)
-
+IMAGES_DIR = DIR.parent / "planner"
 def get_image(name):
     planner = name.replace("-", "_")
     image = os.path.join(IMAGES_DIR, name + ".img")
@@ -116,8 +111,7 @@ for planner, _ in IMAGES:
                     "{domain}",
                     "{problem}",
                     "{sketch}",
-                    w,
-                    "sas_plan",
+                    "plan.ipc",  # planner outputs this file
                 ],
                 time_limit=TIME_LIMIT,
                 memory_limit=MEMORY_LIMIT,

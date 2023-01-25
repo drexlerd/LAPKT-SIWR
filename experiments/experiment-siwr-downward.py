@@ -40,18 +40,13 @@ class BaseReport(AbsoluteReport):
 
 ATTRIBUTES = [
     "run_dir",
-    "length",
     "cost",
     Attribute(name="coverage", absolute=True, min_wins=False),
-    Attribute(name="valid_plan_value", absolute=True, min_wins=False),
     "error",
     "expanded",
     "generated",
     "pruned",
-    "maximum_effective_width",
-    "average_effective_width",
-    "total_time_feature_evaluation",
-    Attribute(name="total_time", absolute=True, function=max),
+    Attribute(name="total_time", absolute=True),
     Attribute(name="width_average", absolute=True, function=arithmetic_mean),
     Attribute(name="width_maximum", absolute=True),
     Attribute(name="not_i_reachable", absolute=True),
@@ -59,7 +54,7 @@ ATTRIBUTES = [
 
 
 DIR = Path(__file__).resolve().parent
-BENCHMARKS_DIR = DIR.parent.parent / "testing"/ "benchmarks" / "downward-benchmarks"
+BENCHMARKS_DIR = DIR.parent / "benchmarks" / "downward-benchmarks"
 print(BENCHMARKS_DIR)
 if project.REMOTE:
     SUITE = ["barman", "childsnack", "driverlog", "floortile", "grid", "tpp"]
@@ -71,7 +66,7 @@ else:
     SUITE = ["barman:p1-11-4-15.pddl", "childsnack:child-snack_pfile05.pddl", "driverlog:p01.pddl", "floortile:p01-4-3-2.pddl", "grid:prob01.pddl", "tpp:p01.pddl"]
 
     ENV = project.LocalEnvironment(processes=4)
-SKETCHES_DIR = DIR.parent.parent / "testing" / "sketches_kr2021"
+SKETCHES_DIR = DIR.parent / "sketches" / "sketches_kr2021"
 print(SKETCHES_DIR)
 
 exp = Experiment(environment=ENV)
@@ -81,7 +76,7 @@ exp.add_parse_again_step()
 exp.add_fetcher(name="fetch")
 exp.add_parser("parser-singularity-iw.py")
 
-IMAGES_DIR = DIR.parent.parent / "testing" / "planners"
+IMAGES_DIR = DIR.parent / "planner"
 print(IMAGES_DIR)
 
 def get_image(name):
@@ -120,8 +115,7 @@ for planner, _ in IMAGES:
                     "{domain}",
                     "{problem}",
                     "{sketch}",
-                    w,
-                    "sas_plan",
+                    "plan.ipc",  # planner outputs this file
                 ],
                 time_limit=TIME_LIMIT,
                 memory_limit=MEMORY_LIMIT,
