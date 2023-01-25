@@ -16,10 +16,14 @@ images to a local filesystem (e.g., /tmp/) before running experiments.
 
 import os
 from pathlib import Path
+import shutil
+import subprocess
 
 from downward import suites
 from downward.reports.absolute import AbsoluteReport
-from lab.experiment import Experiment
+from downward.experiment import FastDownwardExperiment
+from lab.experiment import Experiment, Run
+from lab import tools
 from lab.reports import Attribute, arithmetic_mean
 
 import project
@@ -41,21 +45,14 @@ class BaseReport(AbsoluteReport):
 ATTRIBUTES = [
     "run_dir",
     "cost",
-    Attribute(name="coverage", absolute=True, min_wins=False),
+    "coverage",
     "error",
-    "expanded",
-    "generated",
-    "pruned",
-    Attribute(name="total_time", absolute=True),
-    Attribute(name="width_average", absolute=True, function=arithmetic_mean),
-    Attribute(name="width_maximum", absolute=True),
-    Attribute(name="not_i_reachable", absolute=True),
+    Attribute(name="total_time", absolute=True, function=max),
 ]
 
 
 DIR = Path(__file__).resolve().parent
 BENCHMARKS_DIR = DIR.parent / "benchmarks" / "autoscale-21.10-agile-strips"
-print(BENCHMARKS_DIR)
 if project.REMOTE:
     SUITE = ["barman", "childsnack", "driverlog", "floortile", "grid", "schedule", "tpp"]
     ENV = project.TetralithEnvironment(
@@ -66,18 +63,14 @@ else:
     SUITE = ["barman:p01.pddl", "childsnack:p01.pddl", "driverlog:p01.pddl", "floortile:p01.pddl", "grid:p01.pddl", "schedule:p01.pddl", "tpp:p01.pddl"]
     ENV = project.LocalEnvironment(processes=4)
 
-SKETCHES_DIR = DIR.parent / "sketches" / "sketches_kr2021"
-print(SKETCHES_DIR)
-
 exp = Experiment(environment=ENV)
 exp.add_step("build", exp.build)
 exp.add_step("start", exp.start_runs)
 exp.add_parse_again_step()
 exp.add_fetcher(name="fetch")
-exp.add_parser("parser-singularity-iw.py")
+exp.add_parser("parser-singularity.py")
 
 IMAGES_DIR = DIR.parent / "planner"
-print(IMAGES_DIR)
 
 def get_image(name):
     planner = name.replace("-", "_")
@@ -86,44 +79,37 @@ def get_image(name):
     return planner, image
 
 
-IMAGES = [get_image("siwr")]
+IMAGES = [get_image("lama-first")]
 
 for planner, image in IMAGES:
     exp.add_resource(planner, image, symlink=True)
 
-singularity_script = os.path.join(DIR, "run-singularity-siwr.sh")
+singularity_script = os.path.join(DIR, "run-singularity.sh")
 exp.add_resource("run_singularity", singularity_script)
 
 TIME_LIMIT = 1800
 MEMORY_LIMIT = 8000
 for planner, _ in IMAGES:
     for task in suites.build_suite(BENCHMARKS_DIR, SUITE):
-        for w in range(0,3):
-            # sketch_name = f"{task.domain}_{w}_structurally_minimized.txt"
-            sketch_name = f"{task.domain}_{w}.txt"
-            sketch_filename = SKETCHES_DIR / task.domain / sketch_name
-            if not sketch_filename.is_file(): continue
-            run = exp.add_run()
-            run.add_resource("domain", task.domain_file, "domain.pddl")
-            run.add_resource("problem", task.problem_file, "problem.pddl")
-            run.add_resource("sketch", sketch_filename)
-            run.add_command(
-                "run-planner",
-                [
-                    "{run_singularity}",
-                    f"{{{planner}}}",
-                    "{domain}",
-                    "{problem}",
-                    "{sketch}",
-                    "plan.ipc",  # planner outputs this file
-                ],
-                time_limit=TIME_LIMIT,
-                memory_limit=MEMORY_LIMIT,
-            )
-            run.set_property("domain", task.domain)
-            run.set_property("problem", task.problem)
-            run.set_property("algorithm", f"{planner}_{w}")
-            run.set_property("id", [f"{planner}_{w}", task.domain, task.problem])
+        run = exp.add_run()
+        run.add_resource("domain", task.domain_file, "domain.pddl")
+        run.add_resource("problem", task.problem_file, "problem.pddl")
+        run.add_command(
+            "run-planner",
+            [
+                "{run_singularity}",
+                f"{{{planner}}}",
+                "{domain}",
+                "{problem}",
+                "sas_plan",
+            ],
+            time_limit=TIME_LIMIT,
+            memory_limit=MEMORY_LIMIT,
+        )
+        run.set_property("domain", task.domain)
+        run.set_property("problem", task.problem)
+        run.set_property("algorithm", planner)
+        run.set_property("id", [planner, task.domain, task.problem])
 
 report = os.path.join(exp.eval_dir, f"{exp.name}.html")
 exp.add_report(BaseReport(attributes=ATTRIBUTES), outfile=report)

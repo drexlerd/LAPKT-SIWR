@@ -47,22 +47,21 @@ ATTRIBUTES = [
     "cost",
     "coverage",
     "error",
-    Attribute(name="total_time", absolute=True, function=max),
+    "total_time",
 ]
 
 
 DIR = Path(__file__).resolve().parent
-BENCHMARKS_DIR = DIR.parent.parent / "testing"/ "benchmarks"
+BENCHMARKS_DIR = DIR.parent / "benchmarks" / "downward-benchmarks"
 if project.REMOTE:
-    SUITE = ["blocks_4_clear", "blocks_4_on", "delivery", "gripper", "miconic", "reward", "spanner", "visitall"]
+    SUITE = ["barman", "childsnack", "driverlog", "floortile", "grid", "schedule", "tpp"]
     ENV = project.TetralithEnvironment(
         email="dominik.drexler@liu.se",
         extra_options="#SBATCH --account=snic2022-5-341",
         memory_per_cpu="8G")
 else:
-    SUITE = ["blocks_4_clear:p-51-0.pddl", "blocks_4_on:p-51-0.pddl", "childsnack:p01.pddl", "delivery:instance_3_2_0.pddl", "gripper:p01.pddl", "miconic:p01.pddl", "reward:instance_5x5_0.pddl", "spanner:pfile01-001.pddl", "visitall:p01.pddl"]
+    SUITE = ["barman:p1-11-4-15.pddl", "childsnack:child-snack_pfile05.pddl", "driverlog:p01.pddl", "floortile:p01-4-3-2.pddl", "grid:prob01.pddl", "schedule:probschedule-2-0.pddl", "tpp:p01.pddl"]
     ENV = project.LocalEnvironment(processes=4)
-
 
 exp = Experiment(environment=ENV)
 exp.add_step("build", exp.build)
@@ -71,7 +70,7 @@ exp.add_parse_again_step()
 exp.add_fetcher(name="fetch")
 exp.add_parser("parser-singularity.py")
 
-IMAGES_DIR = DIR.parent.parent / "testing" / "planners"
+IMAGES_DIR = DIR.parent / "planner"
 
 def get_image(name):
     planner = name.replace("-", "_")
@@ -80,7 +79,7 @@ def get_image(name):
     return planner, image
 
 
-IMAGES = [get_image("lama-first")]
+IMAGES = [get_image("dual-bfws")]
 
 for planner, image in IMAGES:
     exp.add_resource(planner, image, symlink=True)

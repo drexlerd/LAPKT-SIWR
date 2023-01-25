@@ -57,15 +57,15 @@ DIR = Path(__file__).resolve().parent
 BENCHMARKS_DIR = DIR.parent / "benchmarks" / "downward-benchmarks"
 print(BENCHMARKS_DIR)
 if project.REMOTE:
-    SUITE = ["barman", "childsnack", "driverlog", "floortile", "grid", "tpp"]
+    SUITE = ["barman", "childsnack", "driverlog", "floortile", "grid", "schedule", "tpp"]
     ENV = project.TetralithEnvironment(
         email="dominik.drexler@liu.se",
         extra_options="#SBATCH --account=snic2022-5-341",
         memory_per_cpu="8G")
 else:
-    SUITE = ["barman:p1-11-4-15.pddl", "childsnack:child-snack_pfile05.pddl", "driverlog:p01.pddl", "floortile:p01-4-3-2.pddl", "grid:prob01.pddl", "tpp:p01.pddl"]
-
+    SUITE = ["barman:p1-11-4-15.pddl", "childsnack:child-snack_pfile05.pddl", "driverlog:p01.pddl", "floortile:p01-4-3-2.pddl", "grid:prob01.pddl", "schedule:probschedule-2-0.pddl", "tpp:p01.pddl"]
     ENV = project.LocalEnvironment(processes=4)
+
 SKETCHES_DIR = DIR.parent / "sketches" / "sketches_kr2021"
 print(SKETCHES_DIR)
 
