@@ -46,7 +46,10 @@ From: ubuntu:20.04
 	export LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/lib/dlplan/"
 
 	## Install SIW
+    cd /LAPKT-SIWR
+    scons --clean
 	cd /LAPKT-SIWR/planners/siw/
+    scons --clean
 	./build.py
 
 	# Copy planner files into separate subdirectory

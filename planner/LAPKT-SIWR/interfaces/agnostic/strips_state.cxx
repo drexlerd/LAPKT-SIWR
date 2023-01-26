@@ -30,7 +30,7 @@ namespace aptk
 {
 
 State::State( const STRIPS_Problem& problem )
-	: m_fluent_set( problem.num_fluents() ), m_problem( problem )
+	: m_fluent_set( problem.num_fluents() ), m_problem( problem ), m_index( -1 )
 {
 }
 
@@ -342,7 +342,7 @@ void State::regress_lazy_state(const Action* a, Fluent_Vec* added, Fluent_Vec* d
 
 
 void	State::print( std::ostream& os ) const {
-	os << "(:state ";
+	os << "(:state " << m_index << " ";
 	for ( auto p = m_fluent_vec.begin(); p != m_fluent_vec.end(); p++ ) {
 		os << m_problem.fluents()[*p]->signature() << " ";
 	}

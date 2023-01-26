@@ -72,13 +72,25 @@ public:
 
 	void	print( std::ostream& os ) const;
 
-protected:
+	int index() const;
+	void set_index(int index);
 
+protected:
+    int                 m_index;
 	Fluent_Vec			m_fluent_vec;
 	Fluent_Set			m_fluent_set;
 	const STRIPS_Problem&		m_problem;
 	size_t				m_hash;
 };
+
+inline int State::index() const {
+	return m_index;
+}
+
+inline void State::set_index(int index) {
+	m_index = index;
+}
+
 
 inline	size_t State::hash() const {
 	return m_hash;

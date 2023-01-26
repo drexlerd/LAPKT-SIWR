@@ -46,7 +46,10 @@ From: ubuntu:20.04
 	export LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/lib/dlplan/"
 
 	## Install SIWR
+    cd /LAPKT-SIWR
+    scons --clean
 	cd /LAPKT-SIWR/planners/siwr/
+    scons --clean
 	./build.py
 
 	# Copy planner files into separate subdirectory
@@ -92,4 +95,4 @@ Authors     Dominik Drexler <dominik.drexler@liu.se> and Jendrik Seipp <jendrik.
 SupportsDerivedPredicates no
 SupportsQuantifiedPreconditions yes
 SupportsQuantifiedEffects yes
-# sudo singularity build siw.img siw.sif
+# sudo singularity build siwr.img siwr.sif

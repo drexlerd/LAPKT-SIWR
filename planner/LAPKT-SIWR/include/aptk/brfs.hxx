@@ -44,7 +44,7 @@ public:
 	typedef State State_Type;
 
 	Node( State* s, Action_Idx action, Node<State>* parent = nullptr, float cost = 1.0f, bool compute_hash = true)
-	: m_state( s ), m_parent( parent ), m_action(action), m_g( 0 ) {
+	: m_state( s ), m_parent( parent ), m_action(action), m_g( 0 ), m_index( -1 ) {
 		m_g = ( parent ? parent->m_g + cost : 0.0f);
 		if( m_state == NULL )
 			update_hash();
@@ -98,8 +98,11 @@ public:
 		return (m_action == o.m_action) && ( *(m_parent->m_state) == *(o.m_parent->m_state) );
 	}
 
-public:
+	int index() const { return m_index; }
+	void set_index(int index) { m_index = index; }
 
+public:
+    int         m_index;
 	State*		m_state;
 	Node<State>*	m_parent;
 	float		m_h;
@@ -189,6 +192,13 @@ public:
 		m_root->print(std::cout);
 		std::cout << std::endl;
 #endif
+        // Dominik(26.01.2023): Set index of initial state
+		assert(this-m_open_hash.size() == 0 && this->m_closed.size() == 0);
+        this->m_root->set_index(this->m_open_hash.size() + this->m_closed.size());
+		if( this->m_root->has_state() ) {
+		    this->m_root->state()->set_index(this->m_open_hash.size() + this->m_closed.size());
+		}
+
 		m_open.push( m_root );
 		m_open_hash.put( m_root );
 		inc_gen();
@@ -238,6 +248,12 @@ public:
 	}
 
 	void	 	open_node( Search_Node *n ) {
+		// Dominik(26.01.2023): set index of newly generated node. It was previously tested whether it was hashed in open or closed before.
+		n->set_index(m_open_hash.size() + m_closed.size());
+		if( n->has_state() ) {
+		    n->state()->set_index(m_open_hash.size() + m_closed.size() + 1);  // + 1 because get_node pops node during expansion
+		}
+
 		m_open.push(n);
 		m_open_hash.put(n);
 		inc_gen();

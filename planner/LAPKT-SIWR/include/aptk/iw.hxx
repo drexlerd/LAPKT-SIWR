@@ -60,8 +60,6 @@ public:
 	bool	verbose() const { return m_verbose; }
 
 	void	start(State*s = NULL) {
-
-
 		if(!s)
 			this->m_root = new Search_Node( this->problem().init(), no_op, NULL );
 		else
@@ -86,6 +84,13 @@ public:
 			std::cout << std::endl;
 		}
 #endif
+        // Dominik(26.01.2023): Set index of initial state
+		assert(this-m_open_hash.size() == 0 && this->m_closed.size() == 0);
+        this->m_root->set_index(this->m_open_hash.size() + this->m_closed.size());
+		if( this->m_root->has_state() ) {
+		    this->m_root->state()->set_index(this->m_open_hash.size() + this->m_closed.size());
+		}
+
 		this->m_open.push( this->m_root );
 		this->m_open_hash.put( this->m_root );
 		this->inc_gen();
@@ -152,6 +157,7 @@ protected:
 				delete n;
 			}
 			else{
+				// std::cout << "n: " << n->index() << std::endl;
 				if( prune( n ) ){
 					#ifdef DEBUG
 					if ( verbose() ) {

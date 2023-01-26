@@ -74,11 +74,14 @@ public:
 
 		new_init_state = new State( this->problem().task() );
 		new_init_state->set( this->m_root->state()->fluent_vec() );
+		this->start( new_init_state );
+        new_init_state->print( std::cout );
 
         m_sketch = &m_sketch_problem->sketch();
 
-		auto find = m_dlplan_state_to_index.emplace(m_sketch_problem->from_lapkt_state(new_init_state, m_dlplan_state_to_index.size()), m_dlplan_state_to_index.size());
-		m_dlplan_initial_state = find.first->first;
+		//auto find = m_dlplan_state_to_index.emplace(m_sketch_problem->from_lapkt_state(new_init_state, m_dlplan_state_to_index.size()), m_dlplan_state_to_index.size());
+		// m_dlplan_initial_state = find.first->first;
+		m_dlplan_initial_state = m_sketch_problem->from_lapkt_state(new_init_state, new_init_state->index());
 
 		m_rules = m_sketch->evaluate_conditions_eager(m_dlplan_initial_state, m_denotation_caches);
 
@@ -89,6 +92,9 @@ public:
 		do{
 			if ( this->verbose() )
 				//std::cout << std::endl << "{" << gsize << "/" << this->m_goal_candidates.size() << "/" << this->m_goals_achieved.size() << "}:IW(" << this->bound() << ") -> ";
+
+            // We must reset cache because indices start from 0 again.
+		    m_denotation_caches = dlplan::core::DenotationsCaches();
 			end = this->do_search();
 			m_pruned_sum_B_count += this->pruned_by_bound();
 
@@ -172,21 +178,22 @@ public:
 		assert(s != NULL);
 		// TODO: think about removing this statement.
         /* if goal state is closed then don't waste time with expensive computation. */
-		if( is_goal_state_closed( n ) )
-			return false;
+		//if( is_goal_state_closed( n ) )
+		//	return false;
 
-		auto find = m_dlplan_state_to_index.emplace(m_sketch_problem->from_lapkt_state(s, m_dlplan_state_to_index.size()), m_dlplan_state_to_index.size());
-		const auto evaluation_result = m_sketch->evaluate_effects_lazy(m_dlplan_initial_state, find.first->first, m_rules, m_denotation_caches);
+		dlplan::core::State dlplan_target_state = m_sketch_problem->from_lapkt_state(s, s->index());
+		// s->print( std::cout );
+		const auto evaluation_result = m_sketch->evaluate_effects_lazy(m_dlplan_initial_state, dlplan_target_state, m_rules, m_denotation_caches);
 		if (evaluation_result) {
 			m_key_applied_rule = evaluation_result->compute_repr();
-			m_dlplan_initial_state = find.first->first;  // we must temporary copy the state.
+			m_dlplan_initial_state = dlplan_target_state;  // we must temporary copy the state.
 			m_rules = m_sketch->evaluate_conditions_eager(m_dlplan_initial_state, m_denotation_caches);
 			close_goal_state( n );
 			return true;
 		}
 		/* 2. Check whether s is an overall goal of the problem. */
 		if (this->problem().goal(*s)) {
-		    close_goal_state( n );
+		    // close_goal_state( n );
 		    return true;
 		}
 		return false;
@@ -250,7 +257,6 @@ protected:
 
 	// sketch related information
 	const Sketch_STRIPS_Problem* m_sketch_problem;
-	std::unordered_map<dlplan::core::State, int> m_dlplan_state_to_index;
 	dlplan::policy::Policy* m_sketch;
 	dlplan::core::DenotationsCaches m_denotation_caches;
 

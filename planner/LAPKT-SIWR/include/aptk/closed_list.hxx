@@ -48,20 +48,20 @@ public:
 				// 		in_closed = true;
 				// 		return it->second;
 				// 	}
-				// }	
+				// }
 				// else
 				  {
 					if ( (*it->second) == *n ) {
 						in_closed = true;
 						return it->second;
-					}	
-				}	
+					}
+				}
 			if ( !in_closed && range.second != this->end() ) {
-			
+
 				// if( n->state() ){
-				// 	const State& lhs = *(range.second->second->state());					
+				// 	const State& lhs = *(range.second->second->state());
 				// 	if ( lhs == *(n->state()) ) return range.second->second;
-					
+
 				// }
 				// else
 			        {
@@ -69,13 +69,13 @@ public:
 					if ( lhs == *n ) return range.second->second;
 				}
 			}
-		}	
-		return NULL;	
+		}
+		return NULL;
 	}
 
 	iterator retrieve_iterator( Node* n ) {
 	  std::pair< iterator, iterator > range = ( !n->state() ? this->equal_range( n->hash() ) : this->equal_range( n->state()->hash() ));
-		
+
 		if ( range.first != this->end() ) {
 			bool in_closed = false;
 			iterator it;
@@ -85,18 +85,18 @@ public:
 				// 		in_closed = true;
 				// 		return it;
 				// 	}
-				// }	
+				// }
 			        //else
 			        {
 					if ( (*it->second) == *n ) {
 						in_closed = true;
 						return it;
-					}	
+					}
 				}
 			if ( !in_closed && range.second != this->end() ) {
 				// if( n->state() ){
 				// 	const State& lhs = *(range.second->second->state());
-				// 	if ( lhs == *(n->state()) ) return range.second;				
+				// 	if ( lhs == *(n->state()) ) return range.second;
 				// }
 				//else
 				{
@@ -104,8 +104,8 @@ public:
 					if ( lhs == *n ) return range.second;
 				}
 			}
-		}	
-		return this->end();			
+		}
+		return this->end();
 	}
 
 	const_iterator retrieve_iterator( Node* n ) const {
@@ -120,14 +120,14 @@ public:
 				// 		in_closed = true;
 				// 		return it;
 				// 	}
-				// }	
+				// }
 			        //else
 			        {
 					if ( (*it->second) == *n ) {
 						in_closed = true;
 						return it;
-					}	
-				}	
+					}
+				}
 			if ( !in_closed && range.second != this->end() ) {
 				// if( n->state() ){
 				// 	const State& lhs = *(range.second->second->state());
@@ -139,8 +139,8 @@ public:
 					if ( lhs == *n ) return range.second;
 				}
 			}
-		}	
-		return this->end();			
+		}
+		return this->end();
 	}
 
 	void	put( Node* n ) {
@@ -148,7 +148,7 @@ public:
 			this->insert( std::make_pair( n->hash(), n ) );
 		else
 			this->insert( std::make_pair( n->state()->hash(), n ) );
-		
+
 	}
 };
 
@@ -168,13 +168,13 @@ public:
 				if ( (*it->second) == *n ) {
 					in_closed = true;
 					return it->second;
-				}	
+				}
 			if ( !in_closed && range.second != this->end() ) {
 				const Node& lhs = *(range.second->second);
 				if ( lhs == *n ) return range.second->second;
 			}
-		}	
-		return NULL;	
+		}
+		return NULL;
 	}
 
 	iterator retrieve_iterator( Node* n ) {
@@ -186,13 +186,13 @@ public:
 				if ( (*it->second) == *n ) {
 					in_closed = true;
 					return it;
-				}	
+				}
 			if ( !in_closed && range.second != this->end() ) {
 				const Node& lhs = *(range.second->second);
 				if ( lhs == *n ) return range.second;
 			}
-		}	
-		return this->end();			
+		}
+		return this->end();
 	}
 
 	const_iterator retrieve_iterator( Node* n ) const {
@@ -204,13 +204,13 @@ public:
 				if ( (*it->second) == *n ) {
 					in_closed = true;
 					return it;
-				}	
+				}
 			if ( !in_closed && range.second != this->end() ) {
 				const State& lhs = *(range.second->second);
 				if ( lhs == *n ) return range.second;
 			}
-		}	
-		return this->end();			
+		}
+		return this->end();
 	}
 
 	void	put( Node* n ) {
