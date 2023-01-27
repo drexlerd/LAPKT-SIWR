@@ -176,7 +176,6 @@ public:
 
 		dlplan::core::State dlplan_target_state = m_sketch_problem->from_lapkt_state(s, s->index());
 		// s->print( std::cout );
-		// TODO: problem with effect evaluation?
 		const auto evaluation_result = m_sketch->evaluate_effects_lazy(m_dlplan_initial_state, dlplan_target_state, m_rules, m_denotation_caches);
 		if (evaluation_result) {
 			m_key_applied_rule = evaluation_result->compute_repr();
@@ -186,46 +185,6 @@ public:
 		if (this->problem().goal(*s)) {
 		    return true;
 		}
-		return false;
-	}
-
-
-	void set_closed_goal_states( Closed_List_Type* c ){ m_closed_goal_states = c; }
-	void close_goal_state( Search_Node* n ) 	 {
-		if( closed_goal_states() ){
-			//m_closed_goal_states->put( n );
-			State* new_state = new State( this->problem().task() );
-			new_state->set( n->state()->fluent_vec() );
-			new_state->update_hash();
-			Search_Node* new_node = new Search_Node( new_state, n->action() );
-			new_node->gn() = n->gn();
-			m_closed_goal_states->put( new_node );
-		}
-	}
-	Closed_List_Type* closed_goal_states() { return m_closed_goal_states; }
-
-
-	void reset_closed_goal_states( ) {
-		if( closed_goal_states() ){
-			// for ( typename Closed_List_Type::iterator i = m_closed_goal_states->begin();
-			//       i != m_closed_goal_states->end(); i++ ) {
-			// 	i->second = NULL;
-			// }
-			m_closed_goal_states->clear();
-		}
-	}
-
-
-	bool is_goal_state_closed( Search_Node* n ) {
-		if( !closed_goal_states() ) return false;
-
-		n->compare_only_state( true );
-		Search_Node* n2 = this->closed_goal_states()->retrieve(n);
-		n->compare_only_state( false );
-
-		if ( n2 != NULL )
-			return true;
-
 		return false;
 	}
 
