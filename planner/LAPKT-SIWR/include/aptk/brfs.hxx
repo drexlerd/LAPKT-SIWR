@@ -249,7 +249,7 @@ public:
 
 	void	 	open_node( Search_Node *n ) {
 		// Dominik(26.01.2023): set index of newly generated node. It was previously tested whether it was hashed in open or closed before.
-		n->set_index(m_open_hash.size() + m_closed.size());
+		n->set_index(m_open_hash.size() + m_closed.size() + 1);
 		if( n->has_state() ) {
 		    n->state()->set_index(m_open_hash.size() + m_closed.size() + 1);  // + 1 because get_node pops node during expansion
 		}
