@@ -1,0 +1,3700 @@
+{
+  "siw-barman-p01.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "siw",
+      "barman",
+      "p01.pddl"
+    ],
+    "node": "n770",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 0.54,
+    "problem": "p01.pddl",
+    "run_dir": "runs-00001-00100/00001",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-barman-p02.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "siw",
+      "barman",
+      "p02.pddl"
+    ],
+    "node": "n1973",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 0.97,
+    "problem": "p02.pddl",
+    "run_dir": "runs-00001-00100/00002",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-barman-p03.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "siw",
+      "barman",
+      "p03.pddl"
+    ],
+    "node": "n1736",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 0.66,
+    "problem": "p03.pddl",
+    "run_dir": "runs-00001-00100/00003",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-barman-p04.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "siw",
+      "barman",
+      "p04.pddl"
+    ],
+    "node": "n823",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 0.84,
+    "problem": "p04.pddl",
+    "run_dir": "runs-00001-00100/00004",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-barman-p05.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "siw",
+      "barman",
+      "p05.pddl"
+    ],
+    "node": "n1491",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1.42,
+    "problem": "p05.pddl",
+    "run_dir": "runs-00001-00100/00005",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-barman-p06.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "siw",
+      "barman",
+      "p06.pddl"
+    ],
+    "node": "n1393",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1.43,
+    "problem": "p06.pddl",
+    "run_dir": "runs-00001-00100/00006",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-barman-p07.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "siw",
+      "barman",
+      "p07.pddl"
+    ],
+    "node": "n770",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1.67,
+    "problem": "p07.pddl",
+    "run_dir": "runs-00001-00100/00007",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-barman-p08.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "siw",
+      "barman",
+      "p08.pddl"
+    ],
+    "node": "n160",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 2.29,
+    "problem": "p08.pddl",
+    "run_dir": "runs-00001-00100/00008",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-barman-p09.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "siw",
+      "barman",
+      "p09.pddl"
+    ],
+    "node": "n1585",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 2.76,
+    "problem": "p09.pddl",
+    "run_dir": "runs-00001-00100/00009",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-barman-p10.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "siw",
+      "barman",
+      "p10.pddl"
+    ],
+    "node": "n826",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 2.84,
+    "problem": "p10.pddl",
+    "run_dir": "runs-00001-00100/00010",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-barman-p11.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "siw",
+      "barman",
+      "p11.pddl"
+    ],
+    "node": "n1671",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 3.88,
+    "problem": "p11.pddl",
+    "run_dir": "runs-00001-00100/00011",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-barman-p12.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "siw",
+      "barman",
+      "p12.pddl"
+    ],
+    "node": "n1393",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 4.69,
+    "problem": "p12.pddl",
+    "run_dir": "runs-00001-00100/00012",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-barman-p13.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "siw",
+      "barman",
+      "p13.pddl"
+    ],
+    "node": "n956",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 5.82,
+    "problem": "p13.pddl",
+    "run_dir": "runs-00001-00100/00013",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-barman-p14.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "siw",
+      "barman",
+      "p14.pddl"
+    ],
+    "node": "n956",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 6.69,
+    "problem": "p14.pddl",
+    "run_dir": "runs-00001-00100/00014",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-barman-p15.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "siw",
+      "barman",
+      "p15.pddl"
+    ],
+    "node": "n245",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 7.81,
+    "problem": "p15.pddl",
+    "run_dir": "runs-00001-00100/00015",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-barman-p16.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "siw",
+      "barman",
+      "p16.pddl"
+    ],
+    "node": "n1973",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 9.99,
+    "problem": "p16.pddl",
+    "run_dir": "runs-00001-00100/00016",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-barman-p17.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "siw",
+      "barman",
+      "p17.pddl"
+    ],
+    "node": "n726",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 11.44,
+    "problem": "p17.pddl",
+    "run_dir": "runs-00001-00100/00017",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-barman-p18.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "siw",
+      "barman",
+      "p18.pddl"
+    ],
+    "node": "n956",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 14.59,
+    "problem": "p18.pddl",
+    "run_dir": "runs-00001-00100/00018",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-barman-p19.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "siw",
+      "barman",
+      "p19.pddl"
+    ],
+    "node": "n1737",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 28.5,
+    "problem": "p19.pddl",
+    "run_dir": "runs-00001-00100/00019",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-barman-p20.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "siw",
+      "barman",
+      "p20.pddl"
+    ],
+    "node": "n772",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1.51,
+    "problem": "p20.pddl",
+    "run_dir": "runs-00001-00100/00020",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-barman-p21.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "siw",
+      "barman",
+      "p21.pddl"
+    ],
+    "node": "n726",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1.83,
+    "problem": "p21.pddl",
+    "run_dir": "runs-00001-00100/00021",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-barman-p22.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "siw",
+      "barman",
+      "p22.pddl"
+    ],
+    "node": "n823",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1.98,
+    "problem": "p22.pddl",
+    "run_dir": "runs-00001-00100/00022",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-barman-p23.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "siw",
+      "barman",
+      "p23.pddl"
+    ],
+    "node": "n162",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 2.35,
+    "problem": "p23.pddl",
+    "run_dir": "runs-00001-00100/00023",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-barman-p24.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "siw",
+      "barman",
+      "p24.pddl"
+    ],
+    "node": "n241",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 2.32,
+    "problem": "p24.pddl",
+    "run_dir": "runs-00001-00100/00024",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-barman-p25.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "siw",
+      "barman",
+      "p25.pddl"
+    ],
+    "node": "n770",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 2.47,
+    "problem": "p25.pddl",
+    "run_dir": "runs-00001-00100/00025",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-barman-p26.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "siw",
+      "barman",
+      "p26.pddl"
+    ],
+    "node": "n484",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 2.68,
+    "problem": "p26.pddl",
+    "run_dir": "runs-00001-00100/00026",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-barman-p27.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "siw",
+      "barman",
+      "p27.pddl"
+    ],
+    "node": "n484",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 3.1,
+    "problem": "p27.pddl",
+    "run_dir": "runs-00001-00100/00027",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-barman-p28.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "siw",
+      "barman",
+      "p28.pddl"
+    ],
+    "node": "n1399",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 3.74,
+    "problem": "p28.pddl",
+    "run_dir": "runs-00001-00100/00028",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-barman-p29.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "siw",
+      "barman",
+      "p29.pddl"
+    ],
+    "node": "n163",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 3.27,
+    "problem": "p29.pddl",
+    "run_dir": "runs-00001-00100/00029",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-barman-p30.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "siw",
+      "barman",
+      "p30.pddl"
+    ],
+    "node": "n726",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 3.53,
+    "problem": "p30.pddl",
+    "run_dir": "runs-00001-00100/00030",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-childsnack-p01.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "siw",
+      "childsnack",
+      "p01.pddl"
+    ],
+    "node": "n241",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 0.46,
+    "problem": "p01.pddl",
+    "run_dir": "runs-00001-00100/00031",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-childsnack-p02.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "siw",
+      "childsnack",
+      "p02.pddl"
+    ],
+    "node": "n726",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 0.55,
+    "problem": "p02.pddl",
+    "run_dir": "runs-00001-00100/00032",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-childsnack-p03.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "siw",
+      "childsnack",
+      "p03.pddl"
+    ],
+    "node": "n1671",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 0.65,
+    "problem": "p03.pddl",
+    "run_dir": "runs-00001-00100/00033",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-childsnack-p04.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "siw",
+      "childsnack",
+      "p04.pddl"
+    ],
+    "node": "n956",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1.39,
+    "problem": "p04.pddl",
+    "run_dir": "runs-00001-00100/00034",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-childsnack-p05.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "siw",
+      "childsnack",
+      "p05.pddl"
+    ],
+    "node": "n770",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 2.13,
+    "problem": "p05.pddl",
+    "run_dir": "runs-00001-00100/00035",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-childsnack-p06.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "siw",
+      "childsnack",
+      "p06.pddl"
+    ],
+    "node": "n956",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 5.04,
+    "problem": "p06.pddl",
+    "run_dir": "runs-00001-00100/00036",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-childsnack-p07.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "siw",
+      "childsnack",
+      "p07.pddl"
+    ],
+    "node": "n770",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 8.0,
+    "problem": "p07.pddl",
+    "run_dir": "runs-00001-00100/00037",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-childsnack-p08.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "siw",
+      "childsnack",
+      "p08.pddl"
+    ],
+    "node": "n726",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 13.07,
+    "problem": "p08.pddl",
+    "run_dir": "runs-00001-00100/00038",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-childsnack-p09.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "siw",
+      "childsnack",
+      "p09.pddl"
+    ],
+    "node": "n1974",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 24.7,
+    "problem": "p09.pddl",
+    "run_dir": "runs-00001-00100/00039",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-childsnack-p10.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "siw",
+      "childsnack",
+      "p10.pddl"
+    ],
+    "node": "n956",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 39.36,
+    "problem": "p10.pddl",
+    "run_dir": "runs-00001-00100/00040",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-childsnack-p11.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "siw",
+      "childsnack",
+      "p11.pddl"
+    ],
+    "node": "n770",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 77.21,
+    "problem": "p11.pddl",
+    "run_dir": "runs-00001-00100/00041",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-childsnack-p12.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "siw",
+      "childsnack",
+      "p12.pddl"
+    ],
+    "node": "n771",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 107.94,
+    "problem": "p12.pddl",
+    "run_dir": "runs-00001-00100/00042",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-childsnack-p13.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "siw",
+      "childsnack",
+      "p13.pddl"
+    ],
+    "node": "n1393",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 147.38,
+    "problem": "p13.pddl",
+    "run_dir": "runs-00001-00100/00043",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-childsnack-p14.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "siw",
+      "childsnack",
+      "p14.pddl"
+    ],
+    "node": "n290",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 271.56,
+    "problem": "p14.pddl",
+    "run_dir": "runs-00001-00100/00044",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-childsnack-p15.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "siw",
+      "childsnack",
+      "p15.pddl"
+    ],
+    "node": "n1062",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 338.73,
+    "problem": "p15.pddl",
+    "run_dir": "runs-00001-00100/00045",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-childsnack-p16.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "siw",
+      "childsnack",
+      "p16.pddl"
+    ],
+    "node": "n956",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 423.01,
+    "problem": "p16.pddl",
+    "run_dir": "runs-00001-00100/00046",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-childsnack-p17.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "siw",
+      "childsnack",
+      "p17.pddl"
+    ],
+    "node": "n956",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 666.08,
+    "problem": "p17.pddl",
+    "run_dir": "runs-00001-00100/00047",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-childsnack-p18.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "siw",
+      "childsnack",
+      "p18.pddl"
+    ],
+    "node": "n1671",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 796.01,
+    "problem": "p18.pddl",
+    "run_dir": "runs-00001-00100/00048",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-childsnack-p19.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "siw",
+      "childsnack",
+      "p19.pddl"
+    ],
+    "node": "n770",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1258.9,
+    "problem": "p19.pddl",
+    "run_dir": "runs-00001-00100/00049",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-childsnack-p20.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "siw",
+      "childsnack",
+      "p20.pddl"
+    ],
+    "node": "n1062",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1465.55,
+    "problem": "p20.pddl",
+    "run_dir": "runs-00001-00100/00050",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-childsnack-p21.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "timeout",
+    "id": [
+      "siw",
+      "childsnack",
+      "p21.pddl"
+    ],
+    "node": "n1393",
+    "not_i_reachable": 0,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1800.94,
+    "problem": "p21.pddl",
+    "run_dir": "runs-00001-00100/00051",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-childsnack-p22.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "timeout",
+    "id": [
+      "siw",
+      "childsnack",
+      "p22.pddl"
+    ],
+    "node": "n1399",
+    "not_i_reachable": 0,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1800.51,
+    "problem": "p22.pddl",
+    "run_dir": "runs-00001-00100/00052",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-childsnack-p23.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "siw",
+      "childsnack",
+      "p23.pddl"
+    ],
+    "node": "n234",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 470.99,
+    "problem": "p23.pddl",
+    "run_dir": "runs-00001-00100/00053",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-childsnack-p24.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "siw",
+      "childsnack",
+      "p24.pddl"
+    ],
+    "node": "n1393",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 760.93,
+    "problem": "p24.pddl",
+    "run_dir": "runs-00001-00100/00054",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-childsnack-p25.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "siw",
+      "childsnack",
+      "p25.pddl"
+    ],
+    "node": "n1873",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1008.66,
+    "problem": "p25.pddl",
+    "run_dir": "runs-00001-00100/00055",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-childsnack-p26.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "siw",
+      "childsnack",
+      "p26.pddl"
+    ],
+    "node": "n290",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1719.35,
+    "problem": "p26.pddl",
+    "run_dir": "runs-00001-00100/00056",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-childsnack-p27.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "siw",
+      "childsnack",
+      "p27.pddl"
+    ],
+    "node": "n908",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1747.87,
+    "problem": "p27.pddl",
+    "run_dir": "runs-00001-00100/00057",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-childsnack-p28.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "timeout",
+    "id": [
+      "siw",
+      "childsnack",
+      "p28.pddl"
+    ],
+    "node": "n956",
+    "not_i_reachable": 0,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1800.82,
+    "problem": "p28.pddl",
+    "run_dir": "runs-00001-00100/00058",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-childsnack-p29.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "timeout",
+    "id": [
+      "siw",
+      "childsnack",
+      "p29.pddl"
+    ],
+    "node": "n234",
+    "not_i_reachable": 0,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1800.51,
+    "problem": "p29.pddl",
+    "run_dir": "runs-00001-00100/00059",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-childsnack-p30.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "timeout",
+    "id": [
+      "siw",
+      "childsnack",
+      "p30.pddl"
+    ],
+    "node": "n1874",
+    "not_i_reachable": 0,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1800.79,
+    "problem": "p30.pddl",
+    "run_dir": "runs-00001-00100/00060",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-driverlog-p01.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "siw",
+      "driverlog",
+      "p01.pddl"
+    ],
+    "node": "n1873",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 2.37,
+    "problem": "p01.pddl",
+    "run_dir": "runs-00001-00100/00061",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-driverlog-p02.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "siw",
+      "driverlog",
+      "p02.pddl"
+    ],
+    "node": "n1671",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 3.69,
+    "problem": "p02.pddl",
+    "run_dir": "runs-00001-00100/00062",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-driverlog-p03.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "siw",
+      "driverlog",
+      "p03.pddl"
+    ],
+    "node": "n770",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 7.4,
+    "problem": "p03.pddl",
+    "run_dir": "runs-00001-00100/00063",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-driverlog-p04.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "siw",
+      "driverlog",
+      "p04.pddl"
+    ],
+    "node": "n1873",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 33.57,
+    "problem": "p04.pddl",
+    "run_dir": "runs-00001-00100/00064",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-driverlog-p05.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "siw",
+      "driverlog",
+      "p05.pddl"
+    ],
+    "node": "n245",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 38.24,
+    "problem": "p05.pddl",
+    "run_dir": "runs-00001-00100/00065",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-driverlog-p06.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "siw",
+      "driverlog",
+      "p06.pddl"
+    ],
+    "node": "n151",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 181.88,
+    "problem": "p06.pddl",
+    "run_dir": "runs-00001-00100/00066",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-driverlog-p07.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "siw",
+      "driverlog",
+      "p07.pddl"
+    ],
+    "node": "n148",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 101.97,
+    "problem": "p07.pddl",
+    "run_dir": "runs-00001-00100/00067",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-driverlog-p08.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "siw",
+      "driverlog",
+      "p08.pddl"
+    ],
+    "node": "n956",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 209.08,
+    "problem": "p08.pddl",
+    "run_dir": "runs-00001-00100/00068",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-driverlog-p09.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "siw",
+      "driverlog",
+      "p09.pddl"
+    ],
+    "node": "n290",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 450.08,
+    "problem": "p09.pddl",
+    "run_dir": "runs-00001-00100/00069",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-driverlog-p10.pddl": {
+    "algorithm": "siw",
+    "cost": 265,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "expanded": 380231,
+    "generated": 1066896,
+    "id": [
+      "siw",
+      "driverlog",
+      "p10.pddl"
+    ],
+    "node": "n1393",
+    "not_i_reachable": 0,
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 33.52,
+    "problem": "p10.pddl",
+    "pruned": 5840814,
+    "run_dir": "runs-00001-00100/00070",
+    "total_time": 33.47,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ],
+    "width_average": 1.90566,
+    "width_maximum": 2
+  },
+  "siw-driverlog-p11.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "siw",
+      "driverlog",
+      "p11.pddl"
+    ],
+    "node": "n726",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 435.37,
+    "problem": "p11.pddl",
+    "run_dir": "runs-00001-00100/00071",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-driverlog-p12.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "driverlog",
+    "error": "timeout",
+    "id": [
+      "siw",
+      "driverlog",
+      "p12.pddl"
+    ],
+    "node": "n1873",
+    "not_i_reachable": 0,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1801.35,
+    "problem": "p12.pddl",
+    "run_dir": "runs-00001-00100/00072",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-driverlog-p13.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "siw",
+      "driverlog",
+      "p13.pddl"
+    ],
+    "node": "n823",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1460.62,
+    "problem": "p13.pddl",
+    "run_dir": "runs-00001-00100/00073",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-driverlog-p14.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "driverlog",
+    "error": "some-error-occured",
+    "id": [
+      "siw",
+      "driverlog",
+      "p14.pddl"
+    ],
+    "node": "n908",
+    "not_i_reachable": 0,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 893.62,
+    "problem": "p14.pddl",
+    "run_dir": "runs-00001-00100/00074",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-driverlog-p15.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "driverlog",
+    "error": "some-error-occured",
+    "id": [
+      "siw",
+      "driverlog",
+      "p15.pddl"
+    ],
+    "node": "n1394",
+    "not_i_reachable": 0,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 617.58,
+    "problem": "p15.pddl",
+    "run_dir": "runs-00001-00100/00075",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-driverlog-p16.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "driverlog",
+    "error": "timeout",
+    "id": [
+      "siw",
+      "driverlog",
+      "p16.pddl"
+    ],
+    "node": "n1062",
+    "not_i_reachable": 0,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1801.09,
+    "problem": "p16.pddl",
+    "run_dir": "runs-00001-00100/00076",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-driverlog-p17.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "driverlog",
+    "error": "timeout",
+    "id": [
+      "siw",
+      "driverlog",
+      "p17.pddl"
+    ],
+    "node": "n908",
+    "not_i_reachable": 0,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1801.66,
+    "problem": "p17.pddl",
+    "run_dir": "runs-00001-00100/00077",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-driverlog-p18.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "driverlog",
+    "error": "some-error-occured",
+    "id": [
+      "siw",
+      "driverlog",
+      "p18.pddl"
+    ],
+    "node": "n1671",
+    "not_i_reachable": 0,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 782.03,
+    "problem": "p18.pddl",
+    "run_dir": "runs-00001-00100/00078",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-driverlog-p19.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "driverlog",
+    "error": "timeout",
+    "id": [
+      "siw",
+      "driverlog",
+      "p19.pddl"
+    ],
+    "node": "n1873",
+    "not_i_reachable": 0,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1800.99,
+    "problem": "p19.pddl",
+    "run_dir": "runs-00001-00100/00079",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-driverlog-p20.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "driverlog",
+    "error": "some-error-occured",
+    "id": [
+      "siw",
+      "driverlog",
+      "p20.pddl"
+    ],
+    "node": "n823",
+    "not_i_reachable": 0,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1658.16,
+    "problem": "p20.pddl",
+    "run_dir": "runs-00001-00100/00080",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-driverlog-p21.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "driverlog",
+    "error": "some-error-occured",
+    "id": [
+      "siw",
+      "driverlog",
+      "p21.pddl"
+    ],
+    "node": "n911",
+    "not_i_reachable": 0,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 365.68,
+    "problem": "p21.pddl",
+    "run_dir": "runs-00001-00100/00081",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-driverlog-p22.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "driverlog",
+    "error": "timeout",
+    "id": [
+      "siw",
+      "driverlog",
+      "p22.pddl"
+    ],
+    "node": "n1062",
+    "not_i_reachable": 0,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1802.39,
+    "problem": "p22.pddl",
+    "run_dir": "runs-00001-00100/00082",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-driverlog-p23.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "driverlog",
+    "error": "timeout",
+    "id": [
+      "siw",
+      "driverlog",
+      "p23.pddl"
+    ],
+    "node": "n956",
+    "not_i_reachable": 0,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1801.51,
+    "problem": "p23.pddl",
+    "run_dir": "runs-00001-00100/00083",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-driverlog-p24.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "driverlog",
+    "error": "timeout",
+    "id": [
+      "siw",
+      "driverlog",
+      "p24.pddl"
+    ],
+    "node": "n1737",
+    "not_i_reachable": 0,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1801.7,
+    "problem": "p24.pddl",
+    "run_dir": "runs-00001-00100/00084",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-driverlog-p25.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "driverlog",
+    "error": "timeout",
+    "id": [
+      "siw",
+      "driverlog",
+      "p25.pddl"
+    ],
+    "node": "n770",
+    "not_i_reachable": 0,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1801.52,
+    "problem": "p25.pddl",
+    "run_dir": "runs-00001-00100/00085",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-driverlog-p26.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "siw",
+      "driverlog",
+      "p26.pddl"
+    ],
+    "node": "n1736",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 113.49,
+    "problem": "p26.pddl",
+    "run_dir": "runs-00001-00100/00086",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-driverlog-p27.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "siw",
+      "driverlog",
+      "p27.pddl"
+    ],
+    "node": "n1971",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 111.17,
+    "problem": "p27.pddl",
+    "run_dir": "runs-00001-00100/00087",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-driverlog-p28.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "siw",
+      "driverlog",
+      "p28.pddl"
+    ],
+    "node": "n241",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 172.09,
+    "problem": "p28.pddl",
+    "run_dir": "runs-00001-00100/00088",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-driverlog-p29.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "siw",
+      "driverlog",
+      "p29.pddl"
+    ],
+    "node": "n1873",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 183.84,
+    "problem": "p29.pddl",
+    "run_dir": "runs-00001-00100/00089",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-driverlog-p30.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "siw",
+      "driverlog",
+      "p30.pddl"
+    ],
+    "node": "n1878",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 567.11,
+    "problem": "p30.pddl",
+    "run_dir": "runs-00001-00100/00090",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-floortile-p01.pddl": {
+    "algorithm": "siw",
+    "cost": 21,
+    "coverage": 1,
+    "domain": "floortile",
+    "error": "none",
+    "expanded": 30,
+    "generated": 61,
+    "id": [
+      "siw",
+      "floortile",
+      "p01.pddl"
+    ],
+    "node": "n1874",
+    "not_i_reachable": 0,
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.4,
+    "problem": "p01.pddl",
+    "pruned": 103,
+    "run_dir": "runs-00001-00100/00091",
+    "total_time": 0.36,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ],
+    "width_average": 1.25,
+    "width_maximum": 2
+  },
+  "siw-floortile-p02.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "siw",
+      "floortile",
+      "p02.pddl"
+    ],
+    "node": "n1671",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 0.42,
+    "problem": "p02.pddl",
+    "run_dir": "runs-00001-00100/00092",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-floortile-p03.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "siw",
+      "floortile",
+      "p03.pddl"
+    ],
+    "node": "n770",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 0.55,
+    "problem": "p03.pddl",
+    "run_dir": "runs-00001-00100/00093",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-floortile-p04.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "siw",
+      "floortile",
+      "p04.pddl"
+    ],
+    "node": "n908",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1.21,
+    "problem": "p04.pddl",
+    "run_dir": "runs-00001-00100/00094",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-floortile-p05.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "siw",
+      "floortile",
+      "p05.pddl"
+    ],
+    "node": "n1444",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 2.16,
+    "problem": "p05.pddl",
+    "run_dir": "runs-00001-00100/00095",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-floortile-p06.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "siw",
+      "floortile",
+      "p06.pddl"
+    ],
+    "node": "n771",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 3.34,
+    "problem": "p06.pddl",
+    "run_dir": "runs-00001-00100/00096",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-floortile-p07.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "siw",
+      "floortile",
+      "p07.pddl"
+    ],
+    "node": "n1346",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 6.85,
+    "problem": "p07.pddl",
+    "run_dir": "runs-00001-00100/00097",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-floortile-p08.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "siw",
+      "floortile",
+      "p08.pddl"
+    ],
+    "node": "n956",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 28.97,
+    "problem": "p08.pddl",
+    "run_dir": "runs-00001-00100/00098",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-floortile-p09.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "siw",
+      "floortile",
+      "p09.pddl"
+    ],
+    "node": "n163",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 32.08,
+    "problem": "p09.pddl",
+    "run_dir": "runs-00001-00100/00099",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-floortile-p10.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "siw",
+      "floortile",
+      "p10.pddl"
+    ],
+    "node": "n956",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 102.85,
+    "problem": "p10.pddl",
+    "run_dir": "runs-00001-00100/00100",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-floortile-p11.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "siw",
+      "floortile",
+      "p11.pddl"
+    ],
+    "node": "n770",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 392.28,
+    "problem": "p11.pddl",
+    "run_dir": "runs-00101-00200/00101",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-floortile-p12.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "siw",
+      "floortile",
+      "p12.pddl"
+    ],
+    "node": "n339",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 463.88,
+    "problem": "p12.pddl",
+    "run_dir": "runs-00101-00200/00102",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-floortile-p13.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "siw",
+      "floortile",
+      "p13.pddl"
+    ],
+    "node": "n726",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 584.21,
+    "problem": "p13.pddl",
+    "run_dir": "runs-00101-00200/00103",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-floortile-p14.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "timeout",
+    "id": [
+      "siw",
+      "floortile",
+      "p14.pddl"
+    ],
+    "node": "n956",
+    "not_i_reachable": 0,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1800.52,
+    "problem": "p14.pddl",
+    "run_dir": "runs-00101-00200/00104",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-floortile-p15.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "siw",
+      "floortile",
+      "p15.pddl"
+    ],
+    "node": "n771",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1406.44,
+    "problem": "p15.pddl",
+    "run_dir": "runs-00101-00200/00105",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-floortile-p16.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "timeout",
+    "id": [
+      "siw",
+      "floortile",
+      "p16.pddl"
+    ],
+    "node": "n1736",
+    "not_i_reachable": 0,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1801.48,
+    "problem": "p16.pddl",
+    "run_dir": "runs-00101-00200/00106",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-floortile-p17.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "timeout",
+    "id": [
+      "siw",
+      "floortile",
+      "p17.pddl"
+    ],
+    "node": "n1736",
+    "not_i_reachable": 0,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1800.64,
+    "problem": "p17.pddl",
+    "run_dir": "runs-00101-00200/00107",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-floortile-p18.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "timeout",
+    "id": [
+      "siw",
+      "floortile",
+      "p18.pddl"
+    ],
+    "node": "n245",
+    "not_i_reachable": 0,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1800.57,
+    "problem": "p18.pddl",
+    "run_dir": "runs-00101-00200/00108",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-floortile-p19.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "timeout",
+    "id": [
+      "siw",
+      "floortile",
+      "p19.pddl"
+    ],
+    "node": "n1393",
+    "not_i_reachable": 0,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1800.78,
+    "problem": "p19.pddl",
+    "run_dir": "runs-00101-00200/00109",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-floortile-p20.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "timeout",
+    "id": [
+      "siw",
+      "floortile",
+      "p20.pddl"
+    ],
+    "node": "n1491",
+    "not_i_reachable": 0,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1801.08,
+    "problem": "p20.pddl",
+    "run_dir": "runs-00101-00200/00110",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-floortile-p21.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "timeout",
+    "id": [
+      "siw",
+      "floortile",
+      "p21.pddl"
+    ],
+    "node": "n151",
+    "not_i_reachable": 0,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1800.64,
+    "problem": "p21.pddl",
+    "run_dir": "runs-00101-00200/00111",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-floortile-p22.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "timeout",
+    "id": [
+      "siw",
+      "floortile",
+      "p22.pddl"
+    ],
+    "node": "n770",
+    "not_i_reachable": 0,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1809.09,
+    "problem": "p22.pddl",
+    "run_dir": "runs-00101-00200/00112",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-floortile-p23.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "timeout",
+    "id": [
+      "siw",
+      "floortile",
+      "p23.pddl"
+    ],
+    "node": "n770",
+    "not_i_reachable": 0,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1801.42,
+    "problem": "p23.pddl",
+    "run_dir": "runs-00101-00200/00113",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-floortile-p24.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "timeout",
+    "id": [
+      "siw",
+      "floortile",
+      "p24.pddl"
+    ],
+    "node": "n1396",
+    "not_i_reachable": 0,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1800.76,
+    "problem": "p24.pddl",
+    "run_dir": "runs-00101-00200/00114",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-floortile-p25.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "timeout",
+    "id": [
+      "siw",
+      "floortile",
+      "p25.pddl"
+    ],
+    "node": "n1393",
+    "not_i_reachable": 0,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1802.77,
+    "problem": "p25.pddl",
+    "run_dir": "runs-00101-00200/00115",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-floortile-p26.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "timeout",
+    "id": [
+      "siw",
+      "floortile",
+      "p26.pddl"
+    ],
+    "node": "n1671",
+    "not_i_reachable": 0,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1805.49,
+    "problem": "p26.pddl",
+    "run_dir": "runs-00101-00200/00116",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-floortile-p27.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "timeout",
+    "id": [
+      "siw",
+      "floortile",
+      "p27.pddl"
+    ],
+    "node": "n908",
+    "not_i_reachable": 0,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1800.78,
+    "problem": "p27.pddl",
+    "run_dir": "runs-00101-00200/00117",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-floortile-p28.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "timeout",
+    "id": [
+      "siw",
+      "floortile",
+      "p28.pddl"
+    ],
+    "node": "n826",
+    "not_i_reachable": 0,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1800.66,
+    "problem": "p28.pddl",
+    "run_dir": "runs-00101-00200/00118",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-floortile-p29.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "timeout",
+    "id": [
+      "siw",
+      "floortile",
+      "p29.pddl"
+    ],
+    "node": "n726",
+    "not_i_reachable": 0,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1800.89,
+    "problem": "p29.pddl",
+    "run_dir": "runs-00101-00200/00119",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-floortile-p30.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "timeout",
+    "id": [
+      "siw",
+      "floortile",
+      "p30.pddl"
+    ],
+    "node": "n244",
+    "not_i_reachable": 0,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1800.8,
+    "problem": "p30.pddl",
+    "run_dir": "runs-00101-00200/00120",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-grid-p01.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "siw",
+      "grid",
+      "p01.pddl"
+    ],
+    "node": "n1736",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 0.51,
+    "problem": "p01.pddl",
+    "run_dir": "runs-00101-00200/00121",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-grid-p02.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "siw",
+      "grid",
+      "p02.pddl"
+    ],
+    "node": "n956",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 0.98,
+    "problem": "p02.pddl",
+    "run_dir": "runs-00101-00200/00122",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-grid-p03.pddl": {
+    "algorithm": "siw",
+    "cost": 35,
+    "coverage": 1,
+    "domain": "grid",
+    "error": "none",
+    "expanded": 37454,
+    "generated": 40863,
+    "id": [
+      "siw",
+      "grid",
+      "p03.pddl"
+    ],
+    "node": "n291",
+    "not_i_reachable": 0,
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.76,
+    "problem": "p03.pddl",
+    "pruned": 39863,
+    "run_dir": "runs-00101-00200/00123",
+    "total_time": 1.61,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ],
+    "width_average": 2.0,
+    "width_maximum": 2
+  },
+  "siw-grid-p04.pddl": {
+    "algorithm": "siw",
+    "cost": 15,
+    "coverage": 1,
+    "domain": "grid",
+    "error": "none",
+    "expanded": 1395,
+    "generated": 1827,
+    "id": [
+      "siw",
+      "grid",
+      "p04.pddl"
+    ],
+    "node": "n908",
+    "not_i_reachable": 0,
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.37,
+    "problem": "p04.pddl",
+    "pruned": 1104,
+    "run_dir": "runs-00101-00200/00124",
+    "total_time": 1.32,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ],
+    "width_average": 2.0,
+    "width_maximum": 2
+  },
+  "siw-grid-p05.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "siw",
+      "grid",
+      "p05.pddl"
+    ],
+    "node": "n1737",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 44.79,
+    "problem": "p05.pddl",
+    "run_dir": "runs-00101-00200/00125",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-grid-p06.pddl": {
+    "algorithm": "siw",
+    "cost": 68,
+    "coverage": 1,
+    "domain": "grid",
+    "error": "none",
+    "expanded": 135462,
+    "generated": 141345,
+    "id": [
+      "siw",
+      "grid",
+      "p06.pddl"
+    ],
+    "node": "n1736",
+    "not_i_reachable": 0,
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 15.78,
+    "problem": "p06.pddl",
+    "pruned": 122832,
+    "run_dir": "runs-00101-00200/00126",
+    "total_time": 15.71,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ],
+    "width_average": 2.0,
+    "width_maximum": 2
+  },
+  "siw-grid-p07.pddl": {
+    "algorithm": "siw",
+    "cost": 190,
+    "coverage": 1,
+    "domain": "grid",
+    "error": "none",
+    "expanded": 1210993,
+    "generated": 1247555,
+    "id": [
+      "siw",
+      "grid",
+      "p07.pddl"
+    ],
+    "node": "n772",
+    "not_i_reachable": 0,
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 128.67,
+    "problem": "p07.pddl",
+    "pruned": 922909,
+    "run_dir": "runs-00101-00200/00127",
+    "total_time": 128.58,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ],
+    "width_average": 1.66667,
+    "width_maximum": 2
+  },
+  "siw-grid-p08.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "some-error-occured",
+    "id": [
+      "siw",
+      "grid",
+      "p08.pddl"
+    ],
+    "node": "n956",
+    "not_i_reachable": 0,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 135.76,
+    "problem": "p08.pddl",
+    "run_dir": "runs-00101-00200/00128",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-grid-p09.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "some-error-occured",
+    "id": [
+      "siw",
+      "grid",
+      "p09.pddl"
+    ],
+    "node": "n770",
+    "not_i_reachable": 0,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 166.01,
+    "problem": "p09.pddl",
+    "run_dir": "runs-00101-00200/00129",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-grid-p10.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "some-error-occured",
+    "id": [
+      "siw",
+      "grid",
+      "p10.pddl"
+    ],
+    "node": "n484",
+    "not_i_reachable": 0,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 157.67,
+    "problem": "p10.pddl",
+    "run_dir": "runs-00101-00200/00130",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-grid-p11.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "siw",
+      "grid",
+      "p11.pddl"
+    ],
+    "node": "n956",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 83.5,
+    "problem": "p11.pddl",
+    "run_dir": "runs-00101-00200/00131",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-grid-p12.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "siw",
+      "grid",
+      "p12.pddl"
+    ],
+    "node": "n1346",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 111.4,
+    "problem": "p12.pddl",
+    "run_dir": "runs-00101-00200/00132",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-grid-p13.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "siw",
+      "grid",
+      "p13.pddl"
+    ],
+    "node": "n241",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 193.27,
+    "problem": "p13.pddl",
+    "run_dir": "runs-00101-00200/00133",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-grid-p14.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "siw",
+      "grid",
+      "p14.pddl"
+    ],
+    "node": "n823",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 238.85,
+    "problem": "p14.pddl",
+    "run_dir": "runs-00101-00200/00134",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-grid-p15.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "siw",
+      "grid",
+      "p15.pddl"
+    ],
+    "node": "n1393",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 288.13,
+    "problem": "p15.pddl",
+    "run_dir": "runs-00101-00200/00135",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-grid-p16.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "siw",
+      "grid",
+      "p16.pddl"
+    ],
+    "node": "n770",
+    "not_i_reachable": 0,
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 34.18,
+    "problem": "p16.pddl",
+    "run_dir": "runs-00101-00200/00136",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-grid-p17.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "siw",
+      "grid",
+      "p17.pddl"
+    ],
+    "node": "n1062",
+    "not_i_reachable": 0,
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 37.17,
+    "problem": "p17.pddl",
+    "run_dir": "runs-00101-00200/00137",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-grid-p18.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "siw",
+      "grid",
+      "p18.pddl"
+    ],
+    "node": "n956",
+    "not_i_reachable": 0,
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 42.33,
+    "problem": "p18.pddl",
+    "run_dir": "runs-00101-00200/00138",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-grid-p19.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "siw",
+      "grid",
+      "p19.pddl"
+    ],
+    "node": "n1393",
+    "not_i_reachable": 0,
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 45.46,
+    "problem": "p19.pddl",
+    "run_dir": "runs-00101-00200/00139",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-grid-p20.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "siw",
+      "grid",
+      "p20.pddl"
+    ],
+    "node": "n956",
+    "not_i_reachable": 0,
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 48.89,
+    "problem": "p20.pddl",
+    "run_dir": "runs-00101-00200/00140",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-grid-p21.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "siw",
+      "grid",
+      "p21.pddl"
+    ],
+    "node": "n908",
+    "not_i_reachable": 0,
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 64.59,
+    "problem": "p21.pddl",
+    "run_dir": "runs-00101-00200/00141",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-grid-p22.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "siw",
+      "grid",
+      "p22.pddl"
+    ],
+    "node": "n823",
+    "not_i_reachable": 0,
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 69.78,
+    "problem": "p22.pddl",
+    "run_dir": "runs-00101-00200/00142",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-grid-p23.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "siw",
+      "grid",
+      "p23.pddl"
+    ],
+    "node": "n1873",
+    "not_i_reachable": 0,
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 72.19,
+    "problem": "p23.pddl",
+    "run_dir": "runs-00101-00200/00143",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-grid-p24.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "siw",
+      "grid",
+      "p24.pddl"
+    ],
+    "node": "n1971",
+    "not_i_reachable": 0,
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 77.25,
+    "problem": "p24.pddl",
+    "run_dir": "runs-00101-00200/00144",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-grid-p25.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "siw",
+      "grid",
+      "p25.pddl"
+    ],
+    "node": "n770",
+    "not_i_reachable": 0,
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 86.83,
+    "problem": "p25.pddl",
+    "run_dir": "runs-00101-00200/00145",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-grid-p26.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "siw",
+      "grid",
+      "p26.pddl"
+    ],
+    "node": "n1736",
+    "not_i_reachable": 0,
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 107.67,
+    "problem": "p26.pddl",
+    "run_dir": "runs-00101-00200/00146",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-grid-p27.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "siw",
+      "grid",
+      "p27.pddl"
+    ],
+    "node": "n956",
+    "not_i_reachable": 0,
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 125.16,
+    "problem": "p27.pddl",
+    "run_dir": "runs-00101-00200/00147",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-grid-p28.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "siw",
+      "grid",
+      "p28.pddl"
+    ],
+    "node": "n770",
+    "not_i_reachable": 0,
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 131.96,
+    "problem": "p28.pddl",
+    "run_dir": "runs-00101-00200/00148",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-grid-p29.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "siw",
+      "grid",
+      "p29.pddl"
+    ],
+    "node": "n148",
+    "not_i_reachable": 0,
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 126.35,
+    "problem": "p29.pddl",
+    "run_dir": "runs-00101-00200/00149",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-grid-p30.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "siw",
+      "grid",
+      "p30.pddl"
+    ],
+    "node": "n1399",
+    "not_i_reachable": 0,
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 176.25,
+    "problem": "p30.pddl",
+    "run_dir": "runs-00101-00200/00150",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-tpp-p01.pddl": {
+    "algorithm": "siw",
+    "cost": 23,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "expanded": 312,
+    "generated": 365,
+    "id": [
+      "siw",
+      "tpp",
+      "p01.pddl"
+    ],
+    "node": "n241",
+    "not_i_reachable": 0,
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.44,
+    "problem": "p01.pddl",
+    "pruned": 719,
+    "run_dir": "runs-00101-00200/00151",
+    "total_time": 0.42,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ],
+    "width_average": 2.0,
+    "width_maximum": 2
+  },
+  "siw-tpp-p02.pddl": {
+    "algorithm": "siw",
+    "cost": 22,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "expanded": 1037,
+    "generated": 1350,
+    "id": [
+      "siw",
+      "tpp",
+      "p02.pddl"
+    ],
+    "node": "n953",
+    "not_i_reachable": 0,
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.48,
+    "problem": "p02.pddl",
+    "pruned": 3400,
+    "run_dir": "runs-00101-00200/00152",
+    "total_time": 0.45,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ],
+    "width_average": 2.0,
+    "width_maximum": 2
+  },
+  "siw-tpp-p03.pddl": {
+    "algorithm": "siw",
+    "cost": 50,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "expanded": 5066,
+    "generated": 5579,
+    "id": [
+      "siw",
+      "tpp",
+      "p03.pddl"
+    ],
+    "node": "n245",
+    "not_i_reachable": 0,
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.96,
+    "problem": "p03.pddl",
+    "pruned": 24263,
+    "run_dir": "runs-00101-00200/00153",
+    "total_time": 0.8,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ],
+    "width_average": 2.0,
+    "width_maximum": 2
+  },
+  "siw-tpp-p04.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "siw",
+      "tpp",
+      "p04.pddl"
+    ],
+    "node": "n1062",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1.07,
+    "problem": "p04.pddl",
+    "run_dir": "runs-00101-00200/00154",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-tpp-p05.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "siw",
+      "tpp",
+      "p05.pddl"
+    ],
+    "node": "n241",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1.65,
+    "problem": "p05.pddl",
+    "run_dir": "runs-00101-00200/00155",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-tpp-p06.pddl": {
+    "algorithm": "siw",
+    "cost": 77,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "expanded": 42547,
+    "generated": 48564,
+    "id": [
+      "siw",
+      "tpp",
+      "p06.pddl"
+    ],
+    "node": "n160",
+    "not_i_reachable": 0,
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 2.73,
+    "problem": "p06.pddl",
+    "pruned": 380542,
+    "run_dir": "runs-00101-00200/00156",
+    "total_time": 2.68,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ],
+    "width_average": 2.0,
+    "width_maximum": 2
+  },
+  "siw-tpp-p07.pddl": {
+    "algorithm": "siw",
+    "cost": 100,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "expanded": 116788,
+    "generated": 130420,
+    "id": [
+      "siw",
+      "tpp",
+      "p07.pddl"
+    ],
+    "node": "n770",
+    "not_i_reachable": 0,
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 7.05,
+    "problem": "p07.pddl",
+    "pruned": 1237770,
+    "run_dir": "runs-00101-00200/00157",
+    "total_time": 7.02,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ],
+    "width_average": 2.0,
+    "width_maximum": 2
+  },
+  "siw-tpp-p08.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "siw",
+      "tpp",
+      "p08.pddl"
+    ],
+    "node": "n823",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 6.84,
+    "problem": "p08.pddl",
+    "run_dir": "runs-00101-00200/00158",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-tpp-p09.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "siw",
+      "tpp",
+      "p09.pddl"
+    ],
+    "node": "n770",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 17.38,
+    "problem": "p09.pddl",
+    "run_dir": "runs-00101-00200/00159",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-tpp-p10.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "siw",
+      "tpp",
+      "p10.pddl"
+    ],
+    "node": "n726",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 28.89,
+    "problem": "p10.pddl",
+    "run_dir": "runs-00101-00200/00160",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-tpp-p11.pddl": {
+    "algorithm": "siw",
+    "cost": 161,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "expanded": 586149,
+    "generated": 642159,
+    "id": [
+      "siw",
+      "tpp",
+      "p11.pddl"
+    ],
+    "node": "n1671",
+    "not_i_reachable": 0,
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 52.71,
+    "problem": "p11.pddl",
+    "pruned": 8853062,
+    "run_dir": "runs-00101-00200/00161",
+    "total_time": 52.68,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ],
+    "width_average": 2.0,
+    "width_maximum": 2
+  },
+  "siw-tpp-p12.pddl": {
+    "algorithm": "siw",
+    "cost": 168,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "expanded": 930545,
+    "generated": 1044647,
+    "id": [
+      "siw",
+      "tpp",
+      "p12.pddl"
+    ],
+    "node": "n1873",
+    "not_i_reachable": 0,
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 92.2,
+    "problem": "p12.pddl",
+    "pruned": 14775307,
+    "run_dir": "runs-00101-00200/00162",
+    "total_time": 92.17,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ],
+    "width_average": 2.0,
+    "width_maximum": 2
+  },
+  "siw-tpp-p13.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "siw",
+      "tpp",
+      "p13.pddl"
+    ],
+    "node": "n906",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 157.36,
+    "problem": "p13.pddl",
+    "run_dir": "runs-00101-00200/00163",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-tpp-p14.pddl": {
+    "algorithm": "siw",
+    "cost": 270,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "expanded": 2393645,
+    "generated": 2530097,
+    "id": [
+      "siw",
+      "tpp",
+      "p14.pddl"
+    ],
+    "node": "n484",
+    "not_i_reachable": 0,
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 356.79,
+    "problem": "p14.pddl",
+    "pruned": 47989259,
+    "run_dir": "runs-00101-00200/00164",
+    "total_time": 356.74,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ],
+    "width_average": 2.0,
+    "width_maximum": 2
+  },
+  "siw-tpp-p15.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "siw",
+      "tpp",
+      "p15.pddl"
+    ],
+    "node": "n1393",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 351.49,
+    "problem": "p15.pddl",
+    "run_dir": "runs-00101-00200/00165",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-tpp-p16.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "siw",
+      "tpp",
+      "p16.pddl"
+    ],
+    "node": "n823",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 527.08,
+    "problem": "p16.pddl",
+    "run_dir": "runs-00101-00200/00166",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-tpp-p17.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "siw",
+      "tpp",
+      "p17.pddl"
+    ],
+    "node": "n1585",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1106.23,
+    "problem": "p17.pddl",
+    "run_dir": "runs-00101-00200/00167",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-tpp-p18.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "siw",
+      "tpp",
+      "p18.pddl"
+    ],
+    "node": "n1355",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1044.71,
+    "problem": "p18.pddl",
+    "run_dir": "runs-00101-00200/00168",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-tpp-p19.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "siw",
+      "tpp",
+      "p19.pddl"
+    ],
+    "node": "n911",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1369.92,
+    "problem": "p19.pddl",
+    "run_dir": "runs-00101-00200/00169",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-tpp-p20.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "siw",
+      "tpp",
+      "p20.pddl"
+    ],
+    "node": "n1062",
+    "not_i_reachable": 1,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1205.49,
+    "problem": "p20.pddl",
+    "run_dir": "runs-00101-00200/00170",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-tpp-p21.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "tpp",
+    "error": "timeout",
+    "id": [
+      "siw",
+      "tpp",
+      "p21.pddl"
+    ],
+    "node": "n1062",
+    "not_i_reachable": 0,
+    "planner_exit_code": 1,
+    "planner_wall_clock_time": 1801.66,
+    "problem": "p21.pddl",
+    "run_dir": "runs-00101-00200/00171",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-tpp-p22.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "siw",
+      "tpp",
+      "p22.pddl"
+    ],
+    "node": "n1972",
+    "not_i_reachable": 0,
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 105.94,
+    "problem": "p22.pddl",
+    "run_dir": "runs-00101-00200/00172",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-tpp-p23.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "siw",
+      "tpp",
+      "p23.pddl"
+    ],
+    "node": "n772",
+    "not_i_reachable": 0,
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 110.51,
+    "problem": "p23.pddl",
+    "run_dir": "runs-00101-00200/00173",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-tpp-p24.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "siw",
+      "tpp",
+      "p24.pddl"
+    ],
+    "node": "n1062",
+    "not_i_reachable": 0,
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 140.11,
+    "problem": "p24.pddl",
+    "run_dir": "runs-00101-00200/00174",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-tpp-p25.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "siw",
+      "tpp",
+      "p25.pddl"
+    ],
+    "node": "n241",
+    "not_i_reachable": 0,
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 153.42,
+    "problem": "p25.pddl",
+    "run_dir": "runs-00101-00200/00175",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-tpp-p26.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "siw",
+      "tpp",
+      "p26.pddl"
+    ],
+    "node": "n241",
+    "not_i_reachable": 0,
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 181.86,
+    "problem": "p26.pddl",
+    "run_dir": "runs-00101-00200/00176",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-tpp-p27.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "siw",
+      "tpp",
+      "p27.pddl"
+    ],
+    "node": "n1873",
+    "not_i_reachable": 0,
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 192.67,
+    "problem": "p27.pddl",
+    "run_dir": "runs-00101-00200/00177",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-tpp-p28.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "siw",
+      "tpp",
+      "p28.pddl"
+    ],
+    "node": "n1737",
+    "not_i_reachable": 0,
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 241.97,
+    "problem": "p28.pddl",
+    "run_dir": "runs-00101-00200/00178",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-tpp-p29.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "siw",
+      "tpp",
+      "p29.pddl"
+    ],
+    "node": "n953",
+    "not_i_reachable": 0,
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 169.7,
+    "problem": "p29.pddl",
+    "run_dir": "runs-00101-00200/00179",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "siw-tpp-p30.pddl": {
+    "algorithm": "siw",
+    "coverage": 0,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "siw",
+      "tpp",
+      "p30.pddl"
+    ],
+    "node": "n772",
+    "not_i_reachable": 0,
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 175.05,
+    "problem": "p30.pddl",
+    "run_dir": "runs-00101-00200/00180",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  }
+}

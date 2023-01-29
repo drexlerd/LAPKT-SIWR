@@ -1,0 +1,3546 @@
+{
+  "dual_bfws-barman-p01.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 124,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "barman",
+      "p01.pddl"
+    ],
+    "node": "n1105",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 7.25,
+    "problem": "p01.pddl",
+    "run_dir": "runs-00001-00100/00001",
+    "total_time": 7.12,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-barman-p02.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 188,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "barman",
+      "p02.pddl"
+    ],
+    "node": "n124",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 45.46,
+    "problem": "p02.pddl",
+    "run_dir": "runs-00001-00100/00002",
+    "total_time": 45.42,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-barman-p03.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 306,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "barman",
+      "p03.pddl"
+    ],
+    "node": "n1110",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 102.18,
+    "problem": "p03.pddl",
+    "run_dir": "runs-00001-00100/00003",
+    "total_time": 102.12,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-barman-p04.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 322,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "barman",
+      "p04.pddl"
+    ],
+    "node": "n108",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 285.73,
+    "problem": "p04.pddl",
+    "run_dir": "runs-00001-00100/00004",
+    "total_time": 285.68,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-barman-p05.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 557,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "barman",
+      "p05.pddl"
+    ],
+    "node": "n474",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1441.07,
+    "problem": "p05.pddl",
+    "run_dir": "runs-00001-00100/00005",
+    "total_time": 1441.03,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-barman-p06.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "barman",
+      "p06.pddl"
+    ],
+    "node": "n474",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.69,
+    "problem": "p06.pddl",
+    "run_dir": "runs-00001-00100/00006",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-barman-p07.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "barman",
+      "p07.pddl"
+    ],
+    "node": "n1112",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1801.1,
+    "problem": "p07.pddl",
+    "run_dir": "runs-00001-00100/00007",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-barman-p08.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "barman",
+      "p08.pddl"
+    ],
+    "node": "n1106",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1801.1,
+    "problem": "p08.pddl",
+    "run_dir": "runs-00001-00100/00008",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-barman-p09.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "barman",
+      "p09.pddl"
+    ],
+    "node": "n370",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.65,
+    "problem": "p09.pddl",
+    "run_dir": "runs-00001-00100/00009",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-barman-p10.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "barman",
+      "p10.pddl"
+    ],
+    "node": "n1132",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.61,
+    "problem": "p10.pddl",
+    "run_dir": "runs-00001-00100/00010",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-barman-p11.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "barman",
+      "p11.pddl"
+    ],
+    "node": "n1491",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.6,
+    "problem": "p11.pddl",
+    "run_dir": "runs-00001-00100/00011",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-barman-p12.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "barman",
+      "p12.pddl"
+    ],
+    "node": "n1106",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1826.76,
+    "problem": "p12.pddl",
+    "run_dir": "runs-00001-00100/00012",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-barman-p13.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "barman",
+      "p13.pddl"
+    ],
+    "node": "n119",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1805.8,
+    "problem": "p13.pddl",
+    "run_dir": "runs-00001-00100/00013",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-barman-p14.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "barman",
+      "p14.pddl"
+    ],
+    "node": "n1249",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.65,
+    "problem": "p14.pddl",
+    "run_dir": "runs-00001-00100/00014",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-barman-p15.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "barman",
+      "p15.pddl"
+    ],
+    "node": "n370",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.97,
+    "problem": "p15.pddl",
+    "run_dir": "runs-00001-00100/00015",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-barman-p16.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "barman",
+      "p16.pddl"
+    ],
+    "node": "n474",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.75,
+    "problem": "p16.pddl",
+    "run_dir": "runs-00001-00100/00016",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-barman-p17.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "barman",
+      "p17.pddl"
+    ],
+    "node": "n292",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.74,
+    "problem": "p17.pddl",
+    "run_dir": "runs-00001-00100/00017",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-barman-p18.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "barman",
+      "p18.pddl"
+    ],
+    "node": "n108",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1805.82,
+    "problem": "p18.pddl",
+    "run_dir": "runs-00001-00100/00018",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-barman-p19.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "barman",
+      "p19.pddl"
+    ],
+    "node": "n744",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.89,
+    "problem": "p19.pddl",
+    "run_dir": "runs-00001-00100/00019",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-barman-p20.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "barman",
+      "p20.pddl"
+    ],
+    "node": "n391",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.69,
+    "problem": "p20.pddl",
+    "run_dir": "runs-00001-00100/00020",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-barman-p21.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "barman",
+      "p21.pddl"
+    ],
+    "node": "n283",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1801.18,
+    "problem": "p21.pddl",
+    "run_dir": "runs-00001-00100/00021",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-barman-p22.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "barman",
+      "p22.pddl"
+    ],
+    "node": "n116",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1806.53,
+    "problem": "p22.pddl",
+    "run_dir": "runs-00001-00100/00022",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-barman-p23.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "barman",
+      "p23.pddl"
+    ],
+    "node": "n1067",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.54,
+    "problem": "p23.pddl",
+    "run_dir": "runs-00001-00100/00023",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-barman-p24.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "barman",
+      "p24.pddl"
+    ],
+    "node": "n292",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.51,
+    "problem": "p24.pddl",
+    "run_dir": "runs-00001-00100/00024",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-barman-p25.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "barman",
+      "p25.pddl"
+    ],
+    "node": "n1249",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.61,
+    "problem": "p25.pddl",
+    "run_dir": "runs-00001-00100/00025",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-barman-p26.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "barman",
+      "p26.pddl"
+    ],
+    "node": "n1105",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.63,
+    "problem": "p26.pddl",
+    "run_dir": "runs-00001-00100/00026",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-barman-p27.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "barman",
+      "p27.pddl"
+    ],
+    "node": "n1050",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.73,
+    "problem": "p27.pddl",
+    "run_dir": "runs-00001-00100/00027",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-barman-p28.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "barman",
+      "p28.pddl"
+    ],
+    "node": "n1111",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.92,
+    "problem": "p28.pddl",
+    "run_dir": "runs-00001-00100/00028",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-barman-p29.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "barman",
+      "p29.pddl"
+    ],
+    "node": "n1433",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.55,
+    "problem": "p29.pddl",
+    "run_dir": "runs-00001-00100/00029",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-barman-p30.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "barman",
+      "p30.pddl"
+    ],
+    "node": "n116",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1808.15,
+    "problem": "p30.pddl",
+    "run_dir": "runs-00001-00100/00030",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-childsnack-p01.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 21,
+    "coverage": 1,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "childsnack",
+      "p01.pddl"
+    ],
+    "node": "n1111",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.51,
+    "problem": "p01.pddl",
+    "run_dir": "runs-00001-00100/00031",
+    "total_time": 1.46,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-childsnack-p02.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 29,
+    "coverage": 1,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "childsnack",
+      "p02.pddl"
+    ],
+    "node": "n122",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.82,
+    "problem": "p02.pddl",
+    "run_dir": "runs-00001-00100/00032",
+    "total_time": 0.61,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-childsnack-p03.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 29,
+    "coverage": 1,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "childsnack",
+      "p03.pddl"
+    ],
+    "node": "n1112",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 5.94,
+    "problem": "p03.pddl",
+    "run_dir": "runs-00001-00100/00033",
+    "total_time": 5.78,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-childsnack-p04.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "childsnack",
+      "p04.pddl"
+    ],
+    "node": "n474",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 406.28,
+    "problem": "p04.pddl",
+    "run_dir": "runs-00001-00100/00034",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-childsnack-p05.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 45,
+    "coverage": 1,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "childsnack",
+      "p05.pddl"
+    ],
+    "node": "n370",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 7.97,
+    "problem": "p05.pddl",
+    "run_dir": "runs-00001-00100/00035",
+    "total_time": 7.94,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-childsnack-p06.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "childsnack",
+      "p06.pddl"
+    ],
+    "node": "n1132",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 920.77,
+    "problem": "p06.pddl",
+    "run_dir": "runs-00001-00100/00036",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-childsnack-p07.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 59,
+    "coverage": 1,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "childsnack",
+      "p07.pddl"
+    ],
+    "node": "n370",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 697.11,
+    "problem": "p07.pddl",
+    "run_dir": "runs-00001-00100/00037",
+    "total_time": 697.08,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-childsnack-p08.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "childsnack",
+      "p08.pddl"
+    ],
+    "node": "n1261",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1126.01,
+    "problem": "p08.pddl",
+    "run_dir": "runs-00001-00100/00038",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-childsnack-p09.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "childsnack",
+      "p09.pddl"
+    ],
+    "node": "n91",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1829.04,
+    "problem": "p09.pddl",
+    "run_dir": "runs-00001-00100/00039",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-childsnack-p10.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "childsnack",
+      "p10.pddl"
+    ],
+    "node": "n1106",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1801.52,
+    "problem": "p10.pddl",
+    "run_dir": "runs-00001-00100/00040",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-childsnack-p11.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "childsnack",
+      "p11.pddl"
+    ],
+    "node": "n91",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1801.43,
+    "problem": "p11.pddl",
+    "run_dir": "runs-00001-00100/00041",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-childsnack-p12.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "childsnack",
+      "p12.pddl"
+    ],
+    "node": "n102",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1806.54,
+    "problem": "p12.pddl",
+    "run_dir": "runs-00001-00100/00042",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-childsnack-p13.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "childsnack",
+      "p13.pddl"
+    ],
+    "node": "n102",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1801.05,
+    "problem": "p13.pddl",
+    "run_dir": "runs-00001-00100/00043",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-childsnack-p14.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "childsnack",
+      "p14.pddl"
+    ],
+    "node": "n121",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1806.14,
+    "problem": "p14.pddl",
+    "run_dir": "runs-00001-00100/00044",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-childsnack-p15.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "childsnack",
+      "p15.pddl"
+    ],
+    "node": "n102",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1827.43,
+    "problem": "p15.pddl",
+    "run_dir": "runs-00001-00100/00045",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-childsnack-p16.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "childsnack",
+      "p16.pddl"
+    ],
+    "node": "n1261",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1803.86,
+    "problem": "p16.pddl",
+    "run_dir": "runs-00001-00100/00046",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-childsnack-p17.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "childsnack",
+      "p17.pddl"
+    ],
+    "node": "n1111",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1801.76,
+    "problem": "p17.pddl",
+    "run_dir": "runs-00001-00100/00047",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-childsnack-p18.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "childsnack",
+      "p18.pddl"
+    ],
+    "node": "n370",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.65,
+    "problem": "p18.pddl",
+    "run_dir": "runs-00001-00100/00048",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-childsnack-p19.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "childsnack",
+      "p19.pddl"
+    ],
+    "node": "n91",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1805.59,
+    "problem": "p19.pddl",
+    "run_dir": "runs-00001-00100/00049",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-childsnack-p20.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "childsnack",
+      "p20.pddl"
+    ],
+    "node": "n119",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.56,
+    "problem": "p20.pddl",
+    "run_dir": "runs-00001-00100/00050",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-childsnack-p21.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "childsnack",
+      "p21.pddl"
+    ],
+    "node": "n1132",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1826.51,
+    "problem": "p21.pddl",
+    "run_dir": "runs-00001-00100/00051",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-childsnack-p22.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "childsnack",
+      "p22.pddl"
+    ],
+    "node": "n370",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.95,
+    "problem": "p22.pddl",
+    "run_dir": "runs-00001-00100/00052",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-childsnack-p23.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "childsnack",
+      "p23.pddl"
+    ],
+    "node": "n1106",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1805.59,
+    "problem": "p23.pddl",
+    "run_dir": "runs-00001-00100/00053",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-childsnack-p24.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "childsnack",
+      "p24.pddl"
+    ],
+    "node": "n1112",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.8,
+    "problem": "p24.pddl",
+    "run_dir": "runs-00001-00100/00054",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-childsnack-p25.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "childsnack",
+      "p25.pddl"
+    ],
+    "node": "n292",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1801.48,
+    "problem": "p25.pddl",
+    "run_dir": "runs-00001-00100/00055",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-childsnack-p26.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "childsnack",
+      "p26.pddl"
+    ],
+    "node": "n1933",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1801.05,
+    "problem": "p26.pddl",
+    "run_dir": "runs-00001-00100/00056",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-childsnack-p27.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "childsnack",
+      "p27.pddl"
+    ],
+    "node": "n1261",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.91,
+    "problem": "p27.pddl",
+    "run_dir": "runs-00001-00100/00057",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-childsnack-p28.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "childsnack",
+      "p28.pddl"
+    ],
+    "node": "n1064",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.89,
+    "problem": "p28.pddl",
+    "run_dir": "runs-00001-00100/00058",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-childsnack-p29.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "childsnack",
+      "p29.pddl"
+    ],
+    "node": "n1261",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1802.69,
+    "problem": "p29.pddl",
+    "run_dir": "runs-00001-00100/00059",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-childsnack-p30.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "childsnack",
+      "p30.pddl"
+    ],
+    "node": "n292",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.58,
+    "problem": "p30.pddl",
+    "run_dir": "runs-00001-00100/00060",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-driverlog-p01.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 76,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "driverlog",
+      "p01.pddl"
+    ],
+    "node": "n1110",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.83,
+    "problem": "p01.pddl",
+    "run_dir": "runs-00001-00100/00061",
+    "total_time": 0.63,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-driverlog-p02.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 102,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "driverlog",
+      "p02.pddl"
+    ],
+    "node": "n70",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.98,
+    "problem": "p02.pddl",
+    "run_dir": "runs-00001-00100/00062",
+    "total_time": 0.8,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-driverlog-p03.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 121,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "driverlog",
+      "p03.pddl"
+    ],
+    "node": "n1111",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.5,
+    "problem": "p03.pddl",
+    "run_dir": "runs-00001-00100/00063",
+    "total_time": 1.3,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-driverlog-p04.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 140,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "driverlog",
+      "p04.pddl"
+    ],
+    "node": "n474",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 2.03,
+    "problem": "p04.pddl",
+    "run_dir": "runs-00001-00100/00064",
+    "total_time": 1.82,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-driverlog-p05.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 151,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "driverlog",
+      "p05.pddl"
+    ],
+    "node": "n1933",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 2.22,
+    "problem": "p05.pddl",
+    "run_dir": "runs-00001-00100/00065",
+    "total_time": 2.08,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-driverlog-p06.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 189,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "driverlog",
+      "p06.pddl"
+    ],
+    "node": "n370",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 3.19,
+    "problem": "p06.pddl",
+    "run_dir": "runs-00001-00100/00066",
+    "total_time": 3.16,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-driverlog-p07.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 239,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "driverlog",
+      "p07.pddl"
+    ],
+    "node": "n115",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 3.7,
+    "problem": "p07.pddl",
+    "run_dir": "runs-00001-00100/00067",
+    "total_time": 3.63,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-driverlog-p08.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 263,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "driverlog",
+      "p08.pddl"
+    ],
+    "node": "n121",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 6.99,
+    "problem": "p08.pddl",
+    "run_dir": "runs-00001-00100/00068",
+    "total_time": 6.93,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-driverlog-p09.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 263,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "driverlog",
+      "p09.pddl"
+    ],
+    "node": "n1266",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 6.67,
+    "problem": "p09.pddl",
+    "run_dir": "runs-00001-00100/00069",
+    "total_time": 6.44,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-driverlog-p10.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 303,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "driverlog",
+      "p10.pddl"
+    ],
+    "node": "n108",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 9.56,
+    "problem": "p10.pddl",
+    "run_dir": "runs-00001-00100/00070",
+    "total_time": 9.48,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-driverlog-p11.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 311,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "driverlog",
+      "p11.pddl"
+    ],
+    "node": "n124",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 12.67,
+    "problem": "p11.pddl",
+    "run_dir": "runs-00001-00100/00071",
+    "total_time": 12.54,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-driverlog-p12.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 371,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "driverlog",
+      "p12.pddl"
+    ],
+    "node": "n1261",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 37.31,
+    "problem": "p12.pddl",
+    "run_dir": "runs-00001-00100/00072",
+    "total_time": 37.16,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-driverlog-p13.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 368,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "driverlog",
+      "p13.pddl"
+    ],
+    "node": "n1860",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 42.24,
+    "problem": "p13.pddl",
+    "run_dir": "runs-00001-00100/00073",
+    "total_time": 42.1,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-driverlog-p14.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 403,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "driverlog",
+      "p14.pddl"
+    ],
+    "node": "n1888",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 54.65,
+    "problem": "p14.pddl",
+    "run_dir": "runs-00001-00100/00074",
+    "total_time": 54.59,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-driverlog-p15.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 442,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "driverlog",
+      "p15.pddl"
+    ],
+    "node": "n115",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 54.33,
+    "problem": "p15.pddl",
+    "run_dir": "runs-00001-00100/00075",
+    "total_time": 54.25,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-driverlog-p16.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 482,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "driverlog",
+      "p16.pddl"
+    ],
+    "node": "n102",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 39.38,
+    "problem": "p16.pddl",
+    "run_dir": "runs-00001-00100/00076",
+    "total_time": 39.33,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-driverlog-p17.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 506,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "driverlog",
+      "p17.pddl"
+    ],
+    "node": "n115",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 54.66,
+    "problem": "p17.pddl",
+    "run_dir": "runs-00001-00100/00077",
+    "total_time": 54.59,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-driverlog-p18.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 469,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "driverlog",
+      "p18.pddl"
+    ],
+    "node": "n1249",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 131.96,
+    "problem": "p18.pddl",
+    "run_dir": "runs-00001-00100/00078",
+    "total_time": 131.91,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-driverlog-p19.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 594,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "driverlog",
+      "p19.pddl"
+    ],
+    "node": "n70",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 152.2,
+    "problem": "p19.pddl",
+    "run_dir": "runs-00001-00100/00079",
+    "total_time": 152.14,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-driverlog-p20.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 600,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "driverlog",
+      "p20.pddl"
+    ],
+    "node": "n1266",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 170.9,
+    "problem": "p20.pddl",
+    "run_dir": "runs-00001-00100/00080",
+    "total_time": 170.82,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-driverlog-p21.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 616,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "driverlog",
+      "p21.pddl"
+    ],
+    "node": "n474",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 152.04,
+    "problem": "p21.pddl",
+    "run_dir": "runs-00001-00100/00081",
+    "total_time": 151.97,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-driverlog-p22.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 632,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "driverlog",
+      "p22.pddl"
+    ],
+    "node": "n292",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 301.97,
+    "problem": "p22.pddl",
+    "run_dir": "runs-00001-00100/00082",
+    "total_time": 301.9,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-driverlog-p23.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 677,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "driverlog",
+      "p23.pddl"
+    ],
+    "node": "n1933",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 310.39,
+    "problem": "p23.pddl",
+    "run_dir": "runs-00001-00100/00083",
+    "total_time": 310.33,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-driverlog-p24.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 721,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "driverlog",
+      "p24.pddl"
+    ],
+    "node": "n1310",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 434.1,
+    "problem": "p24.pddl",
+    "run_dir": "runs-00001-00100/00084",
+    "total_time": 434.03,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-driverlog-p25.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 680,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "driverlog",
+      "p25.pddl"
+    ],
+    "node": "n119",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 532.49,
+    "problem": "p25.pddl",
+    "run_dir": "runs-00001-00100/00085",
+    "total_time": 532.42,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-driverlog-p26.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 691,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "driverlog",
+      "p26.pddl"
+    ],
+    "node": "n1049",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 488.87,
+    "problem": "p26.pddl",
+    "run_dir": "runs-00001-00100/00086",
+    "total_time": 488.75,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-driverlog-p27.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 772,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "driverlog",
+      "p27.pddl"
+    ],
+    "node": "n1491",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 595.91,
+    "problem": "p27.pddl",
+    "run_dir": "runs-00001-00100/00087",
+    "total_time": 595.85,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-driverlog-p28.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 826,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "driverlog",
+      "p28.pddl"
+    ],
+    "node": "n1933",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 493.0,
+    "problem": "p28.pddl",
+    "run_dir": "runs-00001-00100/00088",
+    "total_time": 492.93,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-driverlog-p29.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 918,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "driverlog",
+      "p29.pddl"
+    ],
+    "node": "n864",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 544.12,
+    "problem": "p29.pddl",
+    "run_dir": "runs-00001-00100/00089",
+    "total_time": 544.05,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-driverlog-p30.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 898,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "driverlog",
+      "p30.pddl"
+    ],
+    "node": "n1933",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 594.59,
+    "problem": "p30.pddl",
+    "run_dir": "runs-00001-00100/00090",
+    "total_time": 594.52,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-floortile-p01.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 21,
+    "coverage": 1,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "floortile",
+      "p01.pddl"
+    ],
+    "node": "n1106",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.48,
+    "problem": "p01.pddl",
+    "run_dir": "runs-00001-00100/00091",
+    "total_time": 0.43,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-floortile-p02.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 128,
+    "coverage": 1,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "floortile",
+      "p02.pddl"
+    ],
+    "node": "n1740",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 839.26,
+    "problem": "p02.pddl",
+    "run_dir": "runs-00001-00100/00092",
+    "total_time": 839.23,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-floortile-p03.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "floortile",
+      "p03.pddl"
+    ],
+    "node": "n91",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1356.39,
+    "problem": "p03.pddl",
+    "run_dir": "runs-00001-00100/00093",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-floortile-p04.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "floortile",
+      "p04.pddl"
+    ],
+    "node": "n119",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1375.22,
+    "problem": "p04.pddl",
+    "run_dir": "runs-00001-00100/00094",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-floortile-p05.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "floortile",
+      "p05.pddl"
+    ],
+    "node": "n1110",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1807.12,
+    "problem": "p05.pddl",
+    "run_dir": "runs-00001-00100/00095",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-floortile-p06.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "floortile",
+      "p06.pddl"
+    ],
+    "node": "n102",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1801.43,
+    "problem": "p06.pddl",
+    "run_dir": "runs-00001-00100/00096",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-floortile-p07.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "floortile",
+      "p07.pddl"
+    ],
+    "node": "n1111",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1802.82,
+    "problem": "p07.pddl",
+    "run_dir": "runs-00001-00100/00097",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-floortile-p08.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "floortile",
+      "p08.pddl"
+    ],
+    "node": "n370",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 937.38,
+    "problem": "p08.pddl",
+    "run_dir": "runs-00001-00100/00098",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-floortile-p09.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "floortile",
+      "p09.pddl"
+    ],
+    "node": "n121",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1136.3,
+    "problem": "p09.pddl",
+    "run_dir": "runs-00001-00100/00099",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-floortile-p10.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "floortile",
+      "p10.pddl"
+    ],
+    "node": "n307",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1016.12,
+    "problem": "p10.pddl",
+    "run_dir": "runs-00001-00100/00100",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-floortile-p11.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "floortile",
+      "p11.pddl"
+    ],
+    "node": "n1105",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1499.31,
+    "problem": "p11.pddl",
+    "run_dir": "runs-00101-00200/00101",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-floortile-p12.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "floortile",
+      "p12.pddl"
+    ],
+    "node": "n474",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1801.85,
+    "problem": "p12.pddl",
+    "run_dir": "runs-00101-00200/00102",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-floortile-p13.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "floortile",
+      "p13.pddl"
+    ],
+    "node": "n1112",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1807.28,
+    "problem": "p13.pddl",
+    "run_dir": "runs-00101-00200/00103",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-floortile-p14.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "floortile",
+      "p14.pddl"
+    ],
+    "node": "n115",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1802.55,
+    "problem": "p14.pddl",
+    "run_dir": "runs-00101-00200/00104",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-floortile-p15.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "floortile",
+      "p15.pddl"
+    ],
+    "node": "n1111",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1801.77,
+    "problem": "p15.pddl",
+    "run_dir": "runs-00101-00200/00105",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-floortile-p16.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "floortile",
+      "p16.pddl"
+    ],
+    "node": "n1249",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1822.46,
+    "problem": "p16.pddl",
+    "run_dir": "runs-00101-00200/00106",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-floortile-p17.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "floortile",
+      "p17.pddl"
+    ],
+    "node": "n115",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1801.56,
+    "problem": "p17.pddl",
+    "run_dir": "runs-00101-00200/00107",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-floortile-p18.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "floortile",
+      "p18.pddl"
+    ],
+    "node": "n965",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1786.62,
+    "problem": "p18.pddl",
+    "run_dir": "runs-00101-00200/00108",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-floortile-p19.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "floortile",
+      "p19.pddl"
+    ],
+    "node": "n474",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1801.85,
+    "problem": "p19.pddl",
+    "run_dir": "runs-00101-00200/00109",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-floortile-p20.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "floortile",
+      "p20.pddl"
+    ],
+    "node": "n1933",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1801.57,
+    "problem": "p20.pddl",
+    "run_dir": "runs-00101-00200/00110",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-floortile-p21.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "floortile",
+      "p21.pddl"
+    ],
+    "node": "n70",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1807.62,
+    "problem": "p21.pddl",
+    "run_dir": "runs-00101-00200/00111",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-floortile-p22.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "floortile",
+      "p22.pddl"
+    ],
+    "node": "n1024",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1805.56,
+    "problem": "p22.pddl",
+    "run_dir": "runs-00101-00200/00112",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-floortile-p23.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "floortile",
+      "p23.pddl"
+    ],
+    "node": "n474",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1801.47,
+    "problem": "p23.pddl",
+    "run_dir": "runs-00101-00200/00113",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-floortile-p24.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "floortile",
+      "p24.pddl"
+    ],
+    "node": "n122",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1801.84,
+    "problem": "p24.pddl",
+    "run_dir": "runs-00101-00200/00114",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-floortile-p25.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "floortile",
+      "p25.pddl"
+    ],
+    "node": "n116",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1801.35,
+    "problem": "p25.pddl",
+    "run_dir": "runs-00101-00200/00115",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-floortile-p26.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "floortile",
+      "p26.pddl"
+    ],
+    "node": "n1617",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1802.91,
+    "problem": "p26.pddl",
+    "run_dir": "runs-00101-00200/00116",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-floortile-p27.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "floortile",
+      "p27.pddl"
+    ],
+    "node": "n116",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1801.49,
+    "problem": "p27.pddl",
+    "run_dir": "runs-00101-00200/00117",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-floortile-p28.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "floortile",
+      "p28.pddl"
+    ],
+    "node": "n1132",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1801.6,
+    "problem": "p28.pddl",
+    "run_dir": "runs-00101-00200/00118",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-floortile-p29.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "floortile",
+      "p29.pddl"
+    ],
+    "node": "n192",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1801.34,
+    "problem": "p29.pddl",
+    "run_dir": "runs-00101-00200/00119",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-floortile-p30.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "floortile",
+      "p30.pddl"
+    ],
+    "node": "n1105",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1827.51,
+    "problem": "p30.pddl",
+    "run_dir": "runs-00101-00200/00120",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-grid-p01.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 38,
+    "coverage": 1,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "grid",
+      "p01.pddl"
+    ],
+    "node": "n307",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.63,
+    "problem": "p01.pddl",
+    "run_dir": "runs-00101-00200/00121",
+    "total_time": 0.44,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-grid-p02.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 55,
+    "coverage": 1,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "grid",
+      "p02.pddl"
+    ],
+    "node": "n1067",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.39,
+    "problem": "p02.pddl",
+    "run_dir": "runs-00101-00200/00122",
+    "total_time": 1.03,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-grid-p03.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 38,
+    "coverage": 1,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "grid",
+      "p03.pddl"
+    ],
+    "node": "n1106",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.42,
+    "problem": "p03.pddl",
+    "run_dir": "runs-00101-00200/00123",
+    "total_time": 1.34,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-grid-p04.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 15,
+    "coverage": 1,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "grid",
+      "p04.pddl"
+    ],
+    "node": "n1105",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 2.28,
+    "problem": "p04.pddl",
+    "run_dir": "runs-00101-00200/00124",
+    "total_time": 2.23,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-grid-p05.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 188,
+    "coverage": 1,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "grid",
+      "p05.pddl"
+    ],
+    "node": "n1112",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 7.06,
+    "problem": "p05.pddl",
+    "run_dir": "runs-00101-00200/00125",
+    "total_time": 6.99,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-grid-p06.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 70,
+    "coverage": 1,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "grid",
+      "p06.pddl"
+    ],
+    "node": "n1249",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 15.64,
+    "problem": "p06.pddl",
+    "run_dir": "runs-00101-00200/00126",
+    "total_time": 15.4,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-grid-p07.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 207,
+    "coverage": 1,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "grid",
+      "p07.pddl"
+    ],
+    "node": "n1105",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 363.93,
+    "problem": "p07.pddl",
+    "run_dir": "runs-00101-00200/00127",
+    "total_time": 363.8,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-grid-p08.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 239,
+    "coverage": 1,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "grid",
+      "p08.pddl"
+    ],
+    "node": "n292",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 730.99,
+    "problem": "p08.pddl",
+    "run_dir": "runs-00101-00200/00128",
+    "total_time": 729.58,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-grid-p09.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "grid",
+      "p09.pddl"
+    ],
+    "node": "n292",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1803.77,
+    "problem": "p09.pddl",
+    "run_dir": "runs-00101-00200/00129",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-grid-p10.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "grid",
+      "p10.pddl"
+    ],
+    "node": "n1888",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1069.41,
+    "problem": "p10.pddl",
+    "run_dir": "runs-00101-00200/00130",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-grid-p11.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 107,
+    "coverage": 1,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "grid",
+      "p11.pddl"
+    ],
+    "node": "n124",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 271.83,
+    "problem": "p11.pddl",
+    "run_dir": "runs-00101-00200/00131",
+    "total_time": 271.63,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-grid-p12.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "grid",
+      "p12.pddl"
+    ],
+    "node": "n1740",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 479.77,
+    "problem": "p12.pddl",
+    "run_dir": "runs-00101-00200/00132",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-grid-p13.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "grid",
+      "p13.pddl"
+    ],
+    "node": "n102",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 695.54,
+    "problem": "p13.pddl",
+    "run_dir": "runs-00101-00200/00133",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-grid-p14.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "grid",
+      "p14.pddl"
+    ],
+    "node": "n292",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 818.4,
+    "problem": "p14.pddl",
+    "run_dir": "runs-00101-00200/00134",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-grid-p15.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "grid",
+      "p15.pddl"
+    ],
+    "node": "n952",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1057.34,
+    "problem": "p15.pddl",
+    "run_dir": "runs-00101-00200/00135",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-grid-p16.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "grid",
+      "p16.pddl"
+    ],
+    "node": "n307",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 32.97,
+    "problem": "p16.pddl",
+    "run_dir": "runs-00101-00200/00136",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-grid-p17.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "grid",
+      "p17.pddl"
+    ],
+    "node": "n1933",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 38.19,
+    "problem": "p17.pddl",
+    "run_dir": "runs-00101-00200/00137",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-grid-p18.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "grid",
+      "p18.pddl"
+    ],
+    "node": "n292",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 42.82,
+    "problem": "p18.pddl",
+    "run_dir": "runs-00101-00200/00138",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-grid-p19.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "grid",
+      "p19.pddl"
+    ],
+    "node": "n115",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 49.39,
+    "problem": "p19.pddl",
+    "run_dir": "runs-00101-00200/00139",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-grid-p20.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "grid",
+      "p20.pddl"
+    ],
+    "node": "n474",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 51.69,
+    "problem": "p20.pddl",
+    "run_dir": "runs-00101-00200/00140",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-grid-p21.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "grid",
+      "p21.pddl"
+    ],
+    "node": "n1132",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 69.08,
+    "problem": "p21.pddl",
+    "run_dir": "runs-00101-00200/00141",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-grid-p22.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "grid",
+      "p22.pddl"
+    ],
+    "node": "n192",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 68.62,
+    "problem": "p22.pddl",
+    "run_dir": "runs-00101-00200/00142",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-grid-p23.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "grid",
+      "p23.pddl"
+    ],
+    "node": "n1266",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 83.55,
+    "problem": "p23.pddl",
+    "run_dir": "runs-00101-00200/00143",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-grid-p24.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "grid",
+      "p24.pddl"
+    ],
+    "node": "n116",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 88.49,
+    "problem": "p24.pddl",
+    "run_dir": "runs-00101-00200/00144",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-grid-p25.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "grid",
+      "p25.pddl"
+    ],
+    "node": "n1106",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 90.06,
+    "problem": "p25.pddl",
+    "run_dir": "runs-00101-00200/00145",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-grid-p26.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "grid",
+      "p26.pddl"
+    ],
+    "node": "n108",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 121.24,
+    "problem": "p26.pddl",
+    "run_dir": "runs-00101-00200/00146",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-grid-p27.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "grid",
+      "p27.pddl"
+    ],
+    "node": "n122",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 131.62,
+    "problem": "p27.pddl",
+    "run_dir": "runs-00101-00200/00147",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-grid-p28.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "grid",
+      "p28.pddl"
+    ],
+    "node": "n1569",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 130.16,
+    "problem": "p28.pddl",
+    "run_dir": "runs-00101-00200/00148",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-grid-p29.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "grid",
+      "p29.pddl"
+    ],
+    "node": "n1266",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 156.32,
+    "problem": "p29.pddl",
+    "run_dir": "runs-00101-00200/00149",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-grid-p30.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "grid",
+      "p30.pddl"
+    ],
+    "node": "n474",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 156.87,
+    "problem": "p30.pddl",
+    "run_dir": "runs-00101-00200/00150",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-tpp-p01.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 29,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "tpp",
+      "p01.pddl"
+    ],
+    "node": "n192",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.47,
+    "problem": "p01.pddl",
+    "run_dir": "runs-00101-00200/00151",
+    "total_time": 0.44,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-tpp-p02.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 23,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "tpp",
+      "p02.pddl"
+    ],
+    "node": "n102",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.6,
+    "problem": "p02.pddl",
+    "run_dir": "runs-00101-00200/00152",
+    "total_time": 0.56,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-tpp-p03.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 69,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "tpp",
+      "p03.pddl"
+    ],
+    "node": "n121",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.56,
+    "problem": "p03.pddl",
+    "run_dir": "runs-00101-00200/00153",
+    "total_time": 1.46,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-tpp-p04.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 80,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "tpp",
+      "p04.pddl"
+    ],
+    "node": "n1106",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 4.61,
+    "problem": "p04.pddl",
+    "run_dir": "runs-00101-00200/00154",
+    "total_time": 4.58,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-tpp-p05.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 93,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "tpp",
+      "p05.pddl"
+    ],
+    "node": "n474",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 11.83,
+    "problem": "p05.pddl",
+    "run_dir": "runs-00101-00200/00155",
+    "total_time": 11.8,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-tpp-p06.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 92,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "tpp",
+      "p06.pddl"
+    ],
+    "node": "n292",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 44.06,
+    "problem": "p06.pddl",
+    "run_dir": "runs-00101-00200/00156",
+    "total_time": 44.03,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-tpp-p07.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 124,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "tpp",
+      "p07.pddl"
+    ],
+    "node": "n108",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 147.76,
+    "problem": "p07.pddl",
+    "run_dir": "runs-00101-00200/00157",
+    "total_time": 147.71,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-tpp-p08.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 123,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "tpp",
+      "p08.pddl"
+    ],
+    "node": "n1110",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 238.27,
+    "problem": "p08.pddl",
+    "run_dir": "runs-00101-00200/00158",
+    "total_time": 238.21,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-tpp-p09.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 215,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "tpp",
+      "p09.pddl"
+    ],
+    "node": "n1105",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 761.39,
+    "problem": "p09.pddl",
+    "run_dir": "runs-00101-00200/00159",
+    "total_time": 761.35,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-tpp-p10.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 200,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "tpp",
+      "p10.pddl"
+    ],
+    "node": "n91",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1342.27,
+    "problem": "p10.pddl",
+    "run_dir": "runs-00101-00200/00160",
+    "total_time": 1342.05,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-tpp-p11.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "tpp",
+      "p11.pddl"
+    ],
+    "node": "n1933",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.62,
+    "problem": "p11.pddl",
+    "run_dir": "runs-00101-00200/00161",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-tpp-p12.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "tpp",
+      "p12.pddl"
+    ],
+    "node": "n1110",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.76,
+    "problem": "p12.pddl",
+    "run_dir": "runs-00101-00200/00162",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-tpp-p13.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "tpp",
+      "p13.pddl"
+    ],
+    "node": "n474",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.9,
+    "problem": "p13.pddl",
+    "run_dir": "runs-00101-00200/00163",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-tpp-p14.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "tpp",
+      "p14.pddl"
+    ],
+    "node": "n1933",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.79,
+    "problem": "p14.pddl",
+    "run_dir": "runs-00101-00200/00164",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-tpp-p15.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "tpp",
+      "p15.pddl"
+    ],
+    "node": "n115",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.76,
+    "problem": "p15.pddl",
+    "run_dir": "runs-00101-00200/00165",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-tpp-p16.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 241,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "tpp",
+      "p16.pddl"
+    ],
+    "node": "n407",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 328.93,
+    "problem": "p16.pddl",
+    "run_dir": "runs-00101-00200/00166",
+    "total_time": 328.89,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-tpp-p17.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "tpp",
+      "p17.pddl"
+    ],
+    "node": "n292",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1801.39,
+    "problem": "p17.pddl",
+    "run_dir": "runs-00101-00200/00167",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-tpp-p18.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "tpp",
+      "p18.pddl"
+    ],
+    "node": "n1110",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.95,
+    "problem": "p18.pddl",
+    "run_dir": "runs-00101-00200/00168",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-tpp-p19.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "tpp",
+      "p19.pddl"
+    ],
+    "node": "n1860",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1801.91,
+    "problem": "p19.pddl",
+    "run_dir": "runs-00101-00200/00169",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-tpp-p20.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "tpp",
+      "p20.pddl"
+    ],
+    "node": "n1266",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1803.55,
+    "problem": "p20.pddl",
+    "run_dir": "runs-00101-00200/00170",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-tpp-p21.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "tpp",
+      "p21.pddl"
+    ],
+    "node": "n192",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1801.46,
+    "problem": "p21.pddl",
+    "run_dir": "runs-00101-00200/00171",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-tpp-p22.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "tpp",
+      "p22.pddl"
+    ],
+    "node": "n70",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 116.32,
+    "problem": "p22.pddl",
+    "run_dir": "runs-00101-00200/00172",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-tpp-p23.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "tpp",
+      "p23.pddl"
+    ],
+    "node": "n1249",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 126.95,
+    "problem": "p23.pddl",
+    "run_dir": "runs-00101-00200/00173",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-tpp-p24.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "tpp",
+      "p24.pddl"
+    ],
+    "node": "n70",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 147.61,
+    "problem": "p24.pddl",
+    "run_dir": "runs-00101-00200/00174",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-tpp-p25.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "tpp",
+      "p25.pddl"
+    ],
+    "node": "n119",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 161.68,
+    "problem": "p25.pddl",
+    "run_dir": "runs-00101-00200/00175",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-tpp-p26.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "tpp",
+      "p26.pddl"
+    ],
+    "node": "n108",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 170.1,
+    "problem": "p26.pddl",
+    "run_dir": "runs-00101-00200/00176",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-tpp-p27.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "tpp",
+      "p27.pddl"
+    ],
+    "node": "n122",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 204.67,
+    "problem": "p27.pddl",
+    "run_dir": "runs-00101-00200/00177",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-tpp-p28.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "tpp",
+      "p28.pddl"
+    ],
+    "node": "n121",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 186.43,
+    "problem": "p28.pddl",
+    "run_dir": "runs-00101-00200/00178",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-tpp-p29.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "tpp",
+      "p29.pddl"
+    ],
+    "node": "n474",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 192.5,
+    "problem": "p29.pddl",
+    "run_dir": "runs-00101-00200/00179",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "dual_bfws-tpp-p30.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "tpp",
+      "p30.pddl"
+    ],
+    "node": "n122",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 195.8,
+    "problem": "p30.pddl",
+    "run_dir": "runs-00101-00200/00180",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  }
+}

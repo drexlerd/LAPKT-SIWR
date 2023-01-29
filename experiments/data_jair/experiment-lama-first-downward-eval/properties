@@ -1,0 +1,6317 @@
+{
+  "lama_first-barman-p1-11-4-15.pddl": {
+    "algorithm": "lama_first",
+    "cost": 240,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "barman",
+      "p1-11-4-15.pddl"
+    ],
+    "node": "n962",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 24.52,
+    "problem": "p1-11-4-15.pddl",
+    "run_dir": "runs-00001-00100/00001",
+    "total_time": 24.48,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-barman-p1-11-5-15.pddl": {
+    "algorithm": "lama_first",
+    "cost": 221,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "barman",
+      "p1-11-5-15.pddl"
+    ],
+    "node": "n1050",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 22.11,
+    "problem": "p1-11-5-15.pddl",
+    "run_dir": "runs-00001-00100/00002",
+    "total_time": 22.08,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-barman-p1-11-5-16.pddl": {
+    "algorithm": "lama_first",
+    "cost": 168,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "barman",
+      "p1-11-5-16.pddl"
+    ],
+    "node": "n1794",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 2.47,
+    "problem": "p1-11-5-16.pddl",
+    "run_dir": "runs-00001-00100/00003",
+    "total_time": 2.44,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-barman-p2-10-4-13.pddl": {
+    "algorithm": "lama_first",
+    "cost": 258,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "barman",
+      "p2-10-4-13.pddl"
+    ],
+    "node": "n982",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 40.24,
+    "problem": "p2-10-4-13.pddl",
+    "run_dir": "runs-00001-00100/00004",
+    "total_time": 40.21,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-barman-p2-11-4-15.pddl": {
+    "algorithm": "lama_first",
+    "cost": 204,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "barman",
+      "p2-11-4-15.pddl"
+    ],
+    "node": "n989",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 14.27,
+    "problem": "p2-11-4-15.pddl",
+    "run_dir": "runs-00001-00100/00005",
+    "total_time": 14.24,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-barman-p2-11-5-15.pddl": {
+    "algorithm": "lama_first",
+    "cost": 159,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "barman",
+      "p2-11-5-15.pddl"
+    ],
+    "node": "n252",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 11.88,
+    "problem": "p2-11-5-15.pddl",
+    "run_dir": "runs-00001-00100/00006",
+    "total_time": 11.84,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-barman-p2-11-5-16.pddl": {
+    "algorithm": "lama_first",
+    "cost": 240,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "barman",
+      "p2-11-5-16.pddl"
+    ],
+    "node": "n1794",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 4.24,
+    "problem": "p2-11-5-16.pddl",
+    "run_dir": "runs-00001-00100/00007",
+    "total_time": 4.2,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-barman-p2-11-5-17.pddl": {
+    "algorithm": "lama_first",
+    "cost": 235,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "barman",
+      "p2-11-5-17.pddl"
+    ],
+    "node": "n1338",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 4.47,
+    "problem": "p2-11-5-17.pddl",
+    "run_dir": "runs-00001-00100/00008",
+    "total_time": 4.43,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-barman-p3-10-4-13.pddl": {
+    "algorithm": "lama_first",
+    "cost": 223,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "barman",
+      "p3-10-4-13.pddl"
+    ],
+    "node": "n709",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 21.15,
+    "problem": "p3-10-4-13.pddl",
+    "run_dir": "runs-00001-00100/00009",
+    "total_time": 21.11,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-barman-p3-11-4-15.pddl": {
+    "algorithm": "lama_first",
+    "cost": 262,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "barman",
+      "p3-11-4-15.pddl"
+    ],
+    "node": "n442",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 22.92,
+    "problem": "p3-11-4-15.pddl",
+    "run_dir": "runs-00001-00100/00010",
+    "total_time": 22.88,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-barman-p3-11-5-15.pddl": {
+    "algorithm": "lama_first",
+    "cost": 222,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "barman",
+      "p3-11-5-15.pddl"
+    ],
+    "node": "n677",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 4.11,
+    "problem": "p3-11-5-15.pddl",
+    "run_dir": "runs-00001-00100/00011",
+    "total_time": 4.08,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-barman-p3-11-5-16.pddl": {
+    "algorithm": "lama_first",
+    "cost": 196,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "barman",
+      "p3-11-5-16.pddl"
+    ],
+    "node": "n703",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 4.61,
+    "problem": "p3-11-5-16.pddl",
+    "run_dir": "runs-00001-00100/00012",
+    "total_time": 4.57,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-barman-p3-11-5-17.pddl": {
+    "algorithm": "lama_first",
+    "cost": 310,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "barman",
+      "p3-11-5-17.pddl"
+    ],
+    "node": "n687",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 6.51,
+    "problem": "p3-11-5-17.pddl",
+    "run_dir": "runs-00001-00100/00013",
+    "total_time": 6.33,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-barman-p4-11-4-14.pddl": {
+    "algorithm": "lama_first",
+    "cost": 212,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "barman",
+      "p4-11-4-14.pddl"
+    ],
+    "node": "n989",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 12.51,
+    "problem": "p4-11-4-14.pddl",
+    "run_dir": "runs-00001-00100/00014",
+    "total_time": 12.47,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-barman-p4-11-4-15.pddl": {
+    "algorithm": "lama_first",
+    "cost": 234,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "barman",
+      "p4-11-4-15.pddl"
+    ],
+    "node": "n982",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 633.83,
+    "problem": "p4-11-4-15.pddl",
+    "run_dir": "runs-00001-00100/00015",
+    "total_time": 633.8,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-barman-p4-11-5-15.pddl": {
+    "algorithm": "lama_first",
+    "cost": 223,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "barman",
+      "p4-11-5-15.pddl"
+    ],
+    "node": "n1359",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 3.98,
+    "problem": "p4-11-5-15.pddl",
+    "run_dir": "runs-00001-00100/00016",
+    "total_time": 3.95,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-barman-p5-10-4-13.pddl": {
+    "algorithm": "lama_first",
+    "cost": 203,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "barman",
+      "p5-10-4-13.pddl"
+    ],
+    "node": "n953",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 2.07,
+    "problem": "p5-10-4-13.pddl",
+    "run_dir": "runs-00001-00100/00017",
+    "total_time": 2.04,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-barman-p5-11-4-15.pddl": {
+    "algorithm": "lama_first",
+    "cost": 217,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "barman",
+      "p5-11-4-15.pddl"
+    ],
+    "node": "n1879",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 2.14,
+    "problem": "p5-11-4-15.pddl",
+    "run_dir": "runs-00001-00100/00018",
+    "total_time": 2.1,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-barman-p5-11-5-15.pddl": {
+    "algorithm": "lama_first",
+    "cost": 238,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "barman",
+      "p5-11-5-15.pddl"
+    ],
+    "node": "n1338",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 3.95,
+    "problem": "p5-11-5-15.pddl",
+    "run_dir": "runs-00001-00100/00019",
+    "total_time": 3.92,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-barman-p5-11-5-16.pddl": {
+    "algorithm": "lama_first",
+    "cost": 187,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "barman",
+      "p5-11-5-16.pddl"
+    ],
+    "node": "n433",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 2.57,
+    "problem": "p5-11-5-16.pddl",
+    "run_dir": "runs-00001-00100/00020",
+    "total_time": 2.54,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-barman-pfile06-021.pddl": {
+    "algorithm": "lama_first",
+    "cost": 68,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "barman",
+      "pfile06-021.pddl"
+    ],
+    "node": "n433",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.55,
+    "problem": "pfile06-021.pddl",
+    "run_dir": "runs-00001-00100/00021",
+    "total_time": 0.52,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-barman-pfile06-022.pddl": {
+    "algorithm": "lama_first",
+    "cost": 300,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "barman",
+      "pfile06-022.pddl"
+    ],
+    "node": "n1879",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.29,
+    "problem": "pfile06-022.pddl",
+    "run_dir": "runs-00001-00100/00022",
+    "total_time": 1.25,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-barman-pfile06-023.pddl": {
+    "algorithm": "lama_first",
+    "cost": 330,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "barman",
+      "pfile06-023.pddl"
+    ],
+    "node": "n999",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.85,
+    "problem": "pfile06-023.pddl",
+    "run_dir": "runs-00001-00100/00023",
+    "total_time": 1.81,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-barman-pfile06-024.pddl": {
+    "algorithm": "lama_first",
+    "cost": 307,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "barman",
+      "pfile06-024.pddl"
+    ],
+    "node": "n982",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 44.27,
+    "problem": "pfile06-024.pddl",
+    "run_dir": "runs-00001-00100/00024",
+    "total_time": 44.24,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-barman-pfile07-025.pddl": {
+    "algorithm": "lama_first",
+    "cost": 342,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "barman",
+      "pfile07-025.pddl"
+    ],
+    "node": "n677",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.31,
+    "problem": "pfile07-025.pddl",
+    "run_dir": "runs-00001-00100/00025",
+    "total_time": 1.27,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-barman-pfile07-026.pddl": {
+    "algorithm": "lama_first",
+    "cost": 447,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "barman",
+      "pfile07-026.pddl"
+    ],
+    "node": "n1933",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 2.72,
+    "problem": "pfile07-026.pddl",
+    "run_dir": "runs-00001-00100/00026",
+    "total_time": 2.68,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-barman-pfile07-027.pddl": {
+    "algorithm": "lama_first",
+    "cost": 317,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "barman",
+      "pfile07-027.pddl"
+    ],
+    "node": "n953",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.06,
+    "problem": "pfile07-027.pddl",
+    "run_dir": "runs-00001-00100/00027",
+    "total_time": 1.03,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-barman-pfile07-028.pddl": {
+    "algorithm": "lama_first",
+    "cost": 331,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "barman",
+      "pfile07-028.pddl"
+    ],
+    "node": "n1359",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.32,
+    "problem": "pfile07-028.pddl",
+    "run_dir": "runs-00001-00100/00028",
+    "total_time": 1.28,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-barman-pfile08-029.pddl": {
+    "algorithm": "lama_first",
+    "cost": 395,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "barman",
+      "pfile08-029.pddl"
+    ],
+    "node": "n953",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.73,
+    "problem": "pfile08-029.pddl",
+    "run_dir": "runs-00001-00100/00029",
+    "total_time": 1.69,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-barman-pfile08-030.pddl": {
+    "algorithm": "lama_first",
+    "cost": 354,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "barman",
+      "pfile08-030.pddl"
+    ],
+    "node": "n252",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 10.37,
+    "problem": "pfile08-030.pddl",
+    "run_dir": "runs-00001-00100/00030",
+    "total_time": 10.33,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-barman-pfile08-031.pddl": {
+    "algorithm": "lama_first",
+    "cost": 466,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "barman",
+      "pfile08-031.pddl"
+    ],
+    "node": "n433",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 121.71,
+    "problem": "pfile08-031.pddl",
+    "run_dir": "runs-00001-00100/00031",
+    "total_time": 121.67,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-barman-pfile08-032.pddl": {
+    "algorithm": "lama_first",
+    "cost": 433,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "barman",
+      "pfile08-032.pddl"
+    ],
+    "node": "n442",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 19.35,
+    "problem": "pfile08-032.pddl",
+    "run_dir": "runs-00001-00100/00032",
+    "total_time": 19.32,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-barman-pfile09-033.pddl": {
+    "algorithm": "lama_first",
+    "cost": 504,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "barman",
+      "pfile09-033.pddl"
+    ],
+    "node": "n962",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 5.27,
+    "problem": "pfile09-033.pddl",
+    "run_dir": "runs-00001-00100/00033",
+    "total_time": 5.24,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-barman-pfile09-034.pddl": {
+    "algorithm": "lama_first",
+    "cost": 465,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "barman",
+      "pfile09-034.pddl"
+    ],
+    "node": "n982",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 13.78,
+    "problem": "pfile09-034.pddl",
+    "run_dir": "runs-00001-00100/00034",
+    "total_time": 13.74,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-barman-pfile09-035.pddl": {
+    "algorithm": "lama_first",
+    "cost": 451,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "barman",
+      "pfile09-035.pddl"
+    ],
+    "node": "n442",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 2.13,
+    "problem": "pfile09-035.pddl",
+    "run_dir": "runs-00001-00100/00035",
+    "total_time": 2.09,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-barman-pfile09-036.pddl": {
+    "algorithm": "lama_first",
+    "cost": 429,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "barman",
+      "pfile09-036.pddl"
+    ],
+    "node": "n709",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 4.79,
+    "problem": "pfile09-036.pddl",
+    "run_dir": "runs-00001-00100/00036",
+    "total_time": 4.75,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-barman-pfile10-037.pddl": {
+    "algorithm": "lama_first",
+    "cost": 441,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "barman",
+      "pfile10-037.pddl"
+    ],
+    "node": "n906",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 2.35,
+    "problem": "pfile10-037.pddl",
+    "run_dir": "runs-00001-00100/00037",
+    "total_time": 2.31,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-barman-pfile10-038.pddl": {
+    "algorithm": "lama_first",
+    "cost": 516,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "barman",
+      "pfile10-038.pddl"
+    ],
+    "node": "n252",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 4.42,
+    "problem": "pfile10-038.pddl",
+    "run_dir": "runs-00001-00100/00038",
+    "total_time": 4.39,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-barman-pfile10-039.pddl": {
+    "algorithm": "lama_first",
+    "cost": 441,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "barman",
+      "pfile10-039.pddl"
+    ],
+    "node": "n1359",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.68,
+    "problem": "pfile10-039.pddl",
+    "run_dir": "runs-00001-00100/00039",
+    "total_time": 1.64,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-barman-pfile10-040.pddl": {
+    "algorithm": "lama_first",
+    "cost": 407,
+    "coverage": 1,
+    "domain": "barman",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "barman",
+      "pfile10-040.pddl"
+    ],
+    "node": "n953",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 2.13,
+    "problem": "pfile10-040.pddl",
+    "run_dir": "runs-00001-00100/00040",
+    "total_time": 2.1,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-childsnack-child-snack_pfile05-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 56,
+    "coverage": 1,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "childsnack",
+      "child-snack_pfile05-2.pddl"
+    ],
+    "node": "n1879",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.83,
+    "problem": "child-snack_pfile05-2.pddl",
+    "run_dir": "runs-00001-00100/00041",
+    "total_time": 0.8,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-childsnack-child-snack_pfile05.pddl": {
+    "algorithm": "lama_first",
+    "cost": 53,
+    "coverage": 1,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "childsnack",
+      "child-snack_pfile05.pddl"
+    ],
+    "node": "n989",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 11.63,
+    "problem": "child-snack_pfile05.pddl",
+    "run_dir": "runs-00001-00100/00042",
+    "total_time": 11.6,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-childsnack-child-snack_pfile06-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 59,
+    "coverage": 1,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "childsnack",
+      "child-snack_pfile06-2.pddl"
+    ],
+    "node": "n864",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.83,
+    "problem": "child-snack_pfile06-2.pddl",
+    "run_dir": "runs-00001-00100/00043",
+    "total_time": 0.8,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-childsnack-child-snack_pfile07-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 64,
+    "coverage": 1,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "childsnack",
+      "child-snack_pfile07-2.pddl"
+    ],
+    "node": "n1879",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.07,
+    "problem": "child-snack_pfile07-2.pddl",
+    "run_dir": "runs-00001-00100/00044",
+    "total_time": 1.04,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-childsnack-child-snack_pfile08-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 69,
+    "coverage": 1,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "childsnack",
+      "child-snack_pfile08-2.pddl"
+    ],
+    "node": "n677",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.27,
+    "problem": "child-snack_pfile08-2.pddl",
+    "run_dir": "runs-00001-00100/00045",
+    "total_time": 1.23,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-childsnack-child-snack_pfile08.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "childsnack",
+      "child-snack_pfile08.pddl"
+    ],
+    "node": "n147",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 196.72,
+    "problem": "child-snack_pfile08.pddl",
+    "run_dir": "runs-00001-00100/00046",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-childsnack-child-snack_pfile09-2.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "childsnack",
+      "child-snack_pfile09-2.pddl"
+    ],
+    "node": "n677",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 213.65,
+    "problem": "child-snack_pfile09-2.pddl",
+    "run_dir": "runs-00001-00100/00047",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-childsnack-child-snack_pfile09.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "childsnack",
+      "child-snack_pfile09.pddl"
+    ],
+    "node": "n677",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 210.65,
+    "problem": "child-snack_pfile09.pddl",
+    "run_dir": "runs-00001-00100/00048",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-childsnack-child-snack_pfile10-2.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "childsnack",
+      "child-snack_pfile10-2.pddl"
+    ],
+    "node": "n677",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 239.12,
+    "problem": "child-snack_pfile10-2.pddl",
+    "run_dir": "runs-00001-00100/00049",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-childsnack-child-snack_pfile10.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "childsnack",
+      "child-snack_pfile10.pddl"
+    ],
+    "node": "n677",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 221.81,
+    "problem": "child-snack_pfile10.pddl",
+    "run_dir": "runs-00001-00100/00050",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-childsnack-child-snack_pfile11-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 86,
+    "coverage": 1,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "childsnack",
+      "child-snack_pfile11-2.pddl"
+    ],
+    "node": "n998",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 10.77,
+    "problem": "child-snack_pfile11-2.pddl",
+    "run_dir": "runs-00001-00100/00051",
+    "total_time": 10.74,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-childsnack-child-snack_pfile11.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "childsnack",
+      "child-snack_pfile11.pddl"
+    ],
+    "node": "n953",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 214.3,
+    "problem": "child-snack_pfile11.pddl",
+    "run_dir": "runs-00001-00100/00052",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-childsnack-child-snack_pfile12.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "childsnack",
+      "child-snack_pfile12.pddl"
+    ],
+    "node": "n953",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 209.95,
+    "problem": "child-snack_pfile12.pddl",
+    "run_dir": "runs-00001-00100/00053",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-childsnack-child-snack_pfile13-2.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "childsnack",
+      "child-snack_pfile13-2.pddl"
+    ],
+    "node": "n1794",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 242.12,
+    "problem": "child-snack_pfile13-2.pddl",
+    "run_dir": "runs-00001-00100/00054",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-childsnack-child-snack_pfile13.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "childsnack",
+      "child-snack_pfile13.pddl"
+    ],
+    "node": "n989",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 216.22,
+    "problem": "child-snack_pfile13.pddl",
+    "run_dir": "runs-00001-00100/00055",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-childsnack-child-snack_pfile14.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "childsnack",
+      "child-snack_pfile14.pddl"
+    ],
+    "node": "n102",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 234.47,
+    "problem": "child-snack_pfile14.pddl",
+    "run_dir": "runs-00001-00100/00056",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-childsnack-child-snack_pfile15-2.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "childsnack",
+      "child-snack_pfile15-2.pddl"
+    ],
+    "node": "n999",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 218.3,
+    "problem": "child-snack_pfile15-2.pddl",
+    "run_dir": "runs-00001-00100/00057",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-childsnack-child-snack_pfile16-2.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "childsnack",
+      "child-snack_pfile16-2.pddl"
+    ],
+    "node": "n252",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 233.38,
+    "problem": "child-snack_pfile16-2.pddl",
+    "run_dir": "runs-00001-00100/00058",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-childsnack-child-snack_pfile19-2.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "childsnack",
+      "child-snack_pfile19-2.pddl"
+    ],
+    "node": "n703",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 217.12,
+    "problem": "child-snack_pfile19-2.pddl",
+    "run_dir": "runs-00001-00100/00059",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-childsnack-child-snack_pfile19.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "childsnack",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "childsnack",
+      "child-snack_pfile19.pddl"
+    ],
+    "node": "n962",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 290.09,
+    "problem": "child-snack_pfile19.pddl",
+    "run_dir": "runs-00001-00100/00060",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-driverlog-p01.pddl": {
+    "algorithm": "lama_first",
+    "cost": 2,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "driverlog",
+      "p01.pddl"
+    ],
+    "node": "n252",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.46,
+    "problem": "p01.pddl",
+    "run_dir": "runs-00001-00100/00061",
+    "total_time": 0.43,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-driverlog-p02.pddl": {
+    "algorithm": "lama_first",
+    "cost": 23,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "driverlog",
+      "p02.pddl"
+    ],
+    "node": "n252",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.49,
+    "problem": "p02.pddl",
+    "run_dir": "runs-00001-00100/00062",
+    "total_time": 0.46,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-driverlog-p03.pddl": {
+    "algorithm": "lama_first",
+    "cost": 13,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "driverlog",
+      "p03.pddl"
+    ],
+    "node": "n292",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.48,
+    "problem": "p03.pddl",
+    "run_dir": "runs-00001-00100/00063",
+    "total_time": 0.45,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-driverlog-p04.pddl": {
+    "algorithm": "lama_first",
+    "cost": 19,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "driverlog",
+      "p04.pddl"
+    ],
+    "node": "n953",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.48,
+    "problem": "p04.pddl",
+    "run_dir": "runs-00001-00100/00064",
+    "total_time": 0.46,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-driverlog-p05.pddl": {
+    "algorithm": "lama_first",
+    "cost": 23,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "driverlog",
+      "p05.pddl"
+    ],
+    "node": "n952",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 9.04,
+    "problem": "p05.pddl",
+    "run_dir": "runs-00001-00100/00065",
+    "total_time": 9.0,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-driverlog-p06.pddl": {
+    "algorithm": "lama_first",
+    "cost": 17,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "driverlog",
+      "p06.pddl"
+    ],
+    "node": "n989",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.49,
+    "problem": "p06.pddl",
+    "run_dir": "runs-00001-00100/00066",
+    "total_time": 0.46,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-driverlog-p07.pddl": {
+    "algorithm": "lama_first",
+    "cost": 18,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "driverlog",
+      "p07.pddl"
+    ],
+    "node": "n252",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 8.52,
+    "problem": "p07.pddl",
+    "run_dir": "runs-00001-00100/00067",
+    "total_time": 8.34,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-driverlog-p08.pddl": {
+    "algorithm": "lama_first",
+    "cost": 27,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "driverlog",
+      "p08.pddl"
+    ],
+    "node": "n962",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.56,
+    "problem": "p08.pddl",
+    "run_dir": "runs-00001-00100/00068",
+    "total_time": 0.53,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-driverlog-p09.pddl": {
+    "algorithm": "lama_first",
+    "cost": 56,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "driverlog",
+      "p09.pddl"
+    ],
+    "node": "n906",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.53,
+    "problem": "p09.pddl",
+    "run_dir": "runs-00001-00100/00069",
+    "total_time": 0.5,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-driverlog-p10.pddl": {
+    "algorithm": "lama_first",
+    "cost": 20,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "driverlog",
+      "p10.pddl"
+    ],
+    "node": "n906",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.54,
+    "problem": "p10.pddl",
+    "run_dir": "runs-00001-00100/00070",
+    "total_time": 0.51,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-driverlog-p11.pddl": {
+    "algorithm": "lama_first",
+    "cost": 26,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "driverlog",
+      "p11.pddl"
+    ],
+    "node": "n434",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.46,
+    "problem": "p11.pddl",
+    "run_dir": "runs-00001-00100/00071",
+    "total_time": 0.44,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-driverlog-p12.pddl": {
+    "algorithm": "lama_first",
+    "cost": 40,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "driverlog",
+      "p12.pddl"
+    ],
+    "node": "n1879",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.68,
+    "problem": "p12.pddl",
+    "run_dir": "runs-00001-00100/00072",
+    "total_time": 0.65,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-driverlog-p13.pddl": {
+    "algorithm": "lama_first",
+    "cost": 41,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "driverlog",
+      "p13.pddl"
+    ],
+    "node": "n1879",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.73,
+    "problem": "p13.pddl",
+    "run_dir": "runs-00001-00100/00073",
+    "total_time": 0.69,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-driverlog-p14.pddl": {
+    "algorithm": "lama_first",
+    "cost": 38,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "driverlog",
+      "p14.pddl"
+    ],
+    "node": "n370",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 17.92,
+    "problem": "p14.pddl",
+    "run_dir": "runs-00001-00100/00074",
+    "total_time": 17.89,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-driverlog-p15.pddl": {
+    "algorithm": "lama_first",
+    "cost": 48,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "driverlog",
+      "p15.pddl"
+    ],
+    "node": "n982",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.79,
+    "problem": "p15.pddl",
+    "run_dir": "runs-00001-00100/00075",
+    "total_time": 0.76,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-driverlog-p16.pddl": {
+    "algorithm": "lama_first",
+    "cost": 158,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "driverlog",
+      "p16.pddl"
+    ],
+    "node": "n953",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 3.35,
+    "problem": "p16.pddl",
+    "run_dir": "runs-00001-00100/00076",
+    "total_time": 3.32,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-driverlog-p17.pddl": {
+    "algorithm": "lama_first",
+    "cost": 134,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "driverlog",
+      "p17.pddl"
+    ],
+    "node": "n953",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.73,
+    "problem": "p17.pddl",
+    "run_dir": "runs-00001-00100/00077",
+    "total_time": 1.7,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-driverlog-p18.pddl": {
+    "algorithm": "lama_first",
+    "cost": 124,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "driverlog",
+      "p18.pddl"
+    ],
+    "node": "n952",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 6.29,
+    "problem": "p18.pddl",
+    "run_dir": "runs-00001-00100/00078",
+    "total_time": 6.24,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-driverlog-p19.pddl": {
+    "algorithm": "lama_first",
+    "cost": 212,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "driverlog",
+      "p19.pddl"
+    ],
+    "node": "n989",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 28.95,
+    "problem": "p19.pddl",
+    "run_dir": "runs-00001-00100/00079",
+    "total_time": 28.91,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-driverlog-p20.pddl": {
+    "algorithm": "lama_first",
+    "cost": 210,
+    "coverage": 1,
+    "domain": "driverlog",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "driverlog",
+      "p20.pddl"
+    ],
+    "node": "n982",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 5.4,
+    "problem": "p20.pddl",
+    "run_dir": "runs-00001-00100/00080",
+    "total_time": 5.36,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-floortile-p01-4-3-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 97,
+    "coverage": 1,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "floortile",
+      "p01-4-3-2.pddl"
+    ],
+    "node": "n953",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 8.29,
+    "problem": "p01-4-3-2.pddl",
+    "run_dir": "runs-00001-00100/00081",
+    "total_time": 8.27,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-floortile-p01-5-4-2.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "floortile",
+      "p01-5-4-2.pddl"
+    ],
+    "node": "n1338",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 965.6,
+    "problem": "p01-5-4-2.pddl",
+    "run_dir": "runs-00001-00100/00082",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-floortile-p01-5-5-2.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "floortile",
+      "p01-5-5-2.pddl"
+    ],
+    "node": "n1359",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1182.31,
+    "problem": "p01-5-5-2.pddl",
+    "run_dir": "runs-00001-00100/00083",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-floortile-p01-6-4-2.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "floortile",
+      "p01-6-4-2.pddl"
+    ],
+    "node": "n370",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1253.9,
+    "problem": "p01-6-4-2.pddl",
+    "run_dir": "runs-00001-00100/00084",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-floortile-p01-6-5-2.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "floortile",
+      "p01-6-5-2.pddl"
+    ],
+    "node": "n1933",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1088.63,
+    "problem": "p01-6-5-2.pddl",
+    "run_dir": "runs-00001-00100/00085",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-floortile-p01-6-5-3.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "floortile",
+      "p01-6-5-3.pddl"
+    ],
+    "node": "n250",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1503.65,
+    "problem": "p01-6-5-3.pddl",
+    "run_dir": "runs-00001-00100/00086",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-floortile-p02-5-4-2.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "floortile",
+      "p02-5-4-2.pddl"
+    ],
+    "node": "n1865",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1073.64,
+    "problem": "p02-5-4-2.pddl",
+    "run_dir": "runs-00001-00100/00087",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-floortile-p02-6-4-2.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "floortile",
+      "p02-6-4-2.pddl"
+    ],
+    "node": "n292",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1235.62,
+    "problem": "p02-6-4-2.pddl",
+    "run_dir": "runs-00001-00100/00088",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-floortile-p02-6-5-2.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "floortile",
+      "p02-6-5-2.pddl"
+    ],
+    "node": "n442",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1198.45,
+    "problem": "p02-6-5-2.pddl",
+    "run_dir": "runs-00001-00100/00089",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-floortile-p02-6-5-3.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "floortile",
+      "p02-6-5-3.pddl"
+    ],
+    "node": "n1523",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1471.51,
+    "problem": "p02-6-5-3.pddl",
+    "run_dir": "runs-00001-00100/00090",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-floortile-p03-6-4-2.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "floortile",
+      "p03-6-4-2.pddl"
+    ],
+    "node": "n677",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1232.32,
+    "problem": "p03-6-4-2.pddl",
+    "run_dir": "runs-00001-00100/00091",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-floortile-p03-6-5-2.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "floortile",
+      "p03-6-5-2.pddl"
+    ],
+    "node": "n687",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1239.4,
+    "problem": "p03-6-5-2.pddl",
+    "run_dir": "runs-00001-00100/00092",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-floortile-p03-6-5-3.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "floortile",
+      "p03-6-5-3.pddl"
+    ],
+    "node": "n989",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1532.34,
+    "problem": "p03-6-5-3.pddl",
+    "run_dir": "runs-00001-00100/00093",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-floortile-p04-5-4-2.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "floortile",
+      "p04-5-4-2.pddl"
+    ],
+    "node": "n953",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1109.03,
+    "problem": "p04-5-4-2.pddl",
+    "run_dir": "runs-00001-00100/00094",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-floortile-p04-5-5-2.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "floortile",
+      "p04-5-5-2.pddl"
+    ],
+    "node": "n433",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1319.39,
+    "problem": "p04-5-5-2.pddl",
+    "run_dir": "runs-00001-00100/00095",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-floortile-p04-6-5-2.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "floortile",
+      "p04-6-5-2.pddl"
+    ],
+    "node": "n1837",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1395.36,
+    "problem": "p04-6-5-2.pddl",
+    "run_dir": "runs-00001-00100/00096",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-floortile-p04-6-5-3.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "floortile",
+      "p04-6-5-3.pddl"
+    ],
+    "node": "n292",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1516.32,
+    "problem": "p04-6-5-3.pddl",
+    "run_dir": "runs-00001-00100/00097",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-floortile-p05-4-3-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 87,
+    "coverage": 1,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "floortile",
+      "p05-4-3-2.pddl"
+    ],
+    "node": "n953",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 2.07,
+    "problem": "p05-4-3-2.pddl",
+    "run_dir": "runs-00001-00100/00098",
+    "total_time": 2.04,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-floortile-p05-6-5-2.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "floortile",
+      "p05-6-5-2.pddl"
+    ],
+    "node": "n252",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1293.66,
+    "problem": "p05-6-5-2.pddl",
+    "run_dir": "runs-00001-00100/00099",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-floortile-p05-6-5-3.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "floortile",
+      "p05-6-5-3.pddl"
+    ],
+    "node": "n119",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1624.94,
+    "problem": "p05-6-5-3.pddl",
+    "run_dir": "runs-00001-00100/00100",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-floortile-seq-p01-001.pddl": {
+    "algorithm": "lama_first",
+    "cost": 118,
+    "coverage": 1,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "floortile",
+      "seq-p01-001.pddl"
+    ],
+    "node": "n252",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 8.76,
+    "problem": "seq-p01-001.pddl",
+    "run_dir": "runs-00101-00200/00101",
+    "total_time": 8.73,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-floortile-seq-p01-002.pddl": {
+    "algorithm": "lama_first",
+    "cost": 103,
+    "coverage": 1,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "floortile",
+      "seq-p01-002.pddl"
+    ],
+    "node": "n1105",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 12.66,
+    "problem": "seq-p01-002.pddl",
+    "run_dir": "runs-00101-00200/00102",
+    "total_time": 12.63,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-floortile-seq-p02-003.pddl": {
+    "algorithm": "lama_first",
+    "cost": 136,
+    "coverage": 1,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "floortile",
+      "seq-p02-003.pddl"
+    ],
+    "node": "n677",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 126.11,
+    "problem": "seq-p02-003.pddl",
+    "run_dir": "runs-00101-00200/00103",
+    "total_time": 126.08,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-floortile-seq-p02-004.pddl": {
+    "algorithm": "lama_first",
+    "cost": 146,
+    "coverage": 1,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "floortile",
+      "seq-p02-004.pddl"
+    ],
+    "node": "n1310",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 152.7,
+    "problem": "seq-p02-004.pddl",
+    "run_dir": "runs-00101-00200/00104",
+    "total_time": 152.67,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-floortile-seq-p03-005.pddl": {
+    "algorithm": "lama_first",
+    "cost": 127,
+    "coverage": 1,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "floortile",
+      "seq-p03-005.pddl"
+    ],
+    "node": "n771",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 199.37,
+    "problem": "seq-p03-005.pddl",
+    "run_dir": "runs-00101-00200/00105",
+    "total_time": 199.34,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-floortile-seq-p03-006.pddl": {
+    "algorithm": "lama_first",
+    "cost": 128,
+    "coverage": 1,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "floortile",
+      "seq-p03-006.pddl"
+    ],
+    "node": "n1359",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 181.47,
+    "problem": "seq-p03-006.pddl",
+    "run_dir": "runs-00101-00200/00106",
+    "total_time": 181.44,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-floortile-seq-p04-007.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "floortile",
+      "seq-p04-007.pddl"
+    ],
+    "node": "n1049",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1100.93,
+    "problem": "seq-p04-007.pddl",
+    "run_dir": "runs-00101-00200/00107",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-floortile-seq-p04-008.pddl": {
+    "algorithm": "lama_first",
+    "cost": 194,
+    "coverage": 1,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "floortile",
+      "seq-p04-008.pddl"
+    ],
+    "node": "n703",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 957.76,
+    "problem": "seq-p04-008.pddl",
+    "run_dir": "runs-00101-00200/00108",
+    "total_time": 957.73,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-floortile-seq-p05-009.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "floortile",
+      "seq-p05-009.pddl"
+    ],
+    "node": "n304",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1081.18,
+    "problem": "seq-p05-009.pddl",
+    "run_dir": "runs-00101-00200/00109",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-floortile-seq-p05-010.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "floortile",
+      "seq-p05-010.pddl"
+    ],
+    "node": "n773",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1424.2,
+    "problem": "seq-p05-010.pddl",
+    "run_dir": "runs-00101-00200/00110",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-floortile-seq-p06-011.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "floortile",
+      "seq-p06-011.pddl"
+    ],
+    "node": "n687",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1078.28,
+    "problem": "seq-p06-011.pddl",
+    "run_dir": "runs-00101-00200/00111",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-floortile-seq-p06-012.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "floortile",
+      "seq-p06-012.pddl"
+    ],
+    "node": "n304",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1075.55,
+    "problem": "seq-p06-012.pddl",
+    "run_dir": "runs-00101-00200/00112",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-floortile-seq-p07-013.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "floortile",
+      "seq-p07-013.pddl"
+    ],
+    "node": "n953",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1512.87,
+    "problem": "seq-p07-013.pddl",
+    "run_dir": "runs-00101-00200/00113",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-floortile-seq-p07-014.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "floortile",
+      "seq-p07-014.pddl"
+    ],
+    "node": "n982",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1455.16,
+    "problem": "seq-p07-014.pddl",
+    "run_dir": "runs-00101-00200/00114",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-floortile-seq-p08-015.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "floortile",
+      "seq-p08-015.pddl"
+    ],
+    "node": "n982",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1454.64,
+    "problem": "seq-p08-015.pddl",
+    "run_dir": "runs-00101-00200/00115",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-floortile-seq-p08-016.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "floortile",
+      "seq-p08-016.pddl"
+    ],
+    "node": "n953",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1599.12,
+    "problem": "seq-p08-016.pddl",
+    "run_dir": "runs-00101-00200/00116",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-floortile-seq-p09-017.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "floortile",
+      "seq-p09-017.pddl"
+    ],
+    "node": "n945",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1801.97,
+    "problem": "seq-p09-017.pddl",
+    "run_dir": "runs-00101-00200/00117",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-floortile-seq-p09-018.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "floortile",
+      "seq-p09-018.pddl"
+    ],
+    "node": "n252",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1742.86,
+    "problem": "seq-p09-018.pddl",
+    "run_dir": "runs-00101-00200/00118",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-floortile-seq-p10-019.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "floortile",
+      "seq-p10-019.pddl"
+    ],
+    "node": "n989",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1798.58,
+    "problem": "seq-p10-019.pddl",
+    "run_dir": "runs-00101-00200/00119",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-floortile-seq-p10-020.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "floortile",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "floortile",
+      "seq-p10-020.pddl"
+    ],
+    "node": "n1879",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1730.49,
+    "problem": "seq-p10-020.pddl",
+    "run_dir": "runs-00101-00200/00120",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-grid-prob01.pddl": {
+    "algorithm": "lama_first",
+    "cost": 14,
+    "coverage": 1,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "grid",
+      "prob01.pddl"
+    ],
+    "node": "n953",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.68,
+    "problem": "prob01.pddl",
+    "run_dir": "runs-00101-00200/00121",
+    "total_time": 0.65,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-grid-prob02.pddl": {
+    "algorithm": "lama_first",
+    "cost": 32,
+    "coverage": 1,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "grid",
+      "prob02.pddl"
+    ],
+    "node": "n1938",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.97,
+    "problem": "prob02.pddl",
+    "run_dir": "runs-00101-00200/00122",
+    "total_time": 0.91,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-grid-prob03.pddl": {
+    "algorithm": "lama_first",
+    "cost": 75,
+    "coverage": 1,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "grid",
+      "prob03.pddl"
+    ],
+    "node": "n962",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.42,
+    "problem": "prob03.pddl",
+    "run_dir": "runs-00101-00200/00123",
+    "total_time": 1.4,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-grid-prob04.pddl": {
+    "algorithm": "lama_first",
+    "cost": 53,
+    "coverage": 1,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "grid",
+      "prob04.pddl"
+    ],
+    "node": "n703",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.76,
+    "problem": "prob04.pddl",
+    "run_dir": "runs-00101-00200/00124",
+    "total_time": 1.73,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-grid-prob05.pddl": {
+    "algorithm": "lama_first",
+    "cost": 167,
+    "coverage": 1,
+    "domain": "grid",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "grid",
+      "prob05.pddl"
+    ],
+    "node": "n1794",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 16.65,
+    "problem": "prob05.pddl",
+    "run_dir": "runs-00101-00200/00125",
+    "total_time": 16.61,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-10-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 16,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-10-0.pddl"
+    ],
+    "node": "n1837",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 20.1,
+    "problem": "probschedule-10-0.pddl",
+    "run_dir": "runs-00101-00200/00150",
+    "total_time": 20.06,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-10-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 15,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-10-1.pddl"
+    ],
+    "node": "n703",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.07,
+    "problem": "probschedule-10-1.pddl",
+    "run_dir": "runs-00101-00200/00151",
+    "total_time": 0.99,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-10-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 17,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-10-2.pddl"
+    ],
+    "node": "n982",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.57,
+    "problem": "probschedule-10-2.pddl",
+    "run_dir": "runs-00101-00200/00152",
+    "total_time": 0.54,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-11-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 15,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-11-0.pddl"
+    ],
+    "node": "n1794",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.73,
+    "problem": "probschedule-11-0.pddl",
+    "run_dir": "runs-00101-00200/00153",
+    "total_time": 0.7,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-11-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 13,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-11-1.pddl"
+    ],
+    "node": "n998",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.6,
+    "problem": "probschedule-11-1.pddl",
+    "run_dir": "runs-00101-00200/00154",
+    "total_time": 0.57,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-11-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 15,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-11-2.pddl"
+    ],
+    "node": "n434",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.51,
+    "problem": "probschedule-11-2.pddl",
+    "run_dir": "runs-00101-00200/00155",
+    "total_time": 0.48,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-12-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 16,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-12-0.pddl"
+    ],
+    "node": "n339",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.75,
+    "problem": "probschedule-12-0.pddl",
+    "run_dir": "runs-00101-00200/00156",
+    "total_time": 0.59,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-12-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 16,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-12-1.pddl"
+    ],
+    "node": "n982",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.65,
+    "problem": "probschedule-12-1.pddl",
+    "run_dir": "runs-00101-00200/00157",
+    "total_time": 0.62,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-12-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 19,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-12-2.pddl"
+    ],
+    "node": "n1837",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.63,
+    "problem": "probschedule-12-2.pddl",
+    "run_dir": "runs-00101-00200/00158",
+    "total_time": 0.57,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-13-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 18,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-13-0.pddl"
+    ],
+    "node": "n982",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.59,
+    "problem": "probschedule-13-0.pddl",
+    "run_dir": "runs-00101-00200/00159",
+    "total_time": 0.56,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-13-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 18,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-13-1.pddl"
+    ],
+    "node": "n1359",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.39,
+    "problem": "probschedule-13-1.pddl",
+    "run_dir": "runs-00101-00200/00160",
+    "total_time": 1.36,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-13-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 18,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-13-2.pddl"
+    ],
+    "node": "n962",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.61,
+    "problem": "probschedule-13-2.pddl",
+    "run_dir": "runs-00101-00200/00161",
+    "total_time": 0.57,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-14-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 19,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-14-0.pddl"
+    ],
+    "node": "n101",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.93,
+    "problem": "probschedule-14-0.pddl",
+    "run_dir": "runs-00101-00200/00162",
+    "total_time": 0.72,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-14-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 19,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-14-1.pddl"
+    ],
+    "node": "n250",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.52,
+    "problem": "probschedule-14-1.pddl",
+    "run_dir": "runs-00101-00200/00163",
+    "total_time": 0.49,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-14-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 17,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-14-2.pddl"
+    ],
+    "node": "n1837",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 20.45,
+    "problem": "probschedule-14-2.pddl",
+    "run_dir": "runs-00101-00200/00164",
+    "total_time": 20.42,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-15-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 21,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-15-0.pddl"
+    ],
+    "node": "n252",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 9.4,
+    "problem": "probschedule-15-0.pddl",
+    "run_dir": "runs-00101-00200/00165",
+    "total_time": 9.08,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-15-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 18,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-15-1.pddl"
+    ],
+    "node": "n1049",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.58,
+    "problem": "probschedule-15-1.pddl",
+    "run_dir": "runs-00101-00200/00166",
+    "total_time": 0.53,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-15-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 18,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-15-2.pddl"
+    ],
+    "node": "n1050",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.63,
+    "problem": "probschedule-15-2.pddl",
+    "run_dir": "runs-00101-00200/00167",
+    "total_time": 0.59,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-16-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 25,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-16-0.pddl"
+    ],
+    "node": "n541",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.55,
+    "problem": "probschedule-16-0.pddl",
+    "run_dir": "runs-00101-00200/00168",
+    "total_time": 0.52,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-16-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 19,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-16-1.pddl"
+    ],
+    "node": "n982",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.63,
+    "problem": "probschedule-16-1.pddl",
+    "run_dir": "runs-00101-00200/00169",
+    "total_time": 0.6,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-16-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 21,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-16-2.pddl"
+    ],
+    "node": "n1779",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.63,
+    "problem": "probschedule-16-2.pddl",
+    "run_dir": "runs-00101-00200/00170",
+    "total_time": 0.52,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-17-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 21,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-17-0.pddl"
+    ],
+    "node": "n952",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.64,
+    "problem": "probschedule-17-0.pddl",
+    "run_dir": "runs-00101-00200/00171",
+    "total_time": 0.61,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-17-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 22,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-17-1.pddl"
+    ],
+    "node": "n703",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.62,
+    "problem": "probschedule-17-1.pddl",
+    "run_dir": "runs-00101-00200/00172",
+    "total_time": 0.59,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-17-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 30,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-17-2.pddl"
+    ],
+    "node": "n906",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 2.06,
+    "problem": "probschedule-17-2.pddl",
+    "run_dir": "runs-00101-00200/00173",
+    "total_time": 2.03,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-18-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 25,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-18-0.pddl"
+    ],
+    "node": "n1879",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.67,
+    "problem": "probschedule-18-0.pddl",
+    "run_dir": "runs-00101-00200/00174",
+    "total_time": 0.64,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-18-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 27,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-18-1.pddl"
+    ],
+    "node": "n989",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 24.01,
+    "problem": "probschedule-18-1.pddl",
+    "run_dir": "runs-00101-00200/00175",
+    "total_time": 23.98,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-18-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 27,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-18-2.pddl"
+    ],
+    "node": "n982",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 11.28,
+    "problem": "probschedule-18-2.pddl",
+    "run_dir": "runs-00101-00200/00176",
+    "total_time": 11.07,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-19-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 27,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-19-0.pddl"
+    ],
+    "node": "n1933",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 19.0,
+    "problem": "probschedule-19-0.pddl",
+    "run_dir": "runs-00101-00200/00177",
+    "total_time": 18.97,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-19-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 26,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-19-1.pddl"
+    ],
+    "node": "n1359",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 6.03,
+    "problem": "probschedule-19-1.pddl",
+    "run_dir": "runs-00101-00200/00178",
+    "total_time": 5.75,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-19-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 25,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-19-2.pddl"
+    ],
+    "node": "n677",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 20.83,
+    "problem": "probschedule-19-2.pddl",
+    "run_dir": "runs-00101-00200/00179",
+    "total_time": 20.8,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-2-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 2,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-2-0.pddl"
+    ],
+    "node": "n989",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.5,
+    "problem": "probschedule-2-0.pddl",
+    "run_dir": "runs-00101-00200/00126",
+    "total_time": 0.47,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-2-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 2,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-2-1.pddl"
+    ],
+    "node": "n989",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 11.09,
+    "problem": "probschedule-2-1.pddl",
+    "run_dir": "runs-00101-00200/00127",
+    "total_time": 11.06,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-2-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 2,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-2-2.pddl"
+    ],
+    "node": "n304",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.47,
+    "problem": "probschedule-2-2.pddl",
+    "run_dir": "runs-00101-00200/00128",
+    "total_time": 0.44,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-20-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 25,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-20-0.pddl"
+    ],
+    "node": "n982",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.68,
+    "problem": "probschedule-20-0.pddl",
+    "run_dir": "runs-00101-00200/00180",
+    "total_time": 0.64,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-20-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 28,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-20-1.pddl"
+    ],
+    "node": "n906",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 2.1,
+    "problem": "probschedule-20-1.pddl",
+    "run_dir": "runs-00101-00200/00181",
+    "total_time": 2.07,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-20-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 27,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-20-2.pddl"
+    ],
+    "node": "n989",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.89,
+    "problem": "probschedule-20-2.pddl",
+    "run_dir": "runs-00101-00200/00182",
+    "total_time": 1.84,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-21-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 27,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-21-0.pddl"
+    ],
+    "node": "n304",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.11,
+    "problem": "probschedule-21-0.pddl",
+    "run_dir": "runs-00101-00200/00183",
+    "total_time": 1.03,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-21-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 27,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-21-1.pddl"
+    ],
+    "node": "n1338",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.75,
+    "problem": "probschedule-21-1.pddl",
+    "run_dir": "runs-00101-00200/00184",
+    "total_time": 0.72,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-21-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 29,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-21-2.pddl"
+    ],
+    "node": "n1779",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 3.41,
+    "problem": "probschedule-21-2.pddl",
+    "run_dir": "runs-00101-00200/00185",
+    "total_time": 3.38,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-22-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 32,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-22-0.pddl"
+    ],
+    "node": "n962",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.16,
+    "problem": "probschedule-22-0.pddl",
+    "run_dir": "runs-00101-00200/00186",
+    "total_time": 1.12,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-22-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 28,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-22-1.pddl"
+    ],
+    "node": "n252",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.72,
+    "problem": "probschedule-22-1.pddl",
+    "run_dir": "runs-00101-00200/00187",
+    "total_time": 0.68,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-22-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 32,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-22-2.pddl"
+    ],
+    "node": "n709",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 16.65,
+    "problem": "probschedule-22-2.pddl",
+    "run_dir": "runs-00101-00200/00188",
+    "total_time": 16.62,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-23-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 30,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-23-0.pddl"
+    ],
+    "node": "n864",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.76,
+    "problem": "probschedule-23-0.pddl",
+    "run_dir": "runs-00101-00200/00189",
+    "total_time": 0.73,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-23-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 44,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-23-1.pddl"
+    ],
+    "node": "n953",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.69,
+    "problem": "probschedule-23-1.pddl",
+    "run_dir": "runs-00101-00200/00190",
+    "total_time": 0.65,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-23-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 33,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-23-2.pddl"
+    ],
+    "node": "n703",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.67,
+    "problem": "probschedule-23-2.pddl",
+    "run_dir": "runs-00101-00200/00191",
+    "total_time": 0.64,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-24-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 33,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-24-0.pddl"
+    ],
+    "node": "n255",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 21.55,
+    "problem": "probschedule-24-0.pddl",
+    "run_dir": "runs-00101-00200/00192",
+    "total_time": 21.4,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-24-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 36,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-24-1.pddl"
+    ],
+    "node": "n147",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 2.64,
+    "problem": "probschedule-24-1.pddl",
+    "run_dir": "runs-00101-00200/00193",
+    "total_time": 2.6,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-24-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 32,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-24-2.pddl"
+    ],
+    "node": "n442",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.69,
+    "problem": "probschedule-24-2.pddl",
+    "run_dir": "runs-00101-00200/00194",
+    "total_time": 0.66,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-25-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 31,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-25-0.pddl"
+    ],
+    "node": "n1359",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.72,
+    "problem": "probschedule-25-0.pddl",
+    "run_dir": "runs-00101-00200/00195",
+    "total_time": 0.68,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-25-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 33,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-25-1.pddl"
+    ],
+    "node": "n906",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 20.72,
+    "problem": "probschedule-25-1.pddl",
+    "run_dir": "runs-00101-00200/00196",
+    "total_time": 20.68,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-25-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 33,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-25-2.pddl"
+    ],
+    "node": "n962",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.75,
+    "problem": "probschedule-25-2.pddl",
+    "run_dir": "runs-00101-00200/00197",
+    "total_time": 0.72,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-26-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 37,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-26-0.pddl"
+    ],
+    "node": "n709",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 18.06,
+    "problem": "probschedule-26-0.pddl",
+    "run_dir": "runs-00101-00200/00198",
+    "total_time": 18.02,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-26-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 34,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-26-1.pddl"
+    ],
+    "node": "n953",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 2.25,
+    "problem": "probschedule-26-1.pddl",
+    "run_dir": "runs-00101-00200/00199",
+    "total_time": 2.2,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-26-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 35,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-26-2.pddl"
+    ],
+    "node": "n998",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 11.21,
+    "problem": "probschedule-26-2.pddl",
+    "run_dir": "runs-00101-00200/00200",
+    "total_time": 11.17,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-27-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 35,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-27-0.pddl"
+    ],
+    "node": "n304",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.33,
+    "problem": "probschedule-27-0.pddl",
+    "run_dir": "runs-00201-00300/00201",
+    "total_time": 1.29,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-27-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 39,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-27-1.pddl"
+    ],
+    "node": "n252",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 9.98,
+    "problem": "probschedule-27-1.pddl",
+    "run_dir": "runs-00201-00300/00202",
+    "total_time": 9.94,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-27-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 37,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-27-2.pddl"
+    ],
+    "node": "n1359",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 4.38,
+    "problem": "probschedule-27-2.pddl",
+    "run_dir": "runs-00201-00300/00203",
+    "total_time": 4.19,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-28-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 34,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-28-0.pddl"
+    ],
+    "node": "n709",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 18.23,
+    "problem": "probschedule-28-0.pddl",
+    "run_dir": "runs-00201-00300/00204",
+    "total_time": 18.2,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-28-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 38,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-28-1.pddl"
+    ],
+    "node": "n982",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.8,
+    "problem": "probschedule-28-1.pddl",
+    "run_dir": "runs-00201-00300/00205",
+    "total_time": 0.76,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-28-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 42,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-28-2.pddl"
+    ],
+    "node": "n999",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.48,
+    "problem": "probschedule-28-2.pddl",
+    "run_dir": "runs-00201-00300/00206",
+    "total_time": 1.29,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-29-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 46,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-29-0.pddl"
+    ],
+    "node": "n304",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 3.29,
+    "problem": "probschedule-29-0.pddl",
+    "run_dir": "runs-00201-00300/00207",
+    "total_time": 3.25,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-29-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 42,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-29-1.pddl"
+    ],
+    "node": "n989",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 11.79,
+    "problem": "probschedule-29-1.pddl",
+    "run_dir": "runs-00201-00300/00208",
+    "total_time": 11.76,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-29-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 37,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-29-2.pddl"
+    ],
+    "node": "n989",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.83,
+    "problem": "probschedule-29-2.pddl",
+    "run_dir": "runs-00201-00300/00209",
+    "total_time": 0.79,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-3-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 4,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-3-0.pddl"
+    ],
+    "node": "n982",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.49,
+    "problem": "probschedule-3-0.pddl",
+    "run_dir": "runs-00101-00200/00129",
+    "total_time": 0.46,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-3-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 2,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-3-1.pddl"
+    ],
+    "node": "n953",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.46,
+    "problem": "probschedule-3-1.pddl",
+    "run_dir": "runs-00101-00200/00130",
+    "total_time": 0.43,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-3-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 4,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-3-2.pddl"
+    ],
+    "node": "n703",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.19,
+    "problem": "probschedule-3-2.pddl",
+    "run_dir": "runs-00101-00200/00131",
+    "total_time": 1.14,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-30-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 43,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-30-0.pddl"
+    ],
+    "node": "n1879",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.88,
+    "problem": "probschedule-30-0.pddl",
+    "run_dir": "runs-00201-00300/00210",
+    "total_time": 0.84,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-30-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 40,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-30-1.pddl"
+    ],
+    "node": "n703",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.9,
+    "problem": "probschedule-30-1.pddl",
+    "run_dir": "runs-00201-00300/00211",
+    "total_time": 0.85,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-30-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 42,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-30-2.pddl"
+    ],
+    "node": "n982",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 24.26,
+    "problem": "probschedule-30-2.pddl",
+    "run_dir": "runs-00201-00300/00212",
+    "total_time": 24.21,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-31-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 41,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-31-0.pddl"
+    ],
+    "node": "n1794",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 16.52,
+    "problem": "probschedule-31-0.pddl",
+    "run_dir": "runs-00201-00300/00213",
+    "total_time": 16.48,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-31-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 42,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-31-1.pddl"
+    ],
+    "node": "n252",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 3.59,
+    "problem": "probschedule-31-1.pddl",
+    "run_dir": "runs-00201-00300/00214",
+    "total_time": 3.56,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-31-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 40,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-31-2.pddl"
+    ],
+    "node": "n982",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.15,
+    "problem": "probschedule-31-2.pddl",
+    "run_dir": "runs-00201-00300/00215",
+    "total_time": 1.11,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-32-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 40,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-32-0.pddl"
+    ],
+    "node": "n116",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.9,
+    "problem": "probschedule-32-0.pddl",
+    "run_dir": "runs-00201-00300/00216",
+    "total_time": 0.86,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-32-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 42,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-32-1.pddl"
+    ],
+    "node": "n953",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.78,
+    "problem": "probschedule-32-1.pddl",
+    "run_dir": "runs-00201-00300/00217",
+    "total_time": 0.75,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-32-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 41,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-32-2.pddl"
+    ],
+    "node": "n952",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.85,
+    "problem": "probschedule-32-2.pddl",
+    "run_dir": "runs-00201-00300/00218",
+    "total_time": 0.81,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-33-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 42,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-33-0.pddl"
+    ],
+    "node": "n677",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 20.82,
+    "problem": "probschedule-33-0.pddl",
+    "run_dir": "runs-00201-00300/00219",
+    "total_time": 20.78,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-33-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 45,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-33-1.pddl"
+    ],
+    "node": "n677",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 20.82,
+    "problem": "probschedule-33-1.pddl",
+    "run_dir": "runs-00201-00300/00220",
+    "total_time": 20.79,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-33-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 39,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-33-2.pddl"
+    ],
+    "node": "n252",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.75,
+    "problem": "probschedule-33-2.pddl",
+    "run_dir": "runs-00201-00300/00221",
+    "total_time": 0.71,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-34-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 42,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-34-0.pddl"
+    ],
+    "node": "n709",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.81,
+    "problem": "probschedule-34-0.pddl",
+    "run_dir": "runs-00201-00300/00222",
+    "total_time": 0.78,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-34-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 51,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-34-1.pddl"
+    ],
+    "node": "n304",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 4.25,
+    "problem": "probschedule-34-1.pddl",
+    "run_dir": "runs-00201-00300/00223",
+    "total_time": 4.21,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-34-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 50,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-34-2.pddl"
+    ],
+    "node": "n1794",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.51,
+    "problem": "probschedule-34-2.pddl",
+    "run_dir": "runs-00201-00300/00224",
+    "total_time": 1.33,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-35-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 59,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-35-0.pddl"
+    ],
+    "node": "n101",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.86,
+    "problem": "probschedule-35-0.pddl",
+    "run_dir": "runs-00201-00300/00225",
+    "total_time": 0.79,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-35-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 48,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-35-1.pddl"
+    ],
+    "node": "n1338",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 4.48,
+    "problem": "probschedule-35-1.pddl",
+    "run_dir": "runs-00201-00300/00226",
+    "total_time": 4.44,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-35-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 52,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-35-2.pddl"
+    ],
+    "node": "n687",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 4.8,
+    "problem": "probschedule-35-2.pddl",
+    "run_dir": "runs-00201-00300/00227",
+    "total_time": 4.71,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-36-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 51,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-36-0.pddl"
+    ],
+    "node": "n292",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.99,
+    "problem": "probschedule-36-0.pddl",
+    "run_dir": "runs-00201-00300/00228",
+    "total_time": 0.95,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-36-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 45,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-36-1.pddl"
+    ],
+    "node": "n370",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 4.66,
+    "problem": "probschedule-36-1.pddl",
+    "run_dir": "runs-00201-00300/00229",
+    "total_time": 4.62,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-36-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 51,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-36-2.pddl"
+    ],
+    "node": "n771",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 6.43,
+    "problem": "probschedule-36-2.pddl",
+    "run_dir": "runs-00201-00300/00230",
+    "total_time": 6.39,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-37-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 52,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-37-0.pddl"
+    ],
+    "node": "n434",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 8.33,
+    "problem": "probschedule-37-0.pddl",
+    "run_dir": "runs-00201-00300/00231",
+    "total_time": 8.22,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-37-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 50,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-37-1.pddl"
+    ],
+    "node": "n442",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 18.19,
+    "problem": "probschedule-37-1.pddl",
+    "run_dir": "runs-00201-00300/00232",
+    "total_time": 18.15,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-37-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 58,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-37-2.pddl"
+    ],
+    "node": "n1569",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 4.67,
+    "problem": "probschedule-37-2.pddl",
+    "run_dir": "runs-00201-00300/00233",
+    "total_time": 4.63,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-38-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 58,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-38-0.pddl"
+    ],
+    "node": "n108",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 7.21,
+    "problem": "probschedule-38-0.pddl",
+    "run_dir": "runs-00201-00300/00234",
+    "total_time": 7.17,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-38-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 52,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-38-1.pddl"
+    ],
+    "node": "n999",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.48,
+    "problem": "probschedule-38-1.pddl",
+    "run_dir": "runs-00201-00300/00235",
+    "total_time": 1.43,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-38-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 64,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-38-2.pddl"
+    ],
+    "node": "n687",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.9,
+    "problem": "probschedule-38-2.pddl",
+    "run_dir": "runs-00201-00300/00236",
+    "total_time": 0.86,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-39-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 52,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-39-0.pddl"
+    ],
+    "node": "n982",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 4.73,
+    "problem": "probschedule-39-0.pddl",
+    "run_dir": "runs-00201-00300/00237",
+    "total_time": 4.7,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-39-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 48,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-39-1.pddl"
+    ],
+    "node": "n709",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.89,
+    "problem": "probschedule-39-1.pddl",
+    "run_dir": "runs-00201-00300/00238",
+    "total_time": 0.85,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-39-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 52,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-39-2.pddl"
+    ],
+    "node": "n982",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.88,
+    "problem": "probschedule-39-2.pddl",
+    "run_dir": "runs-00201-00300/00239",
+    "total_time": 0.84,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-4-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 5,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-4-0.pddl"
+    ],
+    "node": "n953",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.55,
+    "problem": "probschedule-4-0.pddl",
+    "run_dir": "runs-00101-00200/00132",
+    "total_time": 0.52,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-4-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 6,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-4-1.pddl"
+    ],
+    "node": "n1523",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 4.2,
+    "problem": "probschedule-4-1.pddl",
+    "run_dir": "runs-00101-00200/00133",
+    "total_time": 3.91,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-4-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 5,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-4-2.pddl"
+    ],
+    "node": "n703",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.48,
+    "problem": "probschedule-4-2.pddl",
+    "run_dir": "runs-00101-00200/00134",
+    "total_time": 0.45,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-40-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 47,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-40-0.pddl"
+    ],
+    "node": "n962",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.96,
+    "problem": "probschedule-40-0.pddl",
+    "run_dir": "runs-00201-00300/00240",
+    "total_time": 0.92,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-40-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 58,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-40-1.pddl"
+    ],
+    "node": "n703",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.03,
+    "problem": "probschedule-40-1.pddl",
+    "run_dir": "runs-00201-00300/00241",
+    "total_time": 0.98,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-40-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 53,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-40-2.pddl"
+    ],
+    "node": "n252",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 11.03,
+    "problem": "probschedule-40-2.pddl",
+    "run_dir": "runs-00201-00300/00242",
+    "total_time": 10.99,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-41-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 49,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-41-0.pddl"
+    ],
+    "node": "n953",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.47,
+    "problem": "probschedule-41-0.pddl",
+    "run_dir": "runs-00201-00300/00243",
+    "total_time": 1.38,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-41-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 57,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-41-1.pddl"
+    ],
+    "node": "n906",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.06,
+    "problem": "probschedule-41-1.pddl",
+    "run_dir": "runs-00201-00300/00244",
+    "total_time": 1.02,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-41-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 49,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-41-2.pddl"
+    ],
+    "node": "n982",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 24.33,
+    "problem": "probschedule-41-2.pddl",
+    "run_dir": "runs-00201-00300/00245",
+    "total_time": 24.28,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-42-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 56,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-42-0.pddl"
+    ],
+    "node": "n953",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 6.02,
+    "problem": "probschedule-42-0.pddl",
+    "run_dir": "runs-00201-00300/00246",
+    "total_time": 5.98,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-42-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 57,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-42-1.pddl"
+    ],
+    "node": "n252",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 11.73,
+    "problem": "probschedule-42-1.pddl",
+    "run_dir": "runs-00201-00300/00247",
+    "total_time": 11.46,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-42-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 55,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-42-2.pddl"
+    ],
+    "node": "n1523",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 4.27,
+    "problem": "probschedule-42-2.pddl",
+    "run_dir": "runs-00201-00300/00248",
+    "total_time": 4.22,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-43-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 58,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-43-0.pddl"
+    ],
+    "node": "n1359",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.96,
+    "problem": "probschedule-43-0.pddl",
+    "run_dir": "runs-00201-00300/00249",
+    "total_time": 0.92,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-43-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 59,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-43-1.pddl"
+    ],
+    "node": "n982",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 24.37,
+    "problem": "probschedule-43-1.pddl",
+    "run_dir": "runs-00201-00300/00250",
+    "total_time": 24.33,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-43-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 62,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-43-2.pddl"
+    ],
+    "node": "n252",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 16.9,
+    "problem": "probschedule-43-2.pddl",
+    "run_dir": "runs-00201-00300/00251",
+    "total_time": 16.85,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-44-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 61,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-44-0.pddl"
+    ],
+    "node": "n703",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.09,
+    "problem": "probschedule-44-0.pddl",
+    "run_dir": "runs-00201-00300/00252",
+    "total_time": 1.05,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-44-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 56,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-44-1.pddl"
+    ],
+    "node": "n953",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.06,
+    "problem": "probschedule-44-1.pddl",
+    "run_dir": "runs-00201-00300/00253",
+    "total_time": 0.94,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-44-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 61,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-44-2.pddl"
+    ],
+    "node": "n433",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.14,
+    "problem": "probschedule-44-2.pddl",
+    "run_dir": "runs-00201-00300/00254",
+    "total_time": 1.1,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-45-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 65,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-45-0.pddl"
+    ],
+    "node": "n1359",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 2.56,
+    "problem": "probschedule-45-0.pddl",
+    "run_dir": "runs-00201-00300/00255",
+    "total_time": 2.51,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-45-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 55,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-45-1.pddl"
+    ],
+    "node": "n252",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.92,
+    "problem": "probschedule-45-1.pddl",
+    "run_dir": "runs-00201-00300/00256",
+    "total_time": 0.87,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-45-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 57,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-45-2.pddl"
+    ],
+    "node": "n982",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.05,
+    "problem": "probschedule-45-2.pddl",
+    "run_dir": "runs-00201-00300/00257",
+    "total_time": 1.01,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-46-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 54,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-46-0.pddl"
+    ],
+    "node": "n304",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.89,
+    "problem": "probschedule-46-0.pddl",
+    "run_dir": "runs-00201-00300/00258",
+    "total_time": 0.85,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-46-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 64,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-46-1.pddl"
+    ],
+    "node": "n1837",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.08,
+    "problem": "probschedule-46-1.pddl",
+    "run_dir": "runs-00201-00300/00259",
+    "total_time": 1.04,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-46-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 70,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-46-2.pddl"
+    ],
+    "node": "n703",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 12.32,
+    "problem": "probschedule-46-2.pddl",
+    "run_dir": "runs-00201-00300/00260",
+    "total_time": 12.28,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-47-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 58,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-47-0.pddl"
+    ],
+    "node": "n1933",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.0,
+    "problem": "probschedule-47-0.pddl",
+    "run_dir": "runs-00201-00300/00261",
+    "total_time": 0.96,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-47-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 57,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-47-1.pddl"
+    ],
+    "node": "n304",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.94,
+    "problem": "probschedule-47-1.pddl",
+    "run_dir": "runs-00201-00300/00262",
+    "total_time": 0.89,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-47-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 58,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-47-2.pddl"
+    ],
+    "node": "n1338",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.99,
+    "problem": "probschedule-47-2.pddl",
+    "run_dir": "runs-00201-00300/00263",
+    "total_time": 0.95,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-48-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 62,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-48-0.pddl"
+    ],
+    "node": "n953",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.0,
+    "problem": "probschedule-48-0.pddl",
+    "run_dir": "runs-00201-00300/00264",
+    "total_time": 0.96,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-48-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 60,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-48-1.pddl"
+    ],
+    "node": "n101",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 2.55,
+    "problem": "probschedule-48-1.pddl",
+    "run_dir": "runs-00201-00300/00265",
+    "total_time": 2.38,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-48-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 65,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-48-2.pddl"
+    ],
+    "node": "n989",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 11.92,
+    "problem": "probschedule-48-2.pddl",
+    "run_dir": "runs-00201-00300/00266",
+    "total_time": 11.88,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-49-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 61,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-49-0.pddl"
+    ],
+    "node": "n292",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.07,
+    "problem": "probschedule-49-0.pddl",
+    "run_dir": "runs-00201-00300/00267",
+    "total_time": 1.03,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-49-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 64,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-49-1.pddl"
+    ],
+    "node": "n677",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.05,
+    "problem": "probschedule-49-1.pddl",
+    "run_dir": "runs-00201-00300/00268",
+    "total_time": 1.01,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-49-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 66,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-49-2.pddl"
+    ],
+    "node": "n101",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 2.6,
+    "problem": "probschedule-49-2.pddl",
+    "run_dir": "runs-00201-00300/00269",
+    "total_time": 2.55,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-5-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 5,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-5-0.pddl"
+    ],
+    "node": "n292",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.58,
+    "problem": "probschedule-5-0.pddl",
+    "run_dir": "runs-00101-00200/00135",
+    "total_time": 0.55,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-5-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 6,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-5-1.pddl"
+    ],
+    "node": "n709",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 17.91,
+    "problem": "probschedule-5-1.pddl",
+    "run_dir": "runs-00101-00200/00136",
+    "total_time": 17.88,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-5-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 7,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-5-2.pddl"
+    ],
+    "node": "n1338",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.94,
+    "problem": "probschedule-5-2.pddl",
+    "run_dir": "runs-00101-00200/00137",
+    "total_time": 0.9,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-50-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 65,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-50-0.pddl"
+    ],
+    "node": "n1359",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.05,
+    "problem": "probschedule-50-0.pddl",
+    "run_dir": "runs-00201-00300/00270",
+    "total_time": 1.0,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-50-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 69,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-50-1.pddl"
+    ],
+    "node": "n982",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 7.91,
+    "problem": "probschedule-50-1.pddl",
+    "run_dir": "runs-00201-00300/00271",
+    "total_time": 7.87,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-50-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 72,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-50-2.pddl"
+    ],
+    "node": "n252",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.04,
+    "problem": "probschedule-50-2.pddl",
+    "run_dir": "runs-00201-00300/00272",
+    "total_time": 1.0,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-51-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 63,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-51-0.pddl"
+    ],
+    "node": "n252",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.99,
+    "problem": "probschedule-51-0.pddl",
+    "run_dir": "runs-00201-00300/00273",
+    "total_time": 0.94,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-51-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 68,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-51-1.pddl"
+    ],
+    "node": "n677",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.15,
+    "problem": "probschedule-51-1.pddl",
+    "run_dir": "runs-00201-00300/00274",
+    "total_time": 1.11,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-51-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 64,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-51-2.pddl"
+    ],
+    "node": "n982",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 11.66,
+    "problem": "probschedule-51-2.pddl",
+    "run_dir": "runs-00201-00300/00275",
+    "total_time": 11.62,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-6-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 7,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-6-0.pddl"
+    ],
+    "node": "n952",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.56,
+    "problem": "probschedule-6-0.pddl",
+    "run_dir": "runs-00101-00200/00138",
+    "total_time": 0.53,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-6-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 9,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-6-1.pddl"
+    ],
+    "node": "n1050",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 8.79,
+    "problem": "probschedule-6-1.pddl",
+    "run_dir": "runs-00101-00200/00139",
+    "total_time": 8.76,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-6-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 8,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-6-2.pddl"
+    ],
+    "node": "n1837",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 20.06,
+    "problem": "probschedule-6-2.pddl",
+    "run_dir": "runs-00101-00200/00140",
+    "total_time": 15.84,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-7-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 7,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-7-0.pddl"
+    ],
+    "node": "n677",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.56,
+    "problem": "probschedule-7-0.pddl",
+    "run_dir": "runs-00101-00200/00141",
+    "total_time": 0.53,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-7-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 9,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-7-1.pddl"
+    ],
+    "node": "n252",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.54,
+    "problem": "probschedule-7-1.pddl",
+    "run_dir": "runs-00101-00200/00142",
+    "total_time": 0.51,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-7-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 9,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-7-2.pddl"
+    ],
+    "node": "n1523",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 3.3,
+    "problem": "probschedule-7-2.pddl",
+    "run_dir": "runs-00101-00200/00143",
+    "total_time": 2.91,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-8-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 10,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-8-0.pddl"
+    ],
+    "node": "n304",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.48,
+    "problem": "probschedule-8-0.pddl",
+    "run_dir": "runs-00101-00200/00144",
+    "total_time": 0.45,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-8-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 14,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-8-1.pddl"
+    ],
+    "node": "n982",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 11.28,
+    "problem": "probschedule-8-1.pddl",
+    "run_dir": "runs-00101-00200/00145",
+    "total_time": 11.19,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-8-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 13,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-8-2.pddl"
+    ],
+    "node": "n989",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 10.91,
+    "problem": "probschedule-8-2.pddl",
+    "run_dir": "runs-00101-00200/00146",
+    "total_time": 10.85,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-9-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 12,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-9-0.pddl"
+    ],
+    "node": "n252",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 9.4,
+    "problem": "probschedule-9-0.pddl",
+    "run_dir": "runs-00101-00200/00147",
+    "total_time": 9.04,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-9-1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 10,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-9-1.pddl"
+    ],
+    "node": "n982",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.64,
+    "problem": "probschedule-9-1.pddl",
+    "run_dir": "runs-00101-00200/00148",
+    "total_time": 0.61,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-schedule-probschedule-9-2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 11,
+    "coverage": 1,
+    "domain": "schedule",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "schedule",
+      "probschedule-9-2.pddl"
+    ],
+    "node": "n292",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.59,
+    "problem": "probschedule-9-2.pddl",
+    "run_dir": "runs-00101-00200/00149",
+    "total_time": 0.56,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-tpp-p01.pddl": {
+    "algorithm": "lama_first",
+    "cost": 5,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "tpp",
+      "p01.pddl"
+    ],
+    "node": "n252",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.66,
+    "problem": "p01.pddl",
+    "run_dir": "runs-00201-00300/00276",
+    "total_time": 0.63,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-tpp-p02.pddl": {
+    "algorithm": "lama_first",
+    "cost": 8,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "tpp",
+      "p02.pddl"
+    ],
+    "node": "n773",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 21.95,
+    "problem": "p02.pddl",
+    "run_dir": "runs-00201-00300/00277",
+    "total_time": 21.91,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-tpp-p03.pddl": {
+    "algorithm": "lama_first",
+    "cost": 11,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "tpp",
+      "p03.pddl"
+    ],
+    "node": "n1569",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 16.26,
+    "problem": "p03.pddl",
+    "run_dir": "runs-00201-00300/00278",
+    "total_time": 16.24,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-tpp-p04.pddl": {
+    "algorithm": "lama_first",
+    "cost": 14,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "tpp",
+      "p04.pddl"
+    ],
+    "node": "n677",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.47,
+    "problem": "p04.pddl",
+    "run_dir": "runs-00201-00300/00279",
+    "total_time": 0.44,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-tpp-p05.pddl": {
+    "algorithm": "lama_first",
+    "cost": 19,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "tpp",
+      "p05.pddl"
+    ],
+    "node": "n1879",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.47,
+    "problem": "p05.pddl",
+    "run_dir": "runs-00201-00300/00280",
+    "total_time": 0.45,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-tpp-p06.pddl": {
+    "algorithm": "lama_first",
+    "cost": 29,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "tpp",
+      "p06.pddl"
+    ],
+    "node": "n952",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.53,
+    "problem": "p06.pddl",
+    "run_dir": "runs-00201-00300/00281",
+    "total_time": 0.51,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-tpp-p07.pddl": {
+    "algorithm": "lama_first",
+    "cost": 46,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "tpp",
+      "p07.pddl"
+    ],
+    "node": "n773",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 21.97,
+    "problem": "p07.pddl",
+    "run_dir": "runs-00201-00300/00282",
+    "total_time": 21.94,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-tpp-p08.pddl": {
+    "algorithm": "lama_first",
+    "cost": 56,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "tpp",
+      "p08.pddl"
+    ],
+    "node": "n108",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.53,
+    "problem": "p08.pddl",
+    "run_dir": "runs-00201-00300/00283",
+    "total_time": 0.5,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-tpp-p09.pddl": {
+    "algorithm": "lama_first",
+    "cost": 12,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "tpp",
+      "p09.pddl"
+    ],
+    "node": "n1837",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 15.79,
+    "problem": "p09.pddl",
+    "run_dir": "runs-00201-00300/00284",
+    "total_time": 15.76,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-tpp-p10.pddl": {
+    "algorithm": "lama_first",
+    "cost": 74,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "tpp",
+      "p10.pddl"
+    ],
+    "node": "n433",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.6,
+    "problem": "p10.pddl",
+    "run_dir": "runs-00201-00300/00285",
+    "total_time": 0.57,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-tpp-p11.pddl": {
+    "algorithm": "lama_first",
+    "cost": 103,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "tpp",
+      "p11.pddl"
+    ],
+    "node": "n677",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.6,
+    "problem": "p11.pddl",
+    "run_dir": "runs-00201-00300/00286",
+    "total_time": 0.56,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-tpp-p12.pddl": {
+    "algorithm": "lama_first",
+    "cost": 91,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "tpp",
+      "p12.pddl"
+    ],
+    "node": "n982",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 11.15,
+    "problem": "p12.pddl",
+    "run_dir": "runs-00201-00300/00287",
+    "total_time": 11.0,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-tpp-p13.pddl": {
+    "algorithm": "lama_first",
+    "cost": 59,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "tpp",
+      "p13.pddl"
+    ],
+    "node": "n304",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.64,
+    "problem": "p13.pddl",
+    "run_dir": "runs-00201-00300/00288",
+    "total_time": 0.61,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-tpp-p14.pddl": {
+    "algorithm": "lama_first",
+    "cost": 89,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "tpp",
+      "p14.pddl"
+    ],
+    "node": "n677",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.02,
+    "problem": "p14.pddl",
+    "run_dir": "runs-00201-00300/00289",
+    "total_time": 0.99,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-tpp-p15.pddl": {
+    "algorithm": "lama_first",
+    "cost": 105,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "tpp",
+      "p15.pddl"
+    ],
+    "node": "n1359",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 9.57,
+    "problem": "p15.pddl",
+    "run_dir": "runs-00201-00300/00290",
+    "total_time": 9.41,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-tpp-p16.pddl": {
+    "algorithm": "lama_first",
+    "cost": 128,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "tpp",
+      "p16.pddl"
+    ],
+    "node": "n703",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.17,
+    "problem": "p16.pddl",
+    "run_dir": "runs-00201-00300/00291",
+    "total_time": 1.14,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-tpp-p17.pddl": {
+    "algorithm": "lama_first",
+    "cost": 121,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "tpp",
+      "p17.pddl"
+    ],
+    "node": "n952",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 21.5,
+    "problem": "p17.pddl",
+    "run_dir": "runs-00201-00300/00292",
+    "total_time": 21.46,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-tpp-p18.pddl": {
+    "algorithm": "lama_first",
+    "cost": 106,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "tpp",
+      "p18.pddl"
+    ],
+    "node": "n307",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 18.76,
+    "problem": "p18.pddl",
+    "run_dir": "runs-00201-00300/00293",
+    "total_time": 18.73,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-tpp-p19.pddl": {
+    "algorithm": "lama_first",
+    "cost": 163,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "tpp",
+      "p19.pddl"
+    ],
+    "node": "n433",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.92,
+    "problem": "p19.pddl",
+    "run_dir": "runs-00201-00300/00294",
+    "total_time": 1.88,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-tpp-p20.pddl": {
+    "algorithm": "lama_first",
+    "cost": 208,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "tpp",
+      "p20.pddl"
+    ],
+    "node": "n252",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.88,
+    "problem": "p20.pddl",
+    "run_dir": "runs-00201-00300/00295",
+    "total_time": 1.83,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-tpp-p21.pddl": {
+    "algorithm": "lama_first",
+    "cost": 195,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "tpp",
+      "p21.pddl"
+    ],
+    "node": "n703",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 2.4,
+    "problem": "p21.pddl",
+    "run_dir": "runs-00201-00300/00296",
+    "total_time": 2.36,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-tpp-p22.pddl": {
+    "algorithm": "lama_first",
+    "cost": 136,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "tpp",
+      "p22.pddl"
+    ],
+    "node": "n952",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 2.91,
+    "problem": "p22.pddl",
+    "run_dir": "runs-00201-00300/00297",
+    "total_time": 2.87,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-tpp-p23.pddl": {
+    "algorithm": "lama_first",
+    "cost": 171,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "tpp",
+      "p23.pddl"
+    ],
+    "node": "n121",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 3.39,
+    "problem": "p23.pddl",
+    "run_dir": "runs-00201-00300/00298",
+    "total_time": 3.35,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-tpp-p24.pddl": {
+    "algorithm": "lama_first",
+    "cost": 173,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "tpp",
+      "p24.pddl"
+    ],
+    "node": "n703",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 3.72,
+    "problem": "p24.pddl",
+    "run_dir": "runs-00201-00300/00299",
+    "total_time": 3.69,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-tpp-p25.pddl": {
+    "algorithm": "lama_first",
+    "cost": 191,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "tpp",
+      "p25.pddl"
+    ],
+    "node": "n962",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 4.37,
+    "problem": "p25.pddl",
+    "run_dir": "runs-00201-00300/00300",
+    "total_time": 4.34,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-tpp-p26.pddl": {
+    "algorithm": "lama_first",
+    "cost": 198,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "tpp",
+      "p26.pddl"
+    ],
+    "node": "n953",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 6.59,
+    "problem": "p26.pddl",
+    "run_dir": "runs-00301-00400/00301",
+    "total_time": 6.55,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-tpp-p27.pddl": {
+    "algorithm": "lama_first",
+    "cost": 220,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "tpp",
+      "p27.pddl"
+    ],
+    "node": "n703",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 6.74,
+    "problem": "p27.pddl",
+    "run_dir": "runs-00301-00400/00302",
+    "total_time": 6.7,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-tpp-p28.pddl": {
+    "algorithm": "lama_first",
+    "cost": 238,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "tpp",
+      "p28.pddl"
+    ],
+    "node": "n1879",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 9.7,
+    "problem": "p28.pddl",
+    "run_dir": "runs-00301-00400/00303",
+    "total_time": 9.65,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-tpp-p29.pddl": {
+    "algorithm": "lama_first",
+    "cost": 299,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "tpp",
+      "p29.pddl"
+    ],
+    "node": "n982",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 11.33,
+    "problem": "p29.pddl",
+    "run_dir": "runs-00301-00400/00304",
+    "total_time": 11.28,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "lama_first-tpp-p30.pddl": {
+    "algorithm": "lama_first",
+    "cost": 302,
+    "coverage": 1,
+    "domain": "tpp",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "tpp",
+      "p30.pddl"
+    ],
+    "node": "n953",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 11.18,
+    "problem": "p30.pddl",
+    "run_dir": "runs-00301-00400/00305",
+    "total_time": 11.15,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  }
+}
