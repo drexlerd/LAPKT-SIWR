@@ -63,18 +63,19 @@ def fetch_algorithm(exp, expname, algo, new_algo=None):
         return False
 
     exp.add_fetcher(
-        f"data/{expname}-eval",
+        f"data_jair/{expname}-eval",
         filter=rename_and_filter,
-        name=f"fetch-{new_algo}-from-{expname}",
+        name=f"fetch-{algo}_to_{new_algo}-from-{expname}",
         merge=True,
     )
 
-fetch_algorithm(exp, "experiment-dual-bfws", "dual_bfws", "dual_bfws")
-fetch_algorithm(exp, "experiment-lama-first", "lama_first", "lama_first")
-fetch_algorithm(exp, "experiment-hsiwr", "hsiwr_1", "hsiwr_1")
-fetch_algorithm(exp, "experiment-hsiwr", "hsiwr_2", "hsiwr_2")
-fetch_algorithm(exp, "experiment-siwr", "siwr_0", "siwr_0")
+fetch_algorithm(exp, "experiment-siw-downward", "siw", "siw")
+fetch_algorithm(exp, "experiment-siwr-downward", "siwr_0", "siwr")
+fetch_algorithm(exp, "experiment-siwr-downward", "siwr_1", "siwr")
+fetch_algorithm(exp, "experiment-siwr-downward", "siwr_2", "siwr")
+fetch_algorithm(exp, "experiment-dual-bfws-downward", "dual_bfws", "dual_bfws")
+fetch_algorithm(exp, "experiment-lama-first-downward", "lama_first", "lama_first")
 
 report = os.path.join(exp.eval_dir, f"{exp.name}.html")
-exp.add_report(BaseReport(attributes=ATTRIBUTES, filter_algorithm=["siwr_0", "hsiwr_1", "hsiwr_2", "lama_first", "dual_bfws"]), outfile=report)
+exp.add_report(BaseReport(attributes=ATTRIBUTES, filter_algorithm=["siw", "siwr", "lama_first", "dual_bfws"]), outfile=report)
 exp.run_steps()
