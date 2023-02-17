@@ -29,7 +29,7 @@ scons
 ## How to run the SIW_R Planner
 ```console
 cd planner/LAPKT-SIWR/planners/siwr
-./siwr <domain_file> <instance_file> <sketch_file> <plan_file>
+./siwr.py <domain_file> <instance_file> <sketch_file> <plan_file>
 ```
 
 ## How to run the Experiments
