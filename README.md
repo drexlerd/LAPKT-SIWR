@@ -9,7 +9,7 @@ git clone --recursively <link_to_repo>
 ```
 2. Create python3 virtual environment
 ```console
-python3 -m venv --prompt hffpi .venv
+python3 -m venv --prompt siwr .venv
 ```
 3. Activate virtual environment
 ```console
