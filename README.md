@@ -23,7 +23,7 @@ pip install -r requirements.txt
 6. Install SIWR
 ```console
 cd planner/LAPKT-SIWR/planners/siwr
-scons
+./build.py
 ```
 
 ## How to run the SIW_R Planner
@@ -34,7 +34,14 @@ cd planner/LAPKT-SIWR/planners/siwr
 
 ## How to run the Experiments
 
+1. Build the singularities
+```console
+cd planners
+sudo singularity build siwr.img siwr.sif
+```
+
+2. Run the experiments
 ```console
 cd experiments
-./experiment-hffpi.py --all
+./experiment-siwr.py --all
 ```
