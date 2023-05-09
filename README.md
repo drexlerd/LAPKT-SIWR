@@ -5,7 +5,7 @@ LAPKT-SIWR is an implementation of SIW_R into the LAPKT planning system.
 ## Installation
 1. Clone recursively
 ```console
-git clone --recursively <link_to_repo>
+git clone --recursive <link_to_repo>
 ```
 2. Create python3 virtual environment
 ```console

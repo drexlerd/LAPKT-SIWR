@@ -1,3 +1,0 @@
-[submodule "planners/LAPKT-SIWR/libs/dlplan"]
-	path = planners/LAPKT-SIWR/libs/dlplan
-	url = git@github.com:rleap-project/dlplan.git
