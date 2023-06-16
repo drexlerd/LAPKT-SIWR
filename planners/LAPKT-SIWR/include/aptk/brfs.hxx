@@ -270,7 +270,6 @@ public:
 	virtual Search_Node*   process(  Search_Node *head ) {
 		typedef typename Search_Model::Action_Iterator Iterator;
 		Iterator it( this->problem() );
-
 		int a = it.start( *(head->state()) );
 		while ( a != no_op ) {
 			State *succ =  m_problem.next( *(head->state()), a ) ;
