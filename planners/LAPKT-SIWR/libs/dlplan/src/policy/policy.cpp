@@ -8,43 +8,34 @@
 
 #include "../../include/dlplan/policy.h"
 
+#include <iostream>
+
 
 namespace dlplan::policy {
 
 
-BaseCondition::BaseCondition(std::shared_ptr<const core::BaseElement> base_feature)
-    : m_base_feature(base_feature) { }
+BaseCondition::BaseCondition() { }
 
 BaseCondition::~BaseCondition() = default;
 
-void BaseCondition::set_index(int index) {
+void BaseCondition::set_index(ConditionIndex index) {
     m_index = index;
 }
 
-std::shared_ptr<const core::BaseElement> BaseCondition::get_base_feature() const {
-    return m_base_feature;
-}
-
-
-int BaseCondition::get_index() const {
+ConditionIndex BaseCondition::get_index() const {
     return m_index;
 }
 
 
-BaseEffect::BaseEffect(std::shared_ptr<const core::BaseElement> base_feature)
-    : m_base_feature(base_feature) { }
+BaseEffect::BaseEffect() { }
 
 BaseEffect::~BaseEffect() = default;
 
-void BaseEffect::set_index(int index) {
+void BaseEffect::set_index(EffectIndex index) {
     m_index = index;
 }
 
-std::shared_ptr<const core::BaseElement> BaseEffect::get_base_feature() const {
-    return m_base_feature;
-}
-
-int BaseEffect::get_index() const {
+EffectIndex BaseEffect::get_index() const {
     return m_index;
 }
 

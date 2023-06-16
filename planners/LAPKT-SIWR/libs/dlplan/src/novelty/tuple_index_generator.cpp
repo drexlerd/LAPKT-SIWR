@@ -1,152 +1,118 @@
-#include "../../include/dlplan/novelty.h"
-#include "../utils/math.h"
+#include "tuple_index_generator.h"
 
-#include <cassert>
-#include <iostream>
+#include "../utils/logging.h"
 
 
 namespace dlplan::novelty {
 
-// https://stackoverflow.com/questions/127704/algorithm-to-return-all-combinations-of-k-elements-from-n
-template <typename Iterator>
-static bool next_combination(const Iterator first, Iterator k, const Iterator last)
-{
-    /* Credits: Mark Nelson http://marknelson.us */
-    if ((first == last) || (first == k) || (last == k))
-        return false;
-    Iterator i1 = first;
-    Iterator i2 = last;
-    ++i1;
-    if (last == i1)
-        return false;
-    i1 = last;
-    --i1;
-    i1 = k;
-    --i2;
-    while (first != i1)
-    {
-        if (*--i1 < *i2)
-        {
-            Iterator j = k;
-            while (!(*i1 < *j)) ++j;
-            std::iter_swap(i1,j);
-            ++i1;
+std::array<std::vector<int>, 2> compute_geq_mappings(
+    const AtomIndices& vec_1,
+    const AtomIndices& vec_2) {
+    std::vector<int> geq_1(vec_1.size(), std::numeric_limits<int>::max());
+    std::vector<int> geq_2(vec_2.size(), std::numeric_limits<int>::max());
+    int j = 0;
+    int i = 0;
+    while (j < static_cast<int>(geq_1.size()) && i < static_cast<int>(geq_2.size())) {
+        if (vec_1[j] < vec_2[i]) {
+            geq_1[j] = i;
             ++j;
-            i2 = k;
-            std::rotate(i1,j,last);
-            while (last != j)
-            {
-                ++j;
-                ++i2;
-            }
-            std::rotate(k,i2,last);
-            return true;
+        } else if (vec_1[j] > vec_2[i]) {
+            geq_2[i] = j;
+            ++i;
+        } else {
+            geq_2[i] = j;
+            geq_1[j] = i;
+            ++j;
+            ++i;
         }
     }
-    std::rotate(first,k,last);
-    return false;
-}
-
-static AtomIndices pad_and_sort_atom_indices(const AtomIndices& atom_indices, int width, int dummy_atom_index) {
-    AtomIndices result(std::max(width, static_cast<int>(atom_indices.size())), dummy_atom_index);
-    std::copy(atom_indices.begin(), atom_indices.end(), result.begin());
-    std::sort(result.begin(), result.end());
-    return result;
+    return {geq_1, geq_2};
 }
 
 
-TupleIndexGenerator::tuple_index_iterator::tuple_index_iterator(
-    std::shared_ptr<const NoveltyBase> novelty_base,
-    const AtomIndices& atom_indices,
-    bool end) :
-    m_novelty_base(novelty_base),
-    m_atom_indices(pad_and_sort_atom_indices(
-        atom_indices,
-        novelty_base->get_max_tuple_size(),
-        novelty_base->get_num_atoms())),  // index of dummy atom
-    m_width(novelty_base->get_max_tuple_size()),
-    m_count(end ? utils::binomial_coefficient(
-        std::max(novelty_base->get_max_tuple_size(), static_cast<int>(atom_indices.size())),
-        novelty_base->get_max_tuple_size()) : -1),
-    m_tuple_atom_indices(novelty_base->get_max_tuple_size()) {
-    assert(atom_indices.size() > 0);
-    assert(static_cast<int>(m_atom_indices.size()) >= novelty_base->get_max_tuple_size());
-    assert(std::is_sorted(m_atom_indices.begin(), m_atom_indices.end()));
-    if (!end) seek_next();
+template<>
+void for_each_tuple_index<1>(
+    const NoveltyBase &novelty_base,
+    AtomIndices atom_indices,
+    const std::function<bool(TupleIndex)>& callback) {
+    int place_holder = novelty_base.get_num_atoms();
+    atom_indices.push_back(place_holder);
+    for (int atom_index : atom_indices) {
+        bool finish = callback(atom_index);
+        if (finish) return;
+    }
 }
 
-TupleIndexGenerator::tuple_index_iterator::tuple_index_iterator(const TupleIndexGenerator::tuple_index_iterator& other) = default;
-
-TupleIndexGenerator::tuple_index_iterator&
-TupleIndexGenerator::tuple_index_iterator::operator=(const TupleIndexGenerator::tuple_index_iterator& other) = default;
-
-TupleIndexGenerator::tuple_index_iterator::tuple_index_iterator(TupleIndexGenerator::tuple_index_iterator&& other) = default;
-
-TupleIndexGenerator::tuple_index_iterator&
-TupleIndexGenerator::tuple_index_iterator::operator=(TupleIndexGenerator::tuple_index_iterator&& other) = default;
-
-TupleIndexGenerator::tuple_index_iterator::~tuple_index_iterator() = default;
-
-bool
-TupleIndexGenerator::tuple_index_iterator::operator!=(
-    const tuple_index_iterator& other) const {
-    return !(*this == other);
+template<>
+void for_each_tuple_index<2>(
+    const NoveltyBase &novelty_base,
+    AtomIndices atom_indices,
+    const std::function<bool(TupleIndex)>& callback) {
+    const std::vector<int>& factors = novelty_base.get_factors();
+    int place_holder = novelty_base.get_num_atoms();
+    atom_indices.push_back(place_holder);
+    int num_atoms = static_cast<int>(atom_indices.size());
+    for (int i0 = 0; i0 < num_atoms; ++i0) {
+        int i0_tuple_index = factors[0] * atom_indices[i0];
+        for (int i1 = (i0 < num_atoms - 1) ? i0 + 1 : i0; i1 < num_atoms; ++i1) {
+            TupleIndex tuple_index = i0_tuple_index + factors[1] * atom_indices[i1];
+            bool finish = callback(tuple_index);
+            if (finish) return;
+        }
+    }
 }
 
-bool
-TupleIndexGenerator::tuple_index_iterator::operator==(
-    const tuple_index_iterator& other) const {
-    return m_count == other.m_count;
+
+template<>
+void for_each_tuple_index<1>(
+    const NoveltyBase &novelty_base,
+    AtomIndices,
+    AtomIndices add_atom_indices,
+    const std::function<bool(TupleIndex)>& callback) {
+    assert(novelty_base.get_arity() == 1);
+    for (int atom_index : add_atom_indices) {
+        bool finish = callback(atom_index);
+        if (finish) return;
+    }
 }
 
-TupleIndex
-TupleIndexGenerator::tuple_index_iterator::operator*() const {
-    return m_tuple_index;
-}
 
-TupleIndexGenerator::tuple_index_iterator
-TupleIndexGenerator::tuple_index_iterator::operator++(int) {
-    TupleIndexGenerator::tuple_index_iterator prev = *this;
-    seek_next();
-    return prev;
-}
-
-TupleIndexGenerator::tuple_index_iterator&
-TupleIndexGenerator::tuple_index_iterator::operator++() {
-    seek_next();
-    return *this;
-}
-
-void TupleIndexGenerator::tuple_index_iterator::seek_next() {
-    ++m_count;
-    next_combination(m_atom_indices.begin(), m_atom_indices.begin() + m_width, m_atom_indices.end());
-    std::copy(m_atom_indices.begin(), m_atom_indices.begin() + m_width, m_tuple_atom_indices.begin());
-    m_tuple_index = m_novelty_base->atom_tuple_to_tuple_index(m_tuple_atom_indices);
-}
-
-TupleIndexGenerator::TupleIndexGenerator(
-    std::shared_ptr<const NoveltyBase> novelty_base,
-    const AtomIndices& atom_indices)
-    : m_novelty_base(novelty_base), m_atom_indices(atom_indices) { }
-
-TupleIndexGenerator::TupleIndexGenerator(const TupleIndexGenerator& other) = default;
-
-TupleIndexGenerator& TupleIndexGenerator::operator=(const TupleIndexGenerator& other) = default;
-
-TupleIndexGenerator::TupleIndexGenerator(TupleIndexGenerator&& other) = default;
-
-TupleIndexGenerator& TupleIndexGenerator::operator=(TupleIndexGenerator&& other) = default;
-
-TupleIndexGenerator::~TupleIndexGenerator() = default;
-
-TupleIndexGenerator::tuple_index_iterator
-TupleIndexGenerator::begin() {
-    return TupleIndexGenerator::tuple_index_iterator(m_novelty_base, m_atom_indices, false);
-}
-
-TupleIndexGenerator::tuple_index_iterator
-TupleIndexGenerator::end() {
-    return TupleIndexGenerator::tuple_index_iterator(m_novelty_base, m_atom_indices, true);
+template<>
+void for_each_tuple_index<2>(
+    const NoveltyBase &novelty_base,
+    AtomIndices atom_indices,
+    AtomIndices add_atom_indices,
+    const std::function<bool(TupleIndex)>& callback) {
+    assert(novelty_base.get_arity() == 2);
+    assert(std::is_sorted(atom_indices.begin(), atom_indices.end()));
+    assert(std::is_sorted(add_atom_indices.begin(), add_atom_indices.end()));
+    const std::vector<int>& factors = novelty_base.get_factors();
+    // Add placeholders to be able to not pick an atom from atom_indices.
+    int place_holder = novelty_base.get_num_atoms();
+    atom_indices.push_back(place_holder);
+    int num_atom_indices = static_cast<int>(atom_indices.size());
+    int num_add_atom_indices = static_cast<int>(add_atom_indices.size());
+    // Initialize book-keeping for efficient sorted iteration.
+    std::array<std::vector<int>, 2> a_geq = compute_geq_mappings(atom_indices, add_atom_indices);
+    std::array<AtomIndices, 2> a_atom_indices{std::move(atom_indices), std::move(add_atom_indices)};
+    std::array<int, 2> a_num_atom_indices{num_atom_indices, num_add_atom_indices};
+    std::array<int, 2> a;
+    // Iteration that selects at least one atom index from add_atom_indices.
+    for (int k = 1; k < 4; ++k) {
+        int tmp = k;
+        for (int i = 0; i < 2; ++i) {
+            a[i] = (tmp & 1) > 0;
+            tmp >>= 1;
+        }
+        for (int i0 = 0; i0 < a_num_atom_indices[a[0]]; ++i0) {
+            int i0_tuple_index = factors[0] * a_atom_indices[a[0]][i0];
+            for (int i1 = (a[0] != a[1]) ? a_geq[a[0]][i0] : i0+1; i1 < a_num_atom_indices[a[1]]; ++i1) {
+                TupleIndex tuple_index = i0_tuple_index + factors[1] * a_atom_indices[a[1]][i1];
+                bool finish = callback(tuple_index);
+                if (finish) return;
+            }
+        }
+    }
 }
 
 }

@@ -2,6 +2,8 @@
 #define DLPLAN_SRC_CORE_PARSER_EXPRESSIONS_NUMERICAL_H_
 
 #include "expression.h"
+#include "../../cache.h"
+
 
 namespace dlplan::core {
 class Numerical;
@@ -25,7 +27,7 @@ public:
      * Construct or retrieve the Numerical.
      */
     virtual std::shared_ptr<const dlplan::core::Numerical> parse_numerical(std::shared_ptr<const VocabularyInfo> vocabulary_info, Caches &caches) const {
-        return caches.m_numerical_cache->insert(parse_numerical_impl(vocabulary_info, caches)).first;
+        return caches.insert(parse_numerical_impl(vocabulary_info, caches));
     }
 };
 
