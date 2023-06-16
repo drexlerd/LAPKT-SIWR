@@ -253,6 +253,7 @@ public:
 		if( n->has_state() ) {
 		    n->state()->set_index(m_open_hash.size() + m_closed.size() + 1);  // + 1 because get_node pops node during expansion
 		}
+		// n->state()->print(std::cout);
 
 		m_open.push(n);
 		m_open_hash.put(n);

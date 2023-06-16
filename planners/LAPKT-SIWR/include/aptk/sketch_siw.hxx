@@ -177,7 +177,7 @@ public:
 		dlplan::core::State dlplan_target_state = m_sketch_problem->from_lapkt_state(s, s->index());
 		const auto evaluation_result = m_sketch->evaluate_effects_lazy(m_dlplan_initial_state, dlplan_target_state, m_rules, m_denotation_caches);
 		if (evaluation_result) {
-			m_key_applied_rule = evaluation_result->compute_repr();
+			m_key_applied_rule = evaluation_result->str();
 			return true;
 		}
 		/* 2. Check whether s is an overall goal of the problem. */

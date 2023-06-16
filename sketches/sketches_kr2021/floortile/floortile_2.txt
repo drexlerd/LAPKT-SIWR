@@ -1,5 +1,5 @@
 (:policy
-(:boolean_features "b_empty(
+(:booleans (0 "b_empty(
                 c_diff(
                     c_projection(
                         r_diff(r_primitive(painted_g,0,1),r_primitive(painted,0,1)),
@@ -44,8 +44,8 @@
                         0
                     )
                 )
-            )"
+            )")
         )
-(:numerical_features "n_count(r_diff(r_primitive(painted_g,0,1),r_primitive(painted,0,1)))")
+(:numericals (0 "n_count(r_diff(r_primitive(painted_g,0,1),r_primitive(painted,0,1)))"))
 (:rule (:conditions (:c_b_pos 0) (:c_n_gt 0)) (:effects (:e_b_bot 0) (:e_n_dec 0)))
 )
