@@ -11,6 +11,16 @@ target_include_directories(dlplanstatespace
         ${PROJECT_SOURCE_DIR}/include
 )
 
+if (APPLE)
+    set_target_properties(dlplanstatespace PROPERTIES
+        INSTALL_NAME_DIR "@loader_path"
+    )
+elseif (UNIX)
+    set_target_properties(dlplanstatespace PROPERTIES
+        INSTALL_RPATH "$ORIGIN"
+    )
+endif()
+
 install(
     TARGETS
         dlplanstatespace

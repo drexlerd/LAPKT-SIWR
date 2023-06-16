@@ -2,6 +2,7 @@
 #define DLPLAN_SRC_CORE_PARSER_EXPRESSIONS_BOOLEAN_H_
 
 #include "expression.h"
+#include "../../cache.h"
 
 
 namespace dlplan::core {
@@ -25,7 +26,7 @@ public:
      * Construct or retrieve the Boolean.
      */
     virtual std::shared_ptr<const dlplan::core::Boolean> parse_boolean(std::shared_ptr<const VocabularyInfo> vocabulary_info, Caches &caches) const {
-        return caches.m_boolean_cache->insert(parse_boolean_impl(vocabulary_info, caches)).first;
+        return caches.insert(parse_boolean_impl(vocabulary_info, caches));
     }
 };
 

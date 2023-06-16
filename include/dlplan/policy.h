@@ -1,3 +1,5 @@
+/// @brief Implements the general policy language.
+
 #ifndef DLPLAN_INCLUDE_DLPLAN_POLICY_H_
 #define DLPLAN_INCLUDE_DLPLAN_POLICY_H_
 
@@ -11,44 +13,42 @@
 #include <vector>
 
 
-/**
- * Forward declarations and usings
- */
 namespace dlplan::policy {
-    class PolicyBuilder;
-    class PolicyBuilderImpl;
-    class PolicyReaderImpl;
-    class PolicyWriterImpl;
-    class BaseCondition;
-    class BaseEffect;
-    class Rule;
-    class Policy;
+class PolicyBuilderImpl;
+class PolicyReaderImpl;
+class PolicyWriterImpl;
+class BaseCondition;
+class BaseEffect;
+class Rule;
+class Policy;
 
-    using Booleans = std::set<std::shared_ptr<const dlplan::core::Boolean>>;
-    using Numericals = std::set<std::shared_ptr<const dlplan::core::Numerical>>;
+using Booleans = std::set<std::shared_ptr<const dlplan::core::Boolean>>;
+using Numericals = std::set<std::shared_ptr<const dlplan::core::Numerical>>;
+using Conditions = std::set<std::shared_ptr<const BaseCondition>>;
+using Effects = std::set<std::shared_ptr<const BaseEffect>>;
+using Rules = std::set<std::shared_ptr<const Rule>>;
+using Policies = std::set<std::shared_ptr<const Policy>>;
 
-    using Conditions = std::set<std::shared_ptr<const BaseCondition>>;
-    using Effects = std::set<std::shared_ptr<const BaseEffect>>;
-    using Rules = std::set<std::shared_ptr<const Rule>>;
+using StatePair = std::pair<dlplan::core::State, dlplan::core::State>;
+using StatePairs = std::vector<StatePair>;
 
-    using Policies = std::set<std::shared_ptr<const Policy>>;
-}
+using ConditionIndex = int;
+using EffectIndex = int;
+using RuleIndex = int;
+using PolicyIndex = int;
 
 
-namespace dlplan::policy {
-/**
- * All different kinds of conditions.
- */
-class BaseCondition : public dlplan::utils::Cachable {
+/// @brief Represents the abstract base class of a feature condition and
+///        provides functionality to access its underlying data and for
+///        the evaluation on a state.
+class BaseCondition {
 private:
-    std::shared_ptr<const core::BaseElement> m_base_feature;
     int m_index;
 
 protected:
-    BaseCondition(std::shared_ptr<const core::BaseElement> base_feature);
+    BaseCondition();
 
 public:
-    // Condition is not copieable because it must live in the cache.
     BaseCondition(const BaseCondition& other) = delete;
     BaseCondition& operator=(const BaseCondition& other) = delete;
     BaseCondition(BaseCondition&& other) = delete;
@@ -59,42 +59,25 @@ public:
     virtual bool evaluate(const core::State& source_state, core::DenotationsCaches& caches) const = 0;
 
     virtual std::string compute_repr() const = 0;
-
     virtual std::string str() const = 0;
-
-    /**
-     * Adds the condition to the policy builder and returns it
-     */
-    virtual std::shared_ptr<const BaseCondition> copy_to_builder(PolicyBuilder& policy_builder) const = 0;
-
-    /**
-     * Setters.
-     */
-    void set_index(int index);
-
-    /**
-     * Getters.
-     */
-    std::shared_ptr<const core::BaseElement> get_base_feature() const;
+    void set_index(ConditionIndex index);
     virtual std::shared_ptr<const core::Boolean> get_boolean() const = 0;
     virtual std::shared_ptr<const core::Numerical> get_numerical() const = 0;
-    int get_index() const;
+    ConditionIndex get_index() const;
 };
 
 
-/**
- * All different kinds of effects.
- */
-class BaseEffect : public dlplan::utils::Cachable {
+/// @brief Represents the abstract base class of a feature effect and
+///        provides functionality to access its underlying data and for
+///        the evaluation on a pair of states.
+class BaseEffect {
 private:
-    std::shared_ptr<const core::BaseElement> m_base_feature;
     int m_index;
 
 protected:
-    BaseEffect(std::shared_ptr<const core::BaseElement> base_feature);
+    BaseEffect();
 
 public:
-    // Effect is not copieable because it must live in the cache.
     BaseEffect(const BaseEffect& other) = delete;
     BaseEffect& operator=(const BaseEffect& other) = delete;
     BaseEffect(BaseEffect&& other) = delete;
@@ -105,45 +88,29 @@ public:
     virtual bool evaluate(const core::State& source_state, const core::State& target_state, core::DenotationsCaches& caches) const = 0;
 
     virtual std::string compute_repr() const = 0;
-
     virtual std::string str() const = 0;
-
-    /**
-     * Adds the effect to the policy builder and returns it
-     */
-    virtual std::shared_ptr<const BaseEffect> copy_to_builder(PolicyBuilder& policy_builder) const = 0;
-
-    /**
-     * Setters.
-     */
-    void set_index(int index);
-
-    /**
-     * Getters.
-     */
-    int get_index() const;
-    std::shared_ptr<const core::BaseElement> get_base_feature() const;
+    void set_index(EffectIndex index);
+    EffectIndex get_index() const;
     virtual std::shared_ptr<const core::Boolean> get_boolean() const = 0;
     virtual std::shared_ptr<const core::Numerical> get_numerical() const = 0;
 };
 
 
-/**
- * A rule over Boolean and numerical features has form C -> E
- * where C is set of feature conditions and E is set of feature effects
- */
-class Rule : public dlplan::utils::Cachable {
+/// @brief Implements a policy rule of the form C->E with where C is a set of
+///        feature conditions and E is a set of feature effects. Provides
+///        functionality to access its underlying data and for the evaluation
+///        on a pair of states.
+class Rule {
 private:
     Conditions m_conditions;
     Effects m_effects;
-    int m_index;
+    RuleIndex m_index;
 
 private:
     Rule(Conditions&& conditions, Effects&& effects);
     friend class PolicyBuilderImpl;
 
 public:
-    // Rule is not copieable because it must live in the cache.
     Rule(const Rule& other) = delete;
     Rule& operator=(const Rule& other) = delete;
     Rule(Rule&& other) = delete;
@@ -156,32 +123,19 @@ public:
     bool evaluate_effects(const core::State& source_state, const core::State& target_state, core::DenotationsCaches& caches) const;
 
     std::string compute_repr() const;
-
     std::string str() const;
-
-    /**
-     * Adds the rule to the policy builder and returns it
-     */
-    std::shared_ptr<const Rule> copy_to_builder(PolicyBuilder& policy_builder) const;
-
-    /**
-     * Setters.
-     */
-    void set_index(int index);
-
-    /**
-     * Getters.
-     */
-    int get_index() const;
+    void set_index(RuleIndex index);
+    RuleIndex get_index() const;
     const Conditions& get_conditions() const;
     const Effects& get_effects() const;
 };
 
 
-/**
- * A policy is a set of rules over Boolean and numerical features.
- */
-class Policy : public dlplan::utils::Cachable {
+/// @brief Implements a policy consisting of a set of rules over a set of
+///        Boolean and a set of numerical features. Provides functionality
+///        to access its underlying data and for the evaluation on a pair of
+///        states.
+class Policy {
 private:
     Booleans m_booleans;
     Numericals m_numericals;
@@ -203,48 +157,29 @@ public:
     /**
      * Approach 1: naive approach to evaluate (s,s')
      */
-    std::shared_ptr<const Rule> evaluate_lazy(const core::State& source_state, const core::State& target_state) const;
-    std::shared_ptr<const Rule> evaluate_lazy(const core::State& source_state, const core::State& target_state, core::DenotationsCaches& caches) const;
+    std::shared_ptr<const Rule> evaluate(const core::State& source_state, const core::State& target_state) const;
+    std::shared_ptr<const Rule> evaluate(const core::State& source_state, const core::State& target_state, core::DenotationsCaches& caches) const;
 
     /**
      * Approach 2: optimized approach for evaluating pairs with similar source state s, i.e., (s,s1), (s,s2), ..., (s,sn)
      */
-    std::vector<std::shared_ptr<const Rule>> evaluate_conditions_eager(const core::State& source_state) const;
-    std::vector<std::shared_ptr<const Rule>> evaluate_conditions_eager(const core::State& source_state, core::DenotationsCaches& caches) const;
-    std::shared_ptr<const Rule> evaluate_effects_lazy(const core::State& source_state, const core::State& target_state, const std::vector<std::shared_ptr<const Rule>>& rules) const;
-    std::shared_ptr<const Rule> evaluate_effects_lazy(const core::State& source_state, const core::State& target_state, const std::vector<std::shared_ptr<const Rule>>& rules, core::DenotationsCaches& caches) const;
+    std::vector<std::shared_ptr<const Rule>> evaluate_conditions(const core::State& source_state) const;
+    std::vector<std::shared_ptr<const Rule>> evaluate_conditions(const core::State& source_state, core::DenotationsCaches& caches) const;
+    std::shared_ptr<const Rule> evaluate_effects(const core::State& source_state, const core::State& target_state, const std::vector<std::shared_ptr<const Rule>>& rules) const;
+    std::shared_ptr<const Rule> evaluate_effects(const core::State& source_state, const core::State& target_state, const std::vector<std::shared_ptr<const Rule>>& rules, core::DenotationsCaches& caches) const;
 
-    /**
-     * Returns a canonical string representation that can be parsed.
-     */
     std::string compute_repr() const;
-
-    /**
-     * Returns a more readable string representation that is not necessarily canonical.
-     */
     std::string str() const;
-
-    /**
-     * Adds the rule to the policy builder and returns it
-     */
-    std::shared_ptr<const Policy> copy_to_builder(PolicyBuilder& policy_builder) const;
-
-    /**
-     * Setters.
-     */
-    void set_index(int index);
-    /**
-     * Getters.
-     */
-    int get_index() const;
+    void set_index(PolicyIndex index);
+    PolicyIndex get_index() const;
     const Booleans& get_booleans() const;
     const Numericals& get_numericals() const;
     const Rules& get_rules() const;
 };
 
-/**
- * PolicyBuilder for the construction of a forest of policies.
-*/
+
+/// @brief Provides functionality for the syntactically unique creation of
+///        conditions, effects, rules, and policies.
 class PolicyBuilder {
 private:
     dlplan::utils::pimpl<PolicyBuilderImpl> m_pImpl;
@@ -286,9 +221,8 @@ public:
 };
 
 
-/**
- * PolicyMinimizer provides methods to minimize the number of rules in a policy.
- */
+/// @brief Provides functionality for the syntactic and empirical minimization
+///        of policies.
 class PolicyMinimizer {
 public:
     PolicyMinimizer();
@@ -298,14 +232,19 @@ public:
     PolicyMinimizer& operator=(PolicyMinimizer&& other);
     ~PolicyMinimizer();
 
-    std::shared_ptr<const Policy> minimize(const std::shared_ptr<const Policy>& policy, PolicyBuilder& builder) const;
-    std::shared_ptr<const Policy> minimize(const std::shared_ptr<const Policy>& policy, const core::StatePairs& true_state_pairs, const core::StatePairs& false_state_pairs, PolicyBuilder& builder) const;
+    std::shared_ptr<const Policy> minimize(
+        const std::shared_ptr<const Policy>& policy,
+        PolicyBuilder& builder) const;
+    std::shared_ptr<const Policy> minimize(
+        const std::shared_ptr<const Policy>& policy,
+        const StatePairs& true_state_pairs,
+        const StatePairs& false_state_pairs,
+        PolicyBuilder& builder) const;
 };
 
 
-/**
- * PolicyReader for reading general policy from bytestream.
- */
+/// @brief Provides functionality for reading the output of the policy writer
+///        into a policy.
 class PolicyReader {
 private:
     dlplan::utils::pimpl<PolicyReaderImpl> m_pImpl;
@@ -321,9 +260,9 @@ public:
     std::shared_ptr<const Policy> read(const std::string& data, PolicyBuilder& builder, core::SyntacticElementFactory& factory) const;
 };
 
-/**
- * PolicyWriter for writing general policy to bytestream.
- */
+
+/// @brief Provides functionality for creating string representation that
+///        the reader can translate back into a policy.
 class PolicyWriter {
     dlplan::utils::pimpl<PolicyWriterImpl> m_pImpl;
 

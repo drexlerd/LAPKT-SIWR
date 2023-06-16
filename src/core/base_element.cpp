@@ -16,11 +16,20 @@ std::string BaseElement::compute_repr() const {
     return ss.str();
 }
 
-void BaseElement::set_index(int index) {
+std::ostream& operator<<(std::ostream& os, const BaseElement& element) {
+    os << element.compute_repr();
+    return os;
+}
+
+std::string BaseElement::str() const {
+    return compute_repr();
+}
+
+void BaseElement::set_index(ElementIndex index) {
     m_index = index;
 }
 
-int BaseElement::get_index() const {
+ElementIndex BaseElement::get_index() const {
     return m_index;
 }
 
