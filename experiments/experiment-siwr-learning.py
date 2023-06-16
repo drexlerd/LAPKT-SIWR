@@ -75,10 +75,10 @@ exp.add_parse_again_step()
 exp.add_fetcher(name="fetch")
 exp.add_parser("parser-singularity-iw.py")
 
-IMAGES_DIR = DIR.parent / "planner"
+IMAGES_DIR = DIR.parent / "planners"
 def get_image(name):
     planner = name.replace("-", "_")
-    image = os.path.join(IMAGES_DIR, name + ".img")
+    image = os.path.join(IMAGES_DIR, name + ".sif")
     assert os.path.exists(image), image
     return planner, image
 
