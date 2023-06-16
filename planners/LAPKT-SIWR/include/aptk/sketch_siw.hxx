@@ -91,7 +91,7 @@ public:
 		    m_denotation_caches = dlplan::core::DenotationsCaches();
             m_dlplan_initial_state = m_sketch_problem->from_lapkt_state(new_init_state, new_init_state->index());
 			// new_init_state->print( std::cout );
-		    m_rules = m_sketch->evaluate_conditions_eager(m_dlplan_initial_state, m_denotation_caches);
+		    m_rules = m_sketch->evaluate_conditions(m_dlplan_initial_state, m_denotation_caches);
 			end = this->do_search();
 			m_pruned_sum_B_count += this->pruned_by_bound();
 
@@ -175,7 +175,7 @@ public:
 		assert(s != NULL);
 
 		dlplan::core::State dlplan_target_state = m_sketch_problem->from_lapkt_state(s, s->index());
-		const auto evaluation_result = m_sketch->evaluate_effects_lazy(m_dlplan_initial_state, dlplan_target_state, m_rules, m_denotation_caches);
+		const auto evaluation_result = m_sketch->evaluate_effects(m_dlplan_initial_state, dlplan_target_state, m_rules, m_denotation_caches);
 		if (evaluation_result) {
 			m_key_applied_rule = evaluation_result->str();
 			return true;
