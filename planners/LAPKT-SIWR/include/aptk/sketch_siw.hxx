@@ -32,8 +32,16 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <action.hxx>
 
 #include <dlplan/policy.h>
+#include <dlplan/state_space.h>
 
 #include <fstream>
+
+
+struct StateSpaceData {
+    dlplan::state_space::StateMapping state_mapping;
+    dlplan::state_space::AdjacencyList adjacency_list;
+    dlplan::state_space::StateIndicesSet goal_state_indices;
+};
 
 
 namespace aptk {
@@ -57,11 +65,73 @@ public:
 		  m_dlplan_initial_state(static_cast<const Sketch_STRIPS_Problem*>(&search_problem.task())->get_default_state()) {
 		m_goal_agenda = NULL;
 		m_sketch_problem = static_cast<const Sketch_STRIPS_Problem*>(&search_problem.task());
+		m_debug = false;
 	}
 
 	virtual ~Sketch_SIW() {
 	}
 	void            set_goal_agenda( Landmarks_Graph* lg ) { m_goal_agenda = lg; }
+
+	virtual void	 	open_node( Search_Node *n ) override {
+		// Dominik(18.06.2023): set index of newly generated node.
+		if( n->has_state() ) {
+		    n->state()->set_index(this->generated());
+			std::cout << this->generated() << std::endl;
+			m_state_space_data.state_mapping.emplace(this->generated(), m_sketch_problem->from_lapkt_state(n->state(), this->generated()));
+		}
+		// n->state()->print(std::cout);
+
+		this->m_open.push(n);
+		this->m_open_hash.put(n);
+		this->inc_gen();
+		if(n->gn() + 1 > this->m_max_depth){
+			//if( m_max_depth == 0 ) std::cout << std::endl;
+			this->m_max_depth = n->gn() + 1 ;
+			if ( this->verbose() )
+				std::cout << "[" << this->m_max_depth  <<"]" << std::flush;
+		}
+	}
+
+	/**
+	 * Process with successor generator
+	 */
+
+	virtual Search_Node*   	process(  Search_Node *head ) {
+		std::vector< aptk::Action_Idx > app_set;
+		this->problem().applicable_set_v2( *(head->state()), app_set );
+
+		for (unsigned i = 0; i < app_set.size(); ++i ) {
+			int a = app_set[i];
+
+			State *succ = this->problem().next( *(head->state()), a );
+
+			Search_Node* n = new Search_Node( succ , a, head, this->problem().task().actions()[ a ]->cost() );
+
+			if ( this->is_closed( n ) ) {
+				delete n;
+				continue;
+			}
+
+			if( this->previously_hashed(n) ) {
+				delete n;
+			}
+			else{
+				if( this->prune( n ) ){
+					delete n;
+					continue;
+				}
+				this->open_node(n);
+				if (m_debug) {
+				    m_state_space_data.adjacency_list[head->state()->index()].insert(succ->index());
+				}
+				if( this->is_goal( n ) ) {
+					return n;
+				}
+			}
+
+		}
+		return NULL;
+	}
 
     /**
 	 * Calls IW for each subproblem encountered
@@ -82,7 +152,9 @@ public:
 
 		do{
             m_dlplan_initial_state = m_sketch_problem->from_lapkt_state(new_init_state, new_init_state->index());
-			this->m_state_space_data.state_mapping.emplace(new_init_state->index(), m_dlplan_initial_state);
+			if (m_debug) {
+			    m_state_space_data.state_mapping.emplace(new_init_state->index(), m_dlplan_initial_state);
+			}
 			m_denotation_caches = dlplan::core::DenotationsCaches();
 		    m_rules = m_sketch->evaluate_conditions(m_dlplan_initial_state, m_denotation_caches);
 			end = this->do_search();
@@ -158,19 +230,20 @@ public:
 				this->start( new_init_state );
 			}
 		} while( !this->problem().goal( *new_init_state ) );
-
-		// TODO: dump state_space
-		auto instance_info = m_sketch_problem->get_instance_info_ptr();
-		auto state_space = dlplan::state_space::StateSpace(
-			std::move(instance_info),
-			std::move(this->m_state_space_data.state_mapping),
-			0,
-			std::move(this->m_state_space_data.adjacency_list),
-			std::move(this->m_state_space_data.goal_state_indices));
-		std::ofstream ss;
-		ss.open("state_space.dot");
-		ss << state_space.to_dot(0);
-		ss.close();
+        if (m_debug) {
+			m_state_space_data.goal_state_indices.insert(new_init_state->index());
+			auto instance_info = m_sketch_problem->get_instance_info_ptr();
+			auto state_space = dlplan::state_space::StateSpace(
+				std::move(instance_info),
+				std::move(m_state_space_data.state_mapping),
+				0,
+				std::move(m_state_space_data.adjacency_list),
+				std::move(m_state_space_data.goal_state_indices));
+			std::ofstream ss;
+			ss.open("state_space.dot");
+			ss << state_space.to_dot(0);
+			ss.close();
+	    }
 
 		return true;
 	}
@@ -220,6 +293,10 @@ protected:
 	std::vector<std::shared_ptr<const dlplan::policy::Rule>> m_rules;
 
 	std::string m_key_applied_rule;
+
+	StateSpaceData  m_state_space_data;
+
+	bool m_debug;
 };
 
 }

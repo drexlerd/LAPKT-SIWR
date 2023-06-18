@@ -104,7 +104,7 @@ public:
 	unsigned		pruned_by_bound() const		{ return m_pruned_B_count; }
 
 protected:
-	bool   prune( Search_Node* n ){
+	virtual bool   prune( Search_Node* n ){
 
 		float node_novelty = infty;
 		m_novelty->eval( n, node_novelty );
