@@ -76,7 +76,6 @@ public:
 		// Dominik(18.06.2023): set index of newly generated node.
 		if( n->has_state() ) {
 		    n->state()->set_index(this->generated());
-			std::cout << this->generated() << std::endl;
 			m_state_space_data.state_mapping.emplace(this->generated(), m_sketch_problem->from_lapkt_state(n->state(), this->generated()));
 		}
 		// n->state()->print(std::cout);
