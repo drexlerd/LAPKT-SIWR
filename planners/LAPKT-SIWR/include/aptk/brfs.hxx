@@ -26,10 +26,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <aptk/closed_list.hxx>
 #include <aptk/hash_table.hxx>
 
+#include <dlplan/state_space.h>
+
 #include <queue>
 #include <vector>
 #include <algorithm>
 #include <iostream>
+
+struct StateSpaceData {
+    dlplan::state_space::StateMapping state_mapping;
+    dlplan::state_space::AdjacencyList adjacency_list;
+    dlplan::state_space::StateIndicesSet goal_state_indices;
+};
 
 namespace aptk {
 
@@ -361,6 +369,7 @@ protected:
 	Search_Node*				m_root;
 	std::vector<Action_Idx> 		m_app_set;
 	bool					m_verbose;
+	StateSpaceData          m_state_space_data;
 };
 
 }

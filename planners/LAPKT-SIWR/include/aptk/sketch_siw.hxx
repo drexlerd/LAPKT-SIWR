@@ -33,6 +33,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include <dlplan/policy.h>
 
+#include <fstream>
+
 
 namespace aptk {
 
@@ -67,12 +69,10 @@ public:
 	virtual bool	find_solution( float& cost, std::vector<Action_Idx>& plan, std::vector<std::vector<Action_Idx>>& partial_plans, std::vector<std::string>& sketch_plan, std::vector<unsigned>& subproblem_widths) {
 		unsigned gsize = this->problem().task().goal().size();
 		Search_Node* end = NULL;
-		State* new_init_state = NULL;
 
 		cost = 0;
 
-		new_init_state = new State( this->problem().task() );
-		new_init_state->set( this->m_root->state()->fluent_vec() );
+		State* new_init_state = this->root()->state();
 
         m_sketch = m_sketch_problem->sketch();
 
@@ -81,11 +81,8 @@ public:
 		const int max_applied_sketch_rules = 100000;
 
 		do{
-			if ( this->verbose() )
-				//std::cout << std::endl << "{" << gsize << "/" << this->m_goal_candidates.size() << "/" << this->m_goals_achieved.size() << "}:IW(" << this->bound() << ") -> ";
-
-            // We must reset cache because indices start from 0 again.
             m_dlplan_initial_state = m_sketch_problem->from_lapkt_state(new_init_state, new_init_state->index());
+			this->m_state_space_data.state_mapping.emplace(new_init_state->index(), m_dlplan_initial_state);
 			m_denotation_caches = dlplan::core::DenotationsCaches();
 		    m_rules = m_sketch->evaluate_conditions(m_dlplan_initial_state, m_denotation_caches);
 			end = this->do_search();
@@ -101,10 +98,6 @@ public:
 				 */
 				if( this->pruned_by_bound() == 0)
 					return false;
-
-				new_init_state = new State( this->problem().task() );
-				new_init_state->set( this->m_root->state()->fluent_vec() );
-				new_init_state->update_hash();
 
 				if ( this->bound() > this->max_bound() ) // Hard cap on width exceeded
 					return false;
@@ -153,12 +146,26 @@ public:
 
 				new_init_state = new State( this->problem().task() );
 				new_init_state->set( end->state()->fluent_vec() );
+				new_init_state->set_index(end->state()->index());
 				new_init_state->update_hash();
 
 				this->set_bound( 1 );
 				this->start( new_init_state );
 			}
 		} while( !this->problem().goal( *new_init_state ) );
+
+		// TODO: dump state_space
+		auto instance_info = m_sketch_problem->get_instance_info_ptr();
+		auto state_space = dlplan::state_space::StateSpace(
+			std::move(instance_info),
+			std::move(this->m_state_space_data.state_mapping),
+			0,
+			std::move(this->m_state_space_data.adjacency_list),
+			std::move(this->m_state_space_data.goal_state_indices));
+		std::ofstream ss;
+		ss.open("state_space.dot");
+		ss << state_space.to_dot(0);
+		ss.close();
 
 		return true;
 	}

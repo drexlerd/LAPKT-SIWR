@@ -63,7 +63,7 @@ public:
 		if(!s) {
 			this->m_root = new Search_Node( this->problem().init(), no_op, NULL );
 			// Dominik(18.06.2023): set index of newly generated node.
-			this->problem().init()->set_index(this->generated());
+			this->m_root->state()->set_index(this->generated());
 		} else {
 			this->m_root = new Search_Node( s, no_op, NULL );
 		}

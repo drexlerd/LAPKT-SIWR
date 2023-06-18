@@ -98,6 +98,8 @@ public:
 
 	void add_constant( std::string object_name );
 
+	std::shared_ptr<const dlplan::core::InstanceInfo> get_instance_info_ptr() const;
+
     /**
 	 * Convert LAPKT state to dlplan state.
 	 */

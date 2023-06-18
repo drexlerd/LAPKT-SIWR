@@ -35,48 +35,7 @@ def main( domain_file, problem_file, sketch_file, plan_file ) :
 	task.solve()
 
 
-def debug() :
-	#main( "/home/dominik/downward-benchmarks/barman-sat14-strips/domain.pddl",
-	#     "/home/dominik/downward-benchmarks/barman-sat14-strips/p5-10-4-13.pddl",
-	#	 "barman.sketch",
-	#	 "." )
-
-	#main( "/home/dominik/downward-benchmarks/grid/domain.pddl",
-	#     "/home/dominik/downward-benchmarks/grid/prob05.pddl",
-	#	 "grid.sketch",
-	#	 "." )
-
-	#main( "/home/dominik/downward-benchmarks/tpp/domain.pddl",
-	#     "/home/dominik/downward-benchmarks/tpp/p30.pddl",
-	#	 "tpp.sketch",
-	#	 "." )
-
-	#main( "/home/dominik/downward-benchmarks/childsnack-sat14-strips/domain.pddl",
-	#     "/home/dominik/downward-benchmarks/childsnack-sat14-strips/child-snack_pfile19-2.pddl",
-	#	 "childsnack.sketch",
-	#	 "." )
-
-	main( "/home/dominik/downward-benchmarks/schedule/domain.pddl",
-	     "/home/dominik/downward-benchmarks/schedule/probschedule-51-2.pddl",
-		 "schedule.sketch",
-		 "." )
-
-    # some errors in distances
-	#main("/home/dominik/downward-benchmarks/driverlog/domain.pddl",
-	#     "/home/dominik/downward-benchmarks/driverlog/p01.pddl",
-	#	 "driverlog.sketch",
-	#	 "." )
-
-    #main("domain.pddl",
-	#     "p-1-3-16-1-1836107035.pddl",
-	#	 "driverlog.sketch",
-	#	 "." )
-
-	#main( "/home/dominik/downward-benchmarks/floortile-sat14-strips/domain.pddl",
-	#     "/home/dominik/downward-benchmarks/floortile-sat14-strips/p04-6-5-3.pddl",
-	#	 "floortile.sketch",
-	#	 "." )
-
 if __name__ == "__main__":
 	main( sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4] )
-	#debug()
+
+# ./siwr.py ../../../../benchmarks/autoscale-21.10-agile-strips/childsnack/domain.pddl ../../../../benchmarks/autoscale-21.10-agile-strips/childsnack/p01.pddl ../../../../sketches/sketches_kr2021/childsnack/childsnack_1.txt plan.ipc

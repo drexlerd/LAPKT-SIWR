@@ -120,6 +120,10 @@ namespace aptk
 		m_vocabulary_info->add_constant(object_name);
 	}
 
+	std::shared_ptr<const dlplan::core::InstanceInfo> Sketch_STRIPS_Problem::get_instance_info_ptr() const {
+        return m_instance_info;
+	}
+
 	dlplan::core::State Sketch_STRIPS_Problem::from_lapkt_state(State* state, int state_id) const {
 		std::vector<int> atom_idxs;
 		atom_idxs.reserve(m_num_total_fluents);
