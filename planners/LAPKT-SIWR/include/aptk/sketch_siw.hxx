@@ -102,6 +102,11 @@ public:
 				if ( this->bound() > this->max_bound() ) // Hard cap on width exceeded
 					return false;
 
+				new_init_state = new State( this->problem().task() );
+				new_init_state->set( this->m_root->state()->fluent_vec() );
+				new_init_state->set_index(this->m_root->state()->index());
+				new_init_state->update_hash();
+
 				this->set_bound( this->bound()+1 );
 				this->start( new_init_state );
 
