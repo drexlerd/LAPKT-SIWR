@@ -60,11 +60,13 @@ public:
 	bool	verbose() const { return m_verbose; }
 
 	void	start(State*s = NULL) {
-		if(!s)
+		if(!s) {
 			this->m_root = new Search_Node( this->problem().init(), no_op, NULL );
-		else
+			// Dominik(18.06.2023): set index of newly generated node.
+			this->problem().init()->set_index(this->generated());
+		} else {
 			this->m_root = new Search_Node( s, no_op, NULL );
-
+		}
 
 		m_pruned_B_count = 0;
 		this->reset();
@@ -84,12 +86,6 @@ public:
 			std::cout << std::endl;
 		}
 #endif
-        // Dominik(26.01.2023): Set index of initial state
-		assert(this-m_open_hash.size() == 0 && this->m_closed.size() == 0);
-        this->m_root->set_index(this->m_open_hash.size() + this->m_closed.size());
-		if( this->m_root->has_state() ) {
-		    this->m_root->state()->set_index(this->m_open_hash.size() + this->m_closed.size());
-		}
 
 		this->m_open.push( this->m_root );
 		this->m_open_hash.put( this->m_root );
@@ -138,7 +134,6 @@ protected:
 			//need to check COND EFF TOO!!
 			// if( head->state()->entails(this->problem().task().actions()[a]->add_vec()) )
 			// 	continue;
-
 
 			State *succ = this->problem().next( *(head->state()), a );
 
@@ -203,14 +198,12 @@ protected:
 				#endif
 
 				this->open_node(n);
-				if( this->is_goal( n ) )
+				if( this->is_goal( n ) ) {
 					return n;
+				}
 			}
 
 		}
-
-
-
 		return NULL;
 	}
 

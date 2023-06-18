@@ -65,7 +65,6 @@ public:
 	 * Calls IW for each subproblem encountered
 	 */
 	virtual bool	find_solution( float& cost, std::vector<Action_Idx>& plan, std::vector<std::vector<Action_Idx>>& partial_plans, std::vector<std::string>& sketch_plan, std::vector<unsigned>& subproblem_widths) {
-
 		unsigned gsize = this->problem().task().goal().size();
 		Search_Node* end = NULL;
 		State* new_init_state = NULL;
@@ -74,8 +73,6 @@ public:
 
 		new_init_state = new State( this->problem().task() );
 		new_init_state->set( this->m_root->state()->fluent_vec() );
-		this->start( new_init_state );
-        // new_init_state->print( std::cout );
 
         m_sketch = m_sketch_problem->sketch();
 
@@ -88,9 +85,8 @@ public:
 				//std::cout << std::endl << "{" << gsize << "/" << this->m_goal_candidates.size() << "/" << this->m_goals_achieved.size() << "}:IW(" << this->bound() << ") -> ";
 
             // We must reset cache because indices start from 0 again.
-		    m_denotation_caches = dlplan::core::DenotationsCaches();
             m_dlplan_initial_state = m_sketch_problem->from_lapkt_state(new_init_state, new_init_state->index());
-			// new_init_state->print( std::cout );
+			m_denotation_caches = dlplan::core::DenotationsCaches();
 		    m_rules = m_sketch->evaluate_conditions(m_dlplan_initial_state, m_denotation_caches);
 			end = this->do_search();
 			m_pruned_sum_B_count += this->pruned_by_bound();
