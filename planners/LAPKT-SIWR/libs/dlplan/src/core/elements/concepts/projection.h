@@ -1,6 +1,8 @@
 #ifndef DLPLAN_SRC_CORE_ELEMENTS_CONCEPTS_PROJECTION_H_
 #define DLPLAN_SRC_CORE_ELEMENTS_CONCEPTS_PROJECTION_H_
 
+#include "../utils.h"
+
 #include "../../../../include/dlplan/core.h"
 
 #include <sstream>
@@ -13,7 +15,7 @@ namespace dlplan::core {
 class ProjectionConcept : public Concept {
 private:
     void compute_result(const RoleDenotation& denot, ConceptDenotation& result) const {
-        for (const auto& pair : denot) {
+        for (const auto& pair : denot.to_vector()) {
             if (m_pos == 0) result.insert(pair.first);
             else if (m_pos == 1) result.insert(pair.second);
         }
@@ -72,6 +74,10 @@ public:
         out << get_name() << "(";
         m_role->compute_repr(out);
         out << "," << std::to_string(m_pos) << ")";
+    }
+
+    int compute_evaluate_time_score() const override {
+        return m_role->compute_evaluate_time_score() + SCORE_QUADRATIC;
     }
 
     static std::string get_name() {

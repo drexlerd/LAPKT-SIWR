@@ -1,6 +1,8 @@
 #ifndef DLPLAN_SRC_CORE_ELEMENTS_ROLES_INVERSE_H_
 #define DLPLAN_SRC_CORE_ELEMENTS_ROLES_INVERSE_H_
 
+#include "../utils.h"
+
 #include "../../../../include/dlplan/core.h"
 
 #include <sstream>
@@ -13,7 +15,7 @@ namespace dlplan::core {
 class InverseRole : public Role {
 private:
     void compute_result(const RoleDenotation& denot, RoleDenotation& result) const {
-        for (const auto& pair : denot) {
+        for (const auto& pair : denot.to_vector()) {
             result.insert(std::make_pair(pair.second, pair.first));
         }
     }
@@ -67,6 +69,10 @@ public:
         out << get_name() << "(";
         m_role->compute_repr(out);
         out << ")";
+    }
+
+    int compute_evaluate_time_score() const override {
+        return m_role->compute_evaluate_time_score() + SCORE_QUADRATIC;
     }
 
     static std::string get_name() {

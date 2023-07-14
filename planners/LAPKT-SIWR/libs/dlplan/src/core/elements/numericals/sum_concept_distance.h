@@ -1,8 +1,9 @@
 #ifndef DLPLAN_SRC_CORE_ELEMENTS_NUMERICAL_SUM_CONCEPT_DISTANCE_H_
 #define DLPLAN_SRC_CORE_ELEMENTS_NUMERICAL_SUM_CONCEPT_DISTANCE_H_
 
-#include "../../../../include/dlplan/core.h"
 #include "../utils.h"
+
+#include "../../../../include/dlplan/core.h"
 
 #include <sstream>
 
@@ -16,7 +17,7 @@ private:
     void compute_result(const ConceptDenotation& concept_from_denot, const RoleDenotation& role_denot, const ConceptDenotation& concept_to_denot, int& result) const {
         result = 0;
         utils::Distances source_distances = utils::compute_multi_source_multi_target_shortest_distances(concept_from_denot, role_denot, concept_to_denot);
-        for (const auto target : concept_to_denot) {
+        for (const auto target : concept_to_denot.to_vector()) {
             result = utils::path_addition(result, source_distances[target]);
         }
     }
@@ -109,6 +110,10 @@ public:
         out << ",";
         m_concept_to->compute_repr(out);
         out << ")";
+    }
+
+    int compute_evaluate_time_score() const override {
+        return m_concept_from->compute_evaluate_time_score() + m_role->compute_evaluate_time_score() + m_concept_to->compute_evaluate_time_score() + SCORE_QUBIC;
     }
 
     static std::string get_name() {
