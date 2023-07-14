@@ -1,6 +1,8 @@
 #ifndef DLPLAN_SRC_CORE_ELEMENTS_CONCEPTS_SUBSET_H_
 #define DLPLAN_SRC_CORE_ELEMENTS_CONCEPTS_SUBSET_H_
 
+#include "../utils.h"
+
 #include "../../../../include/dlplan/core.h"
 
 #include <sstream>
@@ -15,7 +17,7 @@ private:
     void compute_result(const RoleDenotation& left_denot, const RoleDenotation& right_denot, ConceptDenotation& result) const {
         // find counterexamples a : exists b . (a,b) in R and (a,b) notin S
         result.set();
-        for (const auto& pair : left_denot) {
+        for (const auto& pair : left_denot.to_vector()) {
             if (!right_denot.contains(pair)) result.erase(pair.first);
         }
     }
@@ -78,6 +80,10 @@ public:
         out << ",";
         m_role_right->compute_repr(out);
         out << ")";
+    }
+
+    int compute_evaluate_time_score() const override {
+        return m_role_left->compute_evaluate_time_score() + m_role_right->compute_evaluate_time_score() + SCORE_QUADRATIC;
     }
 
     static std::string get_name() {

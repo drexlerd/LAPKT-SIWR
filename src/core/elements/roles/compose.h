@@ -1,8 +1,9 @@
 #ifndef DLPLAN_SRC_CORE_ELEMENTS_ROLES_COMPOSE_H_
 #define DLPLAN_SRC_CORE_ELEMENTS_ROLES_COMPOSE_H_
 
-#include "../../../../include/dlplan/core.h"
 #include "../utils.h"
+
+#include "../../../../include/dlplan/core.h"
 
 #include <sstream>
 
@@ -14,8 +15,11 @@ namespace dlplan::core {
 class ComposeRole : public Role {
 private:
     void compute_result(const RoleDenotation& left_denot, const RoleDenotation& right_denot, RoleDenotation& result) const {
-        for (const auto& left_pair : left_denot) {  // source
-            for (const auto& right_pair : right_denot) {  // target
+        // Compute sparse representation.
+        PairsOfObjectIndices left_pairs = left_denot.to_vector();
+        PairsOfObjectIndices right_pairs = right_denot.to_vector();
+        for (const auto& left_pair : left_pairs) {  // source
+            for (const auto& right_pair : right_pairs) {  // target
                 if (left_pair.second == right_pair.first) {
                     result.insert(std::make_pair(left_pair.first, right_pair.second));
                 }
@@ -79,6 +83,10 @@ public:
         out << ",";
         m_role_right->compute_repr(out);
         out << ")";
+    }
+
+    int compute_evaluate_time_score() const override {
+        return m_role_left->compute_evaluate_time_score() + m_role_right->compute_evaluate_time_score() + SCORE_QUADRATIC;
     }
 
     static std::string get_name() {

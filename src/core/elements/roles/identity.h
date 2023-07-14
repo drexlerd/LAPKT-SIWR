@@ -1,6 +1,8 @@
 #ifndef DLPLAN_SRC_CORE_ELEMENTS_ROLES_IDENTITY_H_
 #define DLPLAN_SRC_CORE_ELEMENTS_ROLES_IDENTITY_H_
 
+#include "../utils.h"
+
 #include "../../../../include/dlplan/core.h"
 
 #include <sstream>
@@ -13,7 +15,7 @@ namespace dlplan::core {
 class IdentityRole : public Role {
 private:
     void compute_result(const ConceptDenotation& denot, RoleDenotation& result) const {
-        for (const auto& single : denot) {
+        for (const auto& single : denot.to_vector()) {
             result.insert(std::make_pair(single, single));
         }
     }
@@ -67,6 +69,10 @@ public:
         out << get_name() << "(";
         m_concept->compute_repr(out);
         out << ")";
+    }
+
+    int compute_evaluate_time_score() const override {
+        return m_concept->compute_evaluate_time_score() + SCORE_LINEAR;
     }
 
     static std::string get_name() {

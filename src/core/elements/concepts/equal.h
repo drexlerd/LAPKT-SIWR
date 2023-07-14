@@ -1,6 +1,8 @@
 #ifndef DLPLAN_SRC_CORE_ELEMENTS_CONCEPTS_EQUAL_H_
 #define DLPLAN_SRC_CORE_ELEMENTS_CONCEPTS_EQUAL_H_
 
+#include "../utils.h"
+
 #include "../../../../include/dlplan/core.h"
 
 #include <sstream>
@@ -15,10 +17,10 @@ private:
     void compute_result(const RoleDenotation& left_denot, const RoleDenotation& right_denot, ConceptDenotation& result) const {
         // find counterexample [(a,b) in R and (a,b) not in S] or [(a,b) not in R and (a,b) in S]
         result.set();
-        for (const auto& pair : left_denot) {
+        for (const auto& pair : left_denot.to_vector()) {
             if (!right_denot.contains(pair)) result.erase(pair.first);
         }
-        for (const auto& pair : right_denot) {
+        for (const auto& pair : right_denot.to_vector()) {
             if (!left_denot.contains(pair)) result.erase(pair.first);
         }
     }
@@ -81,6 +83,10 @@ public:
         out << ",";
         m_role_right->compute_repr(out);
         out << ")";
+    }
+
+    int compute_evaluate_time_score() const override {
+        return m_role_left->compute_evaluate_time_score() + m_role_right->compute_evaluate_time_score() + SCORE_QUADRATIC;
     }
 
     static std::string get_name() {

@@ -1,8 +1,9 @@
 #ifndef DLPLAN_SRC_CORE_ELEMENTS_ROLES_TRANSITIVE_REFLEXIVE_CLOSURE_H_
 #define DLPLAN_SRC_CORE_ELEMENTS_ROLES_TRANSITIVE_REFLEXIVE_CLOSURE_H_
 
-#include "../../../../include/dlplan/core.h"
 #include "../utils.h"
+
+#include "../../../../include/dlplan/core.h"
 
 #include <sstream>
 
@@ -18,8 +19,9 @@ private:
         bool changed = false;
         do {
             RoleDenotation tmp_result = result;
-            for (const auto& pair_1 : tmp_result) {
-                for (const auto& pair_2 : tmp_result) {
+            PairsOfObjectIndices pairs = tmp_result.to_vector();
+            for (const auto& pair_1 : pairs) {
+                for (const auto& pair_2 : pairs) {
                     if (pair_1.second == pair_2.first) {
                         result.insert(std::make_pair(pair_1.first, pair_2.second));
                     }
@@ -86,6 +88,10 @@ public:
         out << get_name() << "(";
         m_role->compute_repr(out);
         out << ")";
+    }
+
+    int compute_evaluate_time_score() const override {
+        return m_role->compute_evaluate_time_score() + SCORE_QUBIC;
     }
 
     static std::string get_name() {
