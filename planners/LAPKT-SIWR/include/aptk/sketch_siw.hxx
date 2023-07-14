@@ -178,7 +178,6 @@ public:
 		assert(s != NULL);
 
 		dlplan::core::State dlplan_target_state = m_sketch_problem->from_lapkt_state(s, s->index());
-		std::cout << s->index() << std::endl;
 		const auto evaluation_result = m_sketch->evaluate_effects(m_dlplan_initial_state, dlplan_target_state, m_rules);
 		if (evaluation_result) {
 			m_key_applied_rule = evaluation_result->str();
