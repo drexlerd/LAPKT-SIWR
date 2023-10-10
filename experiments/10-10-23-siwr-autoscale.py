@@ -54,19 +54,22 @@ ATTRIBUTES = [
 
 
 DIR = Path(__file__).resolve().parent
-BENCHMARKS_DIR = DIR.parent / "benchmarks" / "learning"
+BENCHMARKS_DIR = Path(os.environ["BENCHMARKS_PDDL_AUTOSCALE"])
+SKETCHES_DIR = Path(os.environ["BENCHMARKS_SKETCHES_KR2021"])
+TIME_LIMIT = 1800
+MEMORY_LIMIT = 8000
+IMAGES_DIR = DIR.parent / "planners"
+
 if project.REMOTE:
-    SUITE = ["blocks_4_clear", "blocks_4_on", "delivery", "gripper", "miconic", "reward", "spanner", "visitall"]
+    SUITE = ["barman", "childsnack", "driverlog", "floortile", "grid", "grid-no-exchange", "tpp"]
     ENV = project.TetralithEnvironment(
         email="dominik.drexler@liu.se",
-        extra_options="#SBATCH --account=snic2022-22-820",
+        extra_options="#SBATCH --account=naiss2023-22-782",
         memory_per_cpu="8G")
 else:
-    SUITE = ["blocks_4_clear:p-51-0.pddl", "blocks_4_on:p-51-0.pddl", "childsnack:p01.pddl", "delivery:instance_3_2_0.pddl", "gripper:p01.pddl", "miconic:p01.pddl", "reward:instance_5x5_0.pddl", "spanner:pfile01-001.pddl", "visitall:p01.pddl"]
-    #SUITE = ["blocks_4_on"]
-
+    SUITE = ["barman:p01.pddl", "childsnack:p01.pddl", "driverlog:p01.pddl", "floortile:p01.pddl", "grid:p01.pddl", "grid-no-exchange:p01.pddl", "tpp:p01.pddl"]
     ENV = project.LocalEnvironment(processes=4)
-SKETCHES_DIR = DIR.parent / "sketches" / "sketches_icaps2023"
+    TIME_LIMIT = 60
 
 exp = Experiment(environment=ENV)
 exp.add_step("build", exp.build)
@@ -75,7 +78,6 @@ exp.add_parse_again_step()
 exp.add_fetcher(name="fetch")
 exp.add_parser("parser-singularity-iw.py")
 
-IMAGES_DIR = DIR.parent / "planners"
 def get_image(name):
     planner = name.replace("-", "_")
     image = os.path.join(IMAGES_DIR, name + ".img")
@@ -91,13 +93,12 @@ for planner, image in IMAGES:
 singularity_script = os.path.join(DIR, "run-singularity-siwr.sh")
 exp.add_resource("run_singularity", singularity_script)
 
-TIME_LIMIT = 1800
-MEMORY_LIMIT = 8000
 for planner, _ in IMAGES:
     for task in suites.build_suite(BENCHMARKS_DIR, SUITE):
-        for w in range(0,3):
-            sketch_name = f"{task.domain}_{w}_structurally_minimized.txt"
-            sketch_filename = SKETCHES_DIR / task.domain / sketch_name
+        for arity in range(0,3):
+            sketch_filename = SKETCHES_DIR / task.domain / f"width_{arity}" / "sketch_str.txt"
+            if task.domain == "grid-no-exchange":
+                sketch_filename = SKETCHES_DIR / "grid" / f"width_{arity}" / "sketch_str.txt"
             if not sketch_filename.is_file(): continue
             run = exp.add_run()
             run.add_resource("domain", task.domain_file, "domain.pddl")
@@ -118,8 +119,8 @@ for planner, _ in IMAGES:
             )
             run.set_property("domain", task.domain)
             run.set_property("problem", task.problem)
-            run.set_property("algorithm", f"{planner}_{w}")
-            run.set_property("id", [f"{planner}_{w}", task.domain, task.problem])
+            run.set_property("algorithm", f"{planner}_{arity}")
+            run.set_property("id", [f"{planner}_{arity}", task.domain, task.problem])
 
 report = os.path.join(exp.eval_dir, f"{exp.name}.html")
 exp.add_report(BaseReport(attributes=ATTRIBUTES), outfile=report)

@@ -37,7 +37,7 @@ cd planner/LAPKT-SIWR/planners/siwr
 1. Build the singularities
 ```console
 cd planners
-sudo singularity build siwr.img siwr.sif
+apptainer build siwr.img siwr.def
 ```
 
 2. Run the experiments
