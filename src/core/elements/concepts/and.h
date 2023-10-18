@@ -1,17 +1,36 @@
 #ifndef DLPLAN_SRC_CORE_ELEMENTS_CONCEPTS_AND_H_
 #define DLPLAN_SRC_CORE_ELEMENTS_CONCEPTS_AND_H_
 
-#include "../utils.h"
-
-#include "../../../../include/dlplan/core.h"
-
 #include <sstream>
+#include <memory>
+
+#include <boost/archive/text_oarchive.hpp>
+#include <boost/archive/text_iarchive.hpp>
+#include <boost/serialization/export.hpp>
+#include <boost/serialization/shared_ptr.hpp>
+
+#include "src/core/elements/utils.h"
+#include "include/dlplan/core.h"
 
 using namespace std::string_literals;
 
 
 namespace dlplan::core {
+class AndConcept;
+}
 
+
+namespace boost::serialization {
+    template<typename Archive>
+    void serialize(Archive& ar, dlplan::core::AndConcept& concept, const unsigned int version);
+    template<class Archive>
+    void save_construct_data(Archive& ar, const dlplan::core::AndConcept* concept, const unsigned int version);
+    template<class Archive>
+    void load_construct_data(Archive& ar, dlplan::core::AndConcept* concept, const unsigned int version);
+}
+
+
+namespace dlplan::core {
 class AndConcept : public Concept {
 private:
     void compute_result(const ConceptDenotation& left_denot, const ConceptDenotation& right_denot, ConceptDenotation& result) const {
@@ -40,18 +59,25 @@ private:
                 *(*concept_left_denotations)[i],
                 *(*concept_right_denotations)[i],
                 denotation);
-            denotations.push_back(caches.get_concept_denotation_cache().insert_denotation(std::move(denotation)));
+            denotations.push_back(caches.concept_denotation_cache.insert_denotation(std::move(denotation)));
         }
         return denotations;
     }
+
+    template<typename Archive>
+    friend void boost::serialization::serialize(Archive& ar, AndConcept& concept, const unsigned int version);
+    template<class Archive>
+    friend void boost::serialization::save_construct_data(Archive& ar, const AndConcept* concept, const unsigned int version);
+    template<class Archive>
+    friend void boost::serialization::load_construct_data(Archive& ar, AndConcept* concept, const unsigned int version);
 
 protected:
     std::shared_ptr<const Concept> m_concept_left;
     std::shared_ptr<const Concept> m_concept_right;
 
 public:
-    AndConcept(std::shared_ptr<const VocabularyInfo> vocabulary_info, std::shared_ptr<const Concept> concept_1, std::shared_ptr<const Concept> concept_2)
-    : Concept(vocabulary_info, concept_1->is_static() && concept_2->is_static()),
+    AndConcept(std::shared_ptr<VocabularyInfo> vocabulary_info, ElementIndex index, std::shared_ptr<const Concept> concept_1, std::shared_ptr<const Concept> concept_2)
+    : Concept(vocabulary_info, index, concept_1->is_static() && concept_2->is_static()),
       m_concept_left(concept_1),
       m_concept_right(concept_2) {
         if (!(concept_1 && concept_2)) {
@@ -78,7 +104,7 @@ public:
     }
 
     void compute_repr(std::stringstream& out) const override {
-        out << get_name() << "(";
+        out << "c_and" << "(";
         m_concept_left->compute_repr(out);
         out << ",";
         m_concept_right->compute_repr(out);
@@ -88,12 +114,43 @@ public:
     int compute_evaluate_time_score() const override {
         return m_concept_left->compute_evaluate_time_score() + m_concept_right->compute_evaluate_time_score() + SCORE_LINEAR;
     }
-
-    static std::string get_name() {
-        return "c_and";
-    }
 };
 
 }
+
+
+namespace boost::serialization {
+template<typename Archive>
+void serialize(Archive& /* ar */ , dlplan::core::AndConcept& t, const unsigned int /* version */ )
+{
+    boost::serialization::base_object<dlplan::core::Concept>(t);
+}
+
+template<class Archive>
+void save_construct_data(Archive& ar, const dlplan::core::AndConcept* t, const unsigned int /* version */ )
+{
+    ar << t->m_vocabulary_info;
+    ar << t->m_index;
+    ar << t->m_concept_left;
+    ar << t->m_concept_right;
+}
+
+template<class Archive>
+void load_construct_data(Archive& ar, dlplan::core::AndConcept* t, const unsigned int /* version */ )
+{
+    std::shared_ptr<dlplan::core::VocabularyInfo> vocabulary;
+    int index;
+    std::shared_ptr<const dlplan::core::Concept> concept_left;
+    std::shared_ptr<const dlplan::core::Concept> concept_right;
+    ar >> vocabulary;
+    ar >> index;
+    ar >> concept_left;
+    ar >> concept_right;
+    ::new(t)dlplan::core::AndConcept(vocabulary, index, concept_left, concept_right);
+}
+
+}
+
+BOOST_CLASS_EXPORT_GUID(dlplan::core::AndConcept, "dlplan::core::AndConcept")
 
 #endif

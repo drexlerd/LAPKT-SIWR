@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 
-#include "../../../include/dlplan/state_space.h"
-#include "../../../include/dlplan/novelty.h"
+#include "include/dlplan/state_space.h"
+#include "include/dlplan/novelty.h"
 
 #include <iostream>
 
@@ -14,7 +14,7 @@ namespace dlplan::tests::novelty {
 
 TEST(DLPTests, NoveltyGripperTest) {
     auto result = generate_state_space("domain.pddl", "p-1-0.pddl");
-    auto state_space = std::make_shared<StateSpace>(std::move(result.state_space));
+    std::shared_ptr<StateSpace> state_space = std::move(result.state_space);
 
     auto novelty_base_0 = std::make_shared<NoveltyBase>(
         state_space->get_instance_info()->get_atoms().size(),

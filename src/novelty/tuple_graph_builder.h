@@ -1,9 +1,10 @@
 #ifndef DLPLAN_INCLUDE_DLPLAN_TUPLE_GRAPH_BUILDER_H_
 #define DLPLAN_INCLUDE_DLPLAN_TUPLE_GRAPH_BUILDER_H_
 
-#include "../../include/dlplan/novelty.h"
+#include "include/dlplan/novelty.h"
 
 using namespace dlplan::state_space;
+
 
 namespace dlplan::novelty {
 

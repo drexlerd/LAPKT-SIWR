@@ -4,7 +4,7 @@
 #define STRINGIFY(x) #x
 #define MACRO_STRINGIFY(x) STRINGIFY(x)
 
-#include "../../../include/dlplan/core.h"
+#include "include/dlplan/core.h"
 
 namespace py = pybind11;
 
@@ -50,7 +50,7 @@ void init_core(py::module_ &m_core) {
         .def("get_num_objects", &RoleDenotation::get_num_objects)
     ;
 
-    py::class_<DenotationsCaches>(m_core, "DenotationsCaches")
+    py::class_<DenotationsCaches, std::shared_ptr<DenotationsCaches>>(m_core, "DenotationsCaches")
         .def(py::init<>())
     ;
 
@@ -108,7 +108,7 @@ void init_core(py::module_ &m_core) {
     ;
 
     py::class_<InstanceInfo, std::shared_ptr<InstanceInfo>>(m_core, "InstanceInfo")
-        .def(py::init<std::shared_ptr<const VocabularyInfo>, int>(), py::arg("vocabulary_info"), py::arg("index") = -1)
+        .def(py::init<std::shared_ptr<VocabularyInfo>, int>(), py::arg("vocabulary_info"), py::arg("index") = -1)
         .def("__repr__", &InstanceInfo::compute_repr)
         .def("__str__", &InstanceInfo::str)
         .def("add_object", &InstanceInfo::add_object)
@@ -118,7 +118,6 @@ void init_core(py::module_ &m_core) {
         .def("add_static_atom", py::overload_cast<const Predicate&, const std::vector<Object>&>(&InstanceInfo::add_static_atom))
         .def("add_static_atom", py::overload_cast<int, const std::vector<int>&>(&InstanceInfo::add_static_atom))
         .def("add_static_atom", py::overload_cast<const std::string&, const std::vector<std::string>&>(&InstanceInfo::add_static_atom))
-        .def("set_index", &InstanceInfo::set_index)
         .def("get_index", &InstanceInfo::get_index)
         .def("get_objects", &InstanceInfo::get_objects)
         .def("get_atoms", &InstanceInfo::get_atoms)
@@ -129,14 +128,14 @@ void init_core(py::module_ &m_core) {
     ;
 
     py::class_<State>(m_core, "State")
-        .def(py::init<std::shared_ptr<const InstanceInfo>, const std::vector<Atom>&, int>(), py::arg("instance_info"), py::arg("atoms"), py::arg("index") = -1)
-        .def(py::init<std::shared_ptr<const InstanceInfo>, const std::vector<int>&, int>(), py::arg("instance_info"), py::arg("atom_indices"), py::arg("index") = -1)
+        .def(py::init<std::shared_ptr<InstanceInfo>, const std::vector<Atom>&, int>(), py::arg("instance_info"), py::arg("atoms"), py::arg("index") = -1)
+        .def(py::init<std::shared_ptr<InstanceInfo>, const std::vector<int>&, int>(), py::arg("instance_info"), py::arg("atom_indices"), py::arg("index") = -1)
+        .def(py::init<std::shared_ptr<InstanceInfo>, std::vector<int>&&, int>(), py::arg("instance_info"), py::arg("atom_indices"), py::arg("index") = -1)
         .def("__eq__", &State::operator==)
         .def("__ne__", &State::operator!=)
         .def("__repr__", &State::str)
         .def("__str__", &State::str)
         .def("__hash__", &State::hash)
-        .def("set_index", &State::set_index)
         .def("get_index", &State::get_index)
         .def("get_atom_indices", &State::get_atom_indices)
         .def("get_instance_info", &State::get_instance_info)
@@ -147,7 +146,6 @@ void init_core(py::module_ &m_core) {
         .def("__str__", [](const BaseElement &element) { return element.str(); })
         .def("compute_complexity", &BaseElement::compute_complexity)
         .def("compute_repr", py::overload_cast<>(&BaseElement::compute_repr, py::const_))
-        .def("set_index", &BaseElement::set_index)
         .def("get_index", &BaseElement::get_index)
         .def("get_vocabulary_info", &BaseElement::get_vocabulary_info)
     ;
@@ -177,12 +175,12 @@ void init_core(py::module_ &m_core) {
     ;
 
     py::class_<SyntacticElementFactory, std::shared_ptr<SyntacticElementFactory>>(m_core, "SyntacticElementFactory")
-        .def(py::init<std::shared_ptr<const VocabularyInfo>>())
+        .def(py::init<std::shared_ptr<VocabularyInfo>>())
 
-        .def("parse_concept", &SyntacticElementFactory::parse_concept)
-        .def("parse_role", &SyntacticElementFactory::parse_role)
-        .def("parse_numerical", &SyntacticElementFactory::parse_numerical)
-        .def("parse_boolean", &SyntacticElementFactory::parse_boolean)
+        .def("parse_concept", py::overload_cast<const std::string&, const std::string&>(&SyntacticElementFactory::parse_concept), py::arg("description"), py::arg("filename") = "")
+        .def("parse_role", py::overload_cast<const std::string&, const std::string&>(&SyntacticElementFactory::parse_role), py::arg("description"), py::arg("filename") = "")
+        .def("parse_numerical", py::overload_cast<const std::string&, const std::string&>(&SyntacticElementFactory::parse_numerical), py::arg("description"), py::arg("filename") = "")
+        .def("parse_boolean", py::overload_cast<const std::string&, const std::string&>(&SyntacticElementFactory::parse_boolean), py::arg("description"), py::arg("filename") = "")
 
         .def("make_empty_boolean", py::overload_cast<const std::shared_ptr<const Concept>&>(&SyntacticElementFactory::make_empty_boolean))
         .def("make_empty_boolean", py::overload_cast<const std::shared_ptr<const Role>&>(&SyntacticElementFactory::make_empty_boolean))

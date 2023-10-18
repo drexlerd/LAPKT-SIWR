@@ -1,11 +1,11 @@
-#include "../../include/dlplan/state_space.h"
+#include "include/dlplan/state_space.h"
 
 #include <iostream>
 #include <fstream>
 #include <regex>
 #include <sstream>
 
-#include "../utils/tokenizer.h"
+#include "src/utils/tokenizer.h"
 
 
 using namespace dlplan::core;
@@ -181,12 +181,12 @@ static GeneratorExitCode parse_run_file(const std::string& filename) {
     return GeneratorExitCode::FAIL;
 }
 
-GeneratorResult read(std::shared_ptr<const VocabularyInfo> vocabulary_info, int index) {
+GeneratorResult read(std::shared_ptr<VocabularyInfo> vocabulary_info, int index) {
     auto exit_code = parse_run_file("run.log");
     if (exit_code == GeneratorExitCode::FAIL) {
         return GeneratorResult{
             exit_code,
-            std::move(StateSpace(nullptr, {}, 0, {}, {}))
+            nullptr
         };
     }
     if (!vocabulary_info) {
@@ -212,7 +212,7 @@ GeneratorResult read(std::shared_ptr<const VocabularyInfo> vocabulary_info, int 
     int initial_state_index = 0;
     return GeneratorResult{
         exit_code,
-        std::move(StateSpace(std::move(instance_info), std::move(states), initial_state_index, std::move(adjacency_list), std::move(goal_state_indices)))
+        std::make_shared<StateSpace>(std::move(instance_info), std::move(states), initial_state_index, std::move(adjacency_list), std::move(goal_state_indices))
     };
 }
 

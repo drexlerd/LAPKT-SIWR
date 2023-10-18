@@ -4,7 +4,7 @@
 #define STRINGIFY(x) #x
 #define MACRO_STRINGIFY(x) STRINGIFY(x)
 
-#include "../../../include/dlplan/novelty.h"
+#include "include/dlplan/novelty.h"
 
 namespace py = pybind11;
 
@@ -31,7 +31,7 @@ void init_novelty(py::module_ &m_novelty) {
         .def("resize", &NoveltyTable::resize)
     ;
 
-    py::class_<TupleNode>(m_novelty, "TupleNode")
+    py::class_<TupleNode, std::shared_ptr<TupleNode>>(m_novelty, "TupleNode")
         .def("__repr__", &TupleNode::compute_repr)
         .def("__str__", &TupleNode::str)
         .def("get_index", &TupleNode::get_index)
@@ -41,7 +41,7 @@ void init_novelty(py::module_ &m_novelty) {
         .def("get_successors", &TupleNode::get_successors, py::return_value_policy::reference)
     ;
 
-    py::class_<TupleGraph>(m_novelty, "TupleGraph")
+    py::class_<TupleGraph, std::shared_ptr<TupleGraph>>(m_novelty, "TupleGraph")
         .def(py::init<std::shared_ptr<const NoveltyBase>, std::shared_ptr<const StateSpace>, StateIndex>())
         .def("__repr__", &TupleGraph::compute_repr)
         .def("__str__", &TupleGraph::str)

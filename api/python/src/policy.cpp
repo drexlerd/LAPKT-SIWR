@@ -5,8 +5,8 @@
 #define STRINGIFY(x) #x
 #define MACRO_STRINGIFY(x) STRINGIFY(x)
 
-#include "../../../include/dlplan/core.h"
-#include "../../../include/dlplan/policy.h"
+#include "include/dlplan/core.h"
+#include "include/dlplan/policy.h"
 
 
 namespace py = pybind11;
@@ -62,35 +62,26 @@ void init_policy(py::module_ &m_policy) {
         .def("get_numericals", &Policy::get_numericals, py::return_value_policy::reference)
     ;
 
-    py::class_<PolicyBuilder>(m_policy, "PolicyBuilder")
-        .def(py::init<>())
-        .def("add_pos_condition", &PolicyBuilder::add_pos_condition)
-        .def("add_neg_condition", &PolicyBuilder::add_neg_condition)
-        .def("add_gt_condition", &PolicyBuilder::add_gt_condition)
-        .def("add_eq_condition", &PolicyBuilder::add_eq_condition)
-        .def("add_pos_effect", &PolicyBuilder::add_pos_effect)
-        .def("add_neg_effect", &PolicyBuilder::add_neg_effect)
-        .def("add_inc_effect", &PolicyBuilder::add_inc_effect)
-        .def("add_dec_effect", &PolicyBuilder::add_dec_effect)
-        .def("add_bot_effect", py::overload_cast<const std::shared_ptr<const Boolean>&>(&PolicyBuilder::add_bot_effect))
-        .def("add_bot_effect", py::overload_cast<const std::shared_ptr<const Numerical>&>(&PolicyBuilder::add_bot_effect))
-        .def("add_rule", &PolicyBuilder::add_rule)
-        .def("add_policy", &PolicyBuilder::add_policy)
+    py::class_<PolicyFactory, std::shared_ptr<PolicyFactory>>(m_policy, "PolicyFactory")
+        .def(py::init<std::shared_ptr<dlplan::core::SyntacticElementFactory>>())
+        .def("make_pos_condition", &PolicyFactory::make_pos_condition)
+        .def("make_neg_condition", &PolicyFactory::make_neg_condition)
+        .def("make_gt_condition", &PolicyFactory::make_gt_condition)
+        .def("make_eq_condition", &PolicyFactory::make_eq_condition)
+        .def("make_pos_effect", &PolicyFactory::make_pos_effect)
+        .def("make_neg_effect", &PolicyFactory::make_neg_effect)
+        .def("make_inc_effect", &PolicyFactory::make_inc_effect)
+        .def("make_dec_effect", &PolicyFactory::make_dec_effect)
+        .def("make_bot_effect", py::overload_cast<const std::shared_ptr<const Boolean>&>(&PolicyFactory::make_bot_effect))
+        .def("make_bot_effect", py::overload_cast<const std::shared_ptr<const Numerical>&>(&PolicyFactory::make_bot_effect))
+        .def("make_rule", &PolicyFactory::make_rule)
+        .def("make_policy", &PolicyFactory::make_policy)
+        .def("parse_policy", py::overload_cast<const std::string&, const std::string&>(&PolicyFactory::parse_policy), py::arg("description"), py::arg("filename") = "")
     ;
 
     py::class_<PolicyMinimizer>(m_policy, "PolicyMinimizer")
         .def(py::init<>())
-        .def("minimize", py::overload_cast<const std::shared_ptr<const Policy>&, PolicyBuilder&>(&PolicyMinimizer::minimize, py::const_))
-        .def("minimize", py::overload_cast<const std::shared_ptr<const Policy>&, const StatePairs&, const StatePairs&, PolicyBuilder&>(&PolicyMinimizer::minimize, py::const_))
-    ;
-
-    py::class_<PolicyReader>(m_policy, "PolicyReader")
-        .def(py::init<>())
-        .def("read", &PolicyReader::read)
-    ;
-
-    py::class_<PolicyWriter>(m_policy, "PolicyWriter")
-        .def(py::init<>())
-        .def("write", &PolicyWriter::write)
+        .def("minimize", py::overload_cast<const std::shared_ptr<const Policy>&, PolicyFactory&>(&PolicyMinimizer::minimize, py::const_))
+        .def("minimize", py::overload_cast<const std::shared_ptr<const Policy>&, const StatePairs&, const StatePairs&, PolicyFactory&>(&PolicyMinimizer::minimize, py::const_))
     ;
 }

@@ -1,12 +1,18 @@
-#include "../../include/dlplan/core.h"
-
-#include "../utils/collections.h"
-#include "../utils/logging.h"
+#include "include/dlplan/core.h"
 
 #include <string>
 #include <algorithm>
 #include <iostream>
 #include <sstream>
+
+#include <boost/archive/text_oarchive.hpp>
+#include <boost/archive/text_iarchive.hpp>
+#include <boost/serialization/unordered_map.hpp>
+#include <boost/serialization/shared_ptr.hpp>
+#include <boost/serialization/vector.hpp>
+
+#include "src/utils/collections.h"
+#include "src/utils/logging.h"
 
 using namespace std::string_literals;
 
@@ -24,7 +30,9 @@ static std::string compute_atom_name(const Predicate& predicate, const std::vect
     return ss.str();
 }
 
-InstanceInfo::InstanceInfo(std::shared_ptr<const VocabularyInfo> vocabulary_info, InstanceIndex index)
+InstanceInfo::InstanceInfo() : m_vocabulary_info(nullptr), m_index(-1) { }
+
+InstanceInfo::InstanceInfo(std::shared_ptr<VocabularyInfo> vocabulary_info, InstanceIndex index)
     : m_vocabulary_info(vocabulary_info), m_index(index) {
 }
 
@@ -150,10 +158,6 @@ std::string InstanceInfo::str() const {
     return compute_repr();
 }
 
-void InstanceInfo::set_index(InstanceIndex index) {
-    m_index = index;
-}
-
 InstanceIndex InstanceInfo::get_index() const {
     return m_index;
 }
@@ -170,7 +174,7 @@ const std::vector<Object>& InstanceInfo::get_objects() const {
     return m_objects;
 }
 
-std::shared_ptr<const VocabularyInfo> InstanceInfo::get_vocabulary_info() const {
+std::shared_ptr<VocabularyInfo> InstanceInfo::get_vocabulary_info() const {
     return m_vocabulary_info;
 }
 
@@ -188,4 +192,24 @@ const Atom& InstanceInfo::get_atom(const std::string& name) const {
     return m_atoms[m_atom_name_to_index.at(name)];
 }
 
+}
+
+
+namespace boost::serialization {
+template<typename Archive>
+void serialize(Archive& ar, dlplan::core::InstanceInfo& t, const unsigned int /* version */) {
+    ar & t.m_vocabulary_info;
+    ar & t.m_index;
+    ar & t.m_objects;
+    ar & t.m_object_name_to_index;
+    ar & t.m_atoms;
+    ar & t.m_atom_name_to_index;
+    ar & t.m_static_atoms;
+    ar & t.m_static_atom_name_to_index;
+}
+
+template void serialize(boost::archive::text_iarchive& ar,
+    dlplan::core::InstanceInfo& t, const unsigned int version);
+template void serialize(boost::archive::text_oarchive& ar,
+    dlplan::core::InstanceInfo& t, const unsigned int version);
 }

@@ -1,7 +1,11 @@
-#include "../../include/dlplan/core.h"
-#include "../../include/dlplan/utils/hash.h"
+#include "include/dlplan/core.h"
+
+#include <boost/archive/text_oarchive.hpp>
+#include <boost/archive/text_iarchive.hpp>
+#include <boost/serialization/unique_ptr.hpp>
 
 #include "element_factory.h"
+#include "include/dlplan/utils/hash.h"
 
 
 namespace dlplan::core {
@@ -44,8 +48,11 @@ size_t hash_impl<std::vector<int>>::operator()(const std::vector<int>& data) con
     return dlplan::utils::hash<std::vector<int>>()(data);
 }
 
+SyntacticElementFactory::SyntacticElementFactory()
+    : m_pImpl(nullptr) { }
 
-SyntacticElementFactory::SyntacticElementFactory(std::shared_ptr<const VocabularyInfo> vocabulary_info) : m_pImpl(SyntacticElementFactoryImpl(vocabulary_info)) { }
+SyntacticElementFactory::SyntacticElementFactory(std::shared_ptr<VocabularyInfo> vocabulary_info)
+    : m_pImpl(SyntacticElementFactoryImpl(vocabulary_info)) { }
 
 SyntacticElementFactory::SyntacticElementFactory(const SyntacticElementFactory& other) : m_pImpl(*other.m_pImpl) { }
 
@@ -68,24 +75,48 @@ SyntacticElementFactory& SyntacticElementFactory::operator=(SyntacticElementFact
 
 SyntacticElementFactory::~SyntacticElementFactory() = default;
 
-std::shared_ptr<const VocabularyInfo> SyntacticElementFactory::get_vocabulary_info() const {
+std::shared_ptr<VocabularyInfo> SyntacticElementFactory::get_vocabulary_info() const {
     return m_pImpl->get_vocabulary_info();
 }
 
-std::shared_ptr<const Concept> SyntacticElementFactory::parse_concept(const std::string &description) {
-    return m_pImpl->parse_concept(description);
+std::shared_ptr<const Concept> SyntacticElementFactory::parse_concept(
+    const std::string &description, const std::string& filename) {
+    return m_pImpl->parse_concept(*this, description, filename);
 }
 
-std::shared_ptr<const Role>SyntacticElementFactory::parse_role(const std::string &description) {
-    return m_pImpl->parse_role(description);
+std::shared_ptr<const Concept> SyntacticElementFactory::parse_concept(
+    std::string::const_iterator& iter, std::string::const_iterator end, const std::string& filename) {
+    return m_pImpl->parse_concept(*this, iter, end, filename);
 }
 
-std::shared_ptr<const Numerical>SyntacticElementFactory::parse_numerical(const std::string &description) {
-    return m_pImpl->parse_numerical(description);
+std::shared_ptr<const Role> SyntacticElementFactory::parse_role(
+    const std::string &description, const std::string& filename) {
+    return m_pImpl->parse_role(*this, description, filename);
 }
 
-std::shared_ptr<const Boolean>SyntacticElementFactory::parse_boolean(const std::string &description) {
-    return m_pImpl->parse_boolean(description);
+std::shared_ptr<const Role> SyntacticElementFactory::parse_role(
+    std::string::const_iterator& iter, std::string::const_iterator end, const std::string& filename) {
+    return m_pImpl->parse_role(*this, iter, end, filename);
+}
+
+std::shared_ptr<const Boolean> SyntacticElementFactory::parse_boolean(
+    const std::string &description, const std::string& filename) {
+    return m_pImpl->parse_boolean(*this, description, filename);
+}
+
+std::shared_ptr<const Boolean> SyntacticElementFactory::parse_boolean(
+    std::string::const_iterator& iter, std::string::const_iterator end, const std::string& filename) {
+    return m_pImpl->parse_boolean(*this, iter, end, filename);
+}
+
+std::shared_ptr<const Numerical> SyntacticElementFactory::parse_numerical(
+    const std::string &description, const std::string& filename) {
+    return m_pImpl->parse_numerical(*this, description, filename);
+}
+
+std::shared_ptr<const Numerical> SyntacticElementFactory::parse_numerical(
+    std::string::const_iterator& iter, std::string::const_iterator end, const std::string& filename) {
+    return m_pImpl->parse_numerical(*this, iter, end, filename);
 }
 
 
@@ -232,5 +263,20 @@ std::shared_ptr<const Role>SyntacticElementFactory::make_transitive_closure(cons
 std::shared_ptr<const Role>SyntacticElementFactory::make_transitive_reflexive_closure(const std::shared_ptr<const Role>& role) {
     return m_pImpl->make_transitive_reflexive_closure(role);
 }
+
+}
+
+
+namespace boost::serialization {
+template<typename Archive>
+void serialize(Archive& ar, dlplan::core::SyntacticElementFactory& t, const unsigned int /* version */ )
+{
+    ar & t.m_pImpl;
+}
+
+template void serialize(boost::archive::text_iarchive& ar,
+    dlplan::core::SyntacticElementFactory& t, const unsigned int version);
+template void serialize(boost::archive::text_oarchive& ar,
+    dlplan::core::SyntacticElementFactory& t, const unsigned int version);
 
 }

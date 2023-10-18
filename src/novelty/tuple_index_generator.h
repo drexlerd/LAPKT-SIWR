@@ -1,9 +1,12 @@
 #ifndef DLPLAN_INCLUDE_DLPLAN_TUPLE_INDEX_GENERATOR_H_
 #define DLPLAN_INCLUDE_DLPLAN_TUPLE_INDEX_GENERATOR_H_
 
-#include "../../include/dlplan/novelty.h"
+#include <array>
+#include <vector>
+#include <functional>
 
-#include "../utils/logging.h"
+#include "src/utils/logging.h"
+#include "include/dlplan/novelty.h"
 
 
 namespace dlplan::novelty {
@@ -24,7 +27,7 @@ extern std::array<std::vector<int>, 2> compute_geq_mappings(
 
 /// @brief
 /// @param novelty_base
-/// @param atom_indices
+/// @param atom_indices A vector of atom indices sorted ascendingly.
 /// @param callback
 extern void for_each_tuple_index(
     const NoveltyBase &novelty_base,
@@ -33,8 +36,8 @@ extern void for_each_tuple_index(
 
 /// @brief
 /// @param novelty_base
-/// @param atom_indices
-/// @param add_atom_indices
+/// @param atom_indices A vector of atom indices sorted ascendingly.
+/// @param add_atom_indices A vector of atom indices sorted ascendingly.
 /// @param callback
 extern void for_each_tuple_index(
     const NoveltyBase& novelty_base,

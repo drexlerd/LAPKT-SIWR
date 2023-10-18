@@ -1,13 +1,33 @@
 #ifndef DLPLAN_SRC_CORE_ELEMENTS_NUMERICAL_CONCEPT_DISTANCE_H_
 #define DLPLAN_SRC_CORE_ELEMENTS_NUMERICAL_CONCEPT_DISTANCE_H_
 
-#include "../utils.h"
-
-#include "../../../../include/dlplan/core.h"
-
 #include <sstream>
+#include <memory>
+
+#include <boost/archive/text_oarchive.hpp>
+#include <boost/archive/text_iarchive.hpp>
+#include <boost/serialization/export.hpp>
+#include <boost/serialization/shared_ptr.hpp>
+
+#include "src/core/elements/utils.h"
+#include "include/dlplan/core.h"
 
 using namespace std::string_literals;
+
+
+namespace dlplan::core {
+class ConceptDistanceNumerical;
+}
+
+
+namespace boost::serialization {
+    template<typename Archive>
+    void serialize(Archive& ar, dlplan::core::ConceptDistanceNumerical& numerical, const unsigned int version);
+    template<class Archive>
+    void save_construct_data(Archive& ar, const dlplan::core::ConceptDistanceNumerical* numerical, const unsigned int version);
+    template<class Archive>
+    void load_construct_data(Archive& ar, dlplan::core::ConceptDistanceNumerical* numerical, const unsigned int version);
+}
 
 
 namespace dlplan::core {
@@ -69,14 +89,21 @@ private:
         return denotations;
     }
 
+    template<typename Archive>
+    friend void boost::serialization::serialize(Archive& ar, ConceptDistanceNumerical& numerical, const unsigned int version);
+    template<class Archive>
+    friend void boost::serialization::save_construct_data(Archive& ar, const ConceptDistanceNumerical* numerical, const unsigned int version);
+    template<class Archive>
+    friend void boost::serialization::load_construct_data(Archive& ar, ConceptDistanceNumerical* numerical, const unsigned int version);
+
 protected:
     const std::shared_ptr<const Concept> m_concept_from;
     const std::shared_ptr<const Role> m_role;
     const std::shared_ptr<const Concept> m_concept_to;
 
 public:
-    ConceptDistanceNumerical(std::shared_ptr<const VocabularyInfo> vocabulary_info, std::shared_ptr<const Concept> concept_from, std::shared_ptr<const Role> role, std::shared_ptr<const Concept> concept_to)
-    : Numerical(vocabulary_info, concept_from->is_static() && role->is_static() && concept_to->is_static()),
+    ConceptDistanceNumerical(std::shared_ptr<VocabularyInfo> vocabulary_info, ElementIndex index, std::shared_ptr<const Concept> concept_from, std::shared_ptr<const Role> role, std::shared_ptr<const Concept> concept_to)
+    : Numerical(vocabulary_info, index, concept_from->is_static() && role->is_static() && concept_to->is_static()),
       m_concept_from(concept_from), m_role(role), m_concept_to(concept_to) {
         if (!(concept_from && role && concept_to)) {
             throw std::runtime_error("ConceptDistanceNumerical::ConceptDistanceNumerical - child is not of type Concept, Role, Concept.");
@@ -106,7 +133,7 @@ public:
     }
 
     void compute_repr(std::stringstream& out) const override {
-        out << get_name() << "(";
+        out << "n_concept_distance" << "(";
         m_concept_from->compute_repr(out);
         out << ",";
         m_role->compute_repr(out);
@@ -118,12 +145,46 @@ public:
     int compute_evaluate_time_score() const override {
         return m_concept_from->compute_evaluate_time_score() + m_role->compute_evaluate_time_score() + m_concept_to->compute_evaluate_time_score() + SCORE_QUBIC;
     }
-
-    static std::string get_name() {
-        return "n_concept_distance";
-    }
 };
 
 }
+
+
+namespace boost::serialization {
+template<typename Archive>
+void serialize(Archive& /* ar */ , dlplan::core::ConceptDistanceNumerical& t, const unsigned int /* version */ )
+{
+    boost::serialization::base_object<dlplan::core::Numerical>(t);
+}
+
+template<class Archive>
+void save_construct_data(Archive& ar, const dlplan::core::ConceptDistanceNumerical* t, const unsigned int /* version */ )
+{
+    ar << t->m_vocabulary_info;
+    ar << t->m_index;
+    ar << t->m_concept_from;
+    ar << t->m_role;
+    ar << t->m_concept_to;
+}
+
+template<class Archive>
+void load_construct_data(Archive& ar, dlplan::core::ConceptDistanceNumerical* t, const unsigned int /* version */ )
+{
+    std::shared_ptr<dlplan::core::VocabularyInfo> vocabulary;
+    int index;
+    std::shared_ptr<const dlplan::core::Concept> concept_from;
+    std::shared_ptr<const dlplan::core::Role> role;
+    std::shared_ptr<const dlplan::core::Concept> concept_to;
+    ar >> vocabulary;
+    ar >> index;
+    ar >> concept_from;
+    ar >> role;
+    ar >> concept_to;
+    ::new(t)dlplan::core::ConceptDistanceNumerical(vocabulary, index, concept_from, role, concept_to);
+}
+
+}
+
+BOOST_CLASS_EXPORT_GUID(dlplan::core::ConceptDistanceNumerical, "dlplan::core::ConceptDistanceNumerical")
 
 #endif

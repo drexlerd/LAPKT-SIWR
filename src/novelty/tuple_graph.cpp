@@ -1,32 +1,45 @@
-#include "../../include/dlplan/novelty.h"
-
-#include "tuple_graph_builder.h"
-#include "tuple_index_generator.h"
-
-#include "../utils/logging.h"
+#include "include/dlplan/novelty.h"
 
 #include <cassert>
 #include <sstream>
+
+#include <boost/archive/text_oarchive.hpp>
+#include <boost/archive/text_iarchive.hpp>
+#include <boost/serialization/vector.hpp>
+#include <boost/serialization/shared_ptr.hpp>
+
+#include "tuple_graph_builder.h"
+#include "tuple_index_generator.h"
+#include "src/utils/logging.h"
 
 using namespace dlplan::state_space;
 
 
 namespace dlplan::novelty {
 
+TupleGraph::TupleGraph()
+    : m_novelty_base(nullptr),
+      m_state_space(nullptr),
+      m_root_state_index(-1),
+      m_nodes(TupleNodes()),
+      m_node_indices_by_distance(std::vector<TupleNodeIndices>()),
+      m_state_indices_by_distance(std::vector<TupleNodeIndices>()) {
+}
+
 TupleGraph::TupleGraph(
     std::shared_ptr<const NoveltyBase> novelty_base,
     std::shared_ptr<const state_space::StateSpace> state_space,
-    StateIndex root_state)
+    StateIndex root_state_index)
     : m_novelty_base(novelty_base),
       m_state_space(state_space),
-      m_root_state_index(root_state) {
+      m_root_state_index(root_state_index) {
     if (!m_novelty_base) {
         throw std::runtime_error("TupleGraph::TupleGraph - novelty_base is nullptr.");
     }
     if (!m_novelty_base) {
         throw std::runtime_error("TupleGraph::TupleGraph - state_space is nullptr.");
     }
-    TupleGraphBuilderResult result = TupleGraphBuilder(novelty_base, state_space, root_state).get_result();
+    TupleGraphBuilderResult result = TupleGraphBuilder(novelty_base, state_space, root_state_index).get_result();
     m_nodes = std::move(result.nodes);
     m_node_indices_by_distance = std::move(result.node_indices_by_distance);
     m_state_indices_by_distance = std::move(result.state_indices_by_distance);
@@ -215,4 +228,23 @@ const std::vector<state_space::StateIndices>& TupleGraph::get_state_indices_by_d
     return m_state_indices_by_distance;
 }
 
+}
+
+
+namespace boost::serialization {
+template<typename Archive>
+void serialize(Archive& ar, dlplan::novelty::TupleGraph& t, const unsigned int /* version */ )
+{
+    ar & t.m_novelty_base;
+    ar & t.m_state_space;
+    ar & t.m_root_state_index;
+    ar & t.m_nodes;
+    ar & t.m_node_indices_by_distance;
+    ar & t.m_state_indices_by_distance;
+}
+
+template void serialize(boost::archive::text_iarchive& ar,
+    dlplan::novelty::TupleGraph& t, const unsigned int version);
+template void serialize(boost::archive::text_oarchive& ar,
+    dlplan::novelty::TupleGraph& t, const unsigned int version);
 }
