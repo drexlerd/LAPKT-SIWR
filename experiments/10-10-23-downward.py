@@ -63,19 +63,22 @@ def fetch_algorithm(exp, expname, algo, new_algo=None):
         return False
 
     exp.add_fetcher(
-        f"data_jair/{expname}-eval",
+        f"data/{expname}-eval",
         filter=rename_and_filter,
         name=f"fetch-{algo}_to_{new_algo}-from-{expname}",
         merge=True,
     )
 
-fetch_algorithm(exp, "experiment-siw-downward", "siw", "siw")
-fetch_algorithm(exp, "experiment-siwr-downward", "siwr_0", "siwr")
-fetch_algorithm(exp, "experiment-siwr-downward", "siwr_1", "siwr")
-fetch_algorithm(exp, "experiment-siwr-downward", "siwr_2", "siwr")
-fetch_algorithm(exp, "experiment-dual-bfws-downward", "dual_bfws", "dual_bfws")
-fetch_algorithm(exp, "experiment-lama-first-downward", "lama_first", "lama_first")
+fetch_algorithm(exp, "10-10-23-siw-downward", "siw", "siw")
+fetch_algorithm(exp, "10-10-23-siwr-downward-lifted", "siwr_0", "siwr-lifted")
+fetch_algorithm(exp, "10-10-23-siwr-downward-lifted", "siwr_1", "siwr-lifted")
+fetch_algorithm(exp, "10-10-23-siwr-downward-lifted", "siwr_2", "siwr-lifted")
+fetch_algorithm(exp, "10-10-23-siwr-downward", "siwr_0", "siwr")
+fetch_algorithm(exp, "10-10-23-siwr-downward", "siwr_1", "siwr")
+fetch_algorithm(exp, "10-10-23-siwr-downward", "siwr_2", "siwr")
+fetch_algorithm(exp, "10-10-23-dual-bfws-downward", "dual_bfws", "dual_bfws")
+fetch_algorithm(exp, "10-10-23-lama-first-downward", "lama_first", "lama_first")
 
 report = os.path.join(exp.eval_dir, f"{exp.name}.html")
-exp.add_report(BaseReport(attributes=ATTRIBUTES, filter_algorithm=["siw", "siwr", "lama_first", "dual_bfws"]), outfile=report)
+exp.add_report(BaseReport(attributes=ATTRIBUTES, filter_algorithm=["siw", "siwr", "siwr-lifted", "lama_first", "dual_bfws"]), outfile=report)
 exp.run_steps()
