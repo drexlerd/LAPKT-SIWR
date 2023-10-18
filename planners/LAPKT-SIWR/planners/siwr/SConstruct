@@ -25,6 +25,6 @@ agnostic_objs = SConscript('../../interfaces/agnostic/SConscript.agnostic')
 python_objs = SConscript('../python/agnostic/SConscript.python')
 siw_objs = SConscript('src/SConscript')
 
-common_env.Append( LIBS = [ 'libdlplancore.a', 'libdlplanpolicy.a', 'boost_serialization.a' ], LIBPATH = [ os.path.abspath('../../libs/dlplan/installs/release/dlplan/lib') ] )
+common_env.Append( LIBS = [ 'libdlplancore.a', 'libdlplanpolicy.a', 'boost_serialization.a' ], LIBPATH = [ os.path.abspath('../../libs/dlplan/installs/release/dlplan/lib'), '/boost_1_82_0/' ] )
 
 common_env.SharedLibrary( 'siwr.so', siw_objs + generic_objs + agnostic_objs + python_objs, RPATH=[])
