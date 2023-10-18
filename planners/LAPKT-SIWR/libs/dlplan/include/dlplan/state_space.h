@@ -3,10 +3,26 @@
 #ifndef DLPLAN_INCLUDE_DLPLAN_STATE_SPACE_H_
 #define DLPLAN_INCLUDE_DLPLAN_STATE_SPACE_H_
 
-#include "core.h"
-
+#include <functional>
 #include <unordered_map>
 #include <unordered_set>
+
+#include "core.h"
+
+
+// Forward declarations of this header
+namespace dlplan::state_space {
+class StateSpace;
+}
+
+
+// Forward declarations of template spezializations for serialization
+namespace boost::serialization {
+    class access;
+
+    template <typename Archive>
+    void serialize(Archive& ar, dlplan::state_space::StateSpace& state_space, const unsigned int version);
+}
 
 
 namespace dlplan::state_space {
@@ -25,7 +41,7 @@ const int UNDEFINED = -1;
 class StateSpace {
 private:
     /* Required information. */
-    std::shared_ptr<const core::InstanceInfo> m_instance_info;
+    std::shared_ptr<core::InstanceInfo> m_instance_info;
     StateMapping m_states;
     StateIndex m_initial_state_index;
     AdjacencyList m_forward_successor_state_indices;
@@ -34,9 +50,16 @@ private:
     // for backward search
     AdjacencyList m_backward_successor_state_indices;
 
+    /// @brief Constructor for serialization
+    StateSpace();
+
+    friend class boost::serialization::access;
+    template<typename Archive>
+    friend void boost::serialization::serialize(Archive& ar, StateSpace& state_space, const unsigned int version);
+
 public:
     StateSpace(
-        std::shared_ptr<const core::InstanceInfo>&& instance_info,
+        std::shared_ptr<core::InstanceInfo>&& instance_info,
         StateMapping&& index_to_state,
         StateIndex initial_state_index,
         AdjacencyList&& forward_successor_state_indices,
@@ -80,7 +103,7 @@ public:
 
     void set_initial_state_index(StateIndex initial_state);
     void set_goal_state_indices(const StateIndicesSet& goal_states);
-    std::shared_ptr<const core::InstanceInfo> get_instance_info() const;
+    std::shared_ptr<core::InstanceInfo> get_instance_info() const;
     const StateMapping& get_states() const;
     StateIndex get_initial_state_index() const;
     const AdjacencyList& get_forward_successor_state_indices() const;
@@ -100,7 +123,7 @@ enum class GeneratorExitCode {
 /// @brief Encapsulates the result of the state space generation process.
 struct GeneratorResult {
     GeneratorExitCode exit_code;
-    StateSpace state_space;
+    std::shared_ptr<StateSpace> state_space;
 };
 
 
@@ -114,7 +137,7 @@ struct GeneratorResult {
 extern GeneratorResult generate_state_space(
     const std::string& domain_file,
     const std::string& instance_file,
-    std::shared_ptr<const core::VocabularyInfo> vocabulary_info=nullptr,
+    std::shared_ptr<core::VocabularyInfo> vocabulary_info=nullptr,
     core::InstanceIndex index=-1,
     int max_time=std::numeric_limits<int>::max()-1,
     int max_num_states=std::numeric_limits<int>::max()-1);

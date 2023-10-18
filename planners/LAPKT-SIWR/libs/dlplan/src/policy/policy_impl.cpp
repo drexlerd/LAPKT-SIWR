@@ -1,19 +1,28 @@
-#include "../../include/dlplan/policy.h"
+#include "include/dlplan/policy.h"
+
+#include <algorithm>
+#include <sstream>
+
+#include <boost/archive/text_oarchive.hpp>
+#include <boost/archive/text_iarchive.hpp>
+#include <boost/serialization/set.hpp>
+#include <boost/serialization/shared_ptr.hpp>
 
 #include "condition.h"
 #include "effect.h"
-
-#include "../../include/dlplan/core.h"
-
-#include <sstream>
+#include "include/dlplan/core.h"
 
 
 namespace dlplan::policy {
 
-Policy::Policy() = default;
+Policy::Policy()
+    : m_booleans(Booleans()),
+      m_numericals(Numericals()),
+      m_rules(Rules()),
+      m_index(-1) { }
 
-Policy::Policy(Rules&& rules)
-    : m_rules(move(rules)) {
+Policy::Policy(const Rules& rules, PolicyIndex index)
+    : m_rules(rules), m_index(index) {
     // Retrieve boolean and numericals from the rules.
     for (const auto& rule : m_rules) {
         for (const auto& condition : rule->get_conditions()) {
@@ -124,13 +133,13 @@ std::string Policy::str() const {
     ss << "(:policy\n";
     ss << "(:booleans ";
     for (const auto& boolean : m_booleans) {
-        ss << "(" << boolean->get_index() << " \"" << boolean->compute_repr() << "\")";
+        ss << "(" << "b" << boolean->get_index() << " \"" << boolean->compute_repr() << "\")";
         if (boolean != *m_booleans.rbegin()) ss << " ";
     }
     ss << ")\n";
     ss << "(:numericals ";
     for (const auto& numerical : m_numericals) {
-        ss << "(" << numerical->get_index() << " \"" << numerical->compute_repr() << "\")";
+        ss << "(" << "n" << numerical->get_index() << " \"" << numerical->compute_repr() << "\")";
         if (numerical != *m_numericals.rbegin()) ss << " ";
     }
     ss << ")\n";
@@ -149,10 +158,6 @@ int Policy::compute_evaluate_time_score() const {
     return score;
 }
 
-void Policy::set_index(PolicyIndex index) {
-    m_index = index;
-}
-
 PolicyIndex Policy::get_index() const {
     return m_index;
 }
@@ -169,4 +174,21 @@ const Rules& Policy::get_rules() const {
     return m_rules;
 }
 
+}
+
+
+namespace boost::serialization {
+template<typename Archive>
+void serialize(Archive& ar, dlplan::policy::Policy& t, const unsigned int /* version */ )
+{
+    ar & t.m_index;
+    ar & t.m_booleans;
+    ar & t.m_numericals;
+    ar & t.m_rules;
+}
+
+template void serialize(boost::archive::text_iarchive& ar,
+    dlplan::policy::Policy& t, const unsigned int version);
+template void serialize(boost::archive::text_oarchive& ar,
+    dlplan::policy::Policy& t, const unsigned int version);
 }

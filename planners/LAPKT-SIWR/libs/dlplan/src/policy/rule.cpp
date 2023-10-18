@@ -1,15 +1,22 @@
-#include "../../include/dlplan/policy.h"
+#include "include/dlplan/policy.h"
+
+#include <algorithm>
+#include <sstream>
+
+#include <boost/archive/text_oarchive.hpp>
+#include <boost/archive/text_iarchive.hpp>
+#include <boost/serialization/set.hpp>
+#include <boost/serialization/shared_ptr.hpp>
 
 #include "condition.h"
 #include "effect.h"
 
-#include <sstream>
-
 
 namespace dlplan::policy {
+Rule::Rule() : m_conditions(Conditions()), m_effects(Effects()), m_index(-1) { }
 
-Rule::Rule(Conditions&& conditions, Effects&& effects)
-    : m_conditions(std::move(conditions)), m_effects(std::move(effects)) {
+Rule::Rule(const Conditions& conditions, const Effects& effects, RuleIndex index)
+    : m_conditions(conditions), m_effects(effects), m_index(index) {
 }
 
 Rule::~Rule() = default;
@@ -103,10 +110,6 @@ int Rule::compute_evaluate_time_score() const {
     return score;
 }
 
-void Rule::set_index(RuleIndex index) {
-    m_index = index;
-}
-
 RuleIndex Rule::get_index() const {
     return m_index;
 }
@@ -119,4 +122,20 @@ const Effects& Rule::get_effects() const {
     return m_effects;
 }
 
+}
+
+
+namespace boost::serialization {
+template<typename Archive>
+void serialize(Archive& ar, dlplan::policy::Rule& t, const unsigned int /* version */ )
+{
+    ar & t.m_index;
+    ar & t.m_conditions;
+    ar & t.m_effects;
+}
+
+template void serialize(boost::archive::text_iarchive& ar,
+    dlplan::policy::Rule& t, const unsigned int version);
+template void serialize(boost::archive::text_oarchive& ar,
+    dlplan::policy::Rule& t, const unsigned int version);
 }

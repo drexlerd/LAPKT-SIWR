@@ -7,6 +7,7 @@ target_sources(_dlplan
         src/generator.cpp
         src/novelty.cpp
         src/policy.cpp
+        src/serialization.cpp
         src/state_space.cpp)
 target_link_libraries(_dlplan
     PRIVATE
@@ -15,18 +16,6 @@ target_link_libraries(_dlplan
         dlplangenerator
         dlplannovelty
         dlplanpolicy
+        dlplanserialization
         dlplanstatespace)
 target_compile_definitions(_dlplan PUBLIC DLPLAN_VERSION_INFO="${DLPLAN_VERSION_INFO}")
-
-# In case of moving the library (as done in the setup.py),
-# we need the library to find the component libraries in origin directory.
-if(CMAKE_SYSTEM_NAME STREQUAL "Linux")
-    set_target_properties(_dlplan PROPERTIES INSTALL_RPATH $ORIGIN)
-endif()
-if(CMAKE_SYSTEM_NAME STREQUAL "Darwin")
-    set_target_properties(_dlplan PROPERTIES INSTALL_RPATH @loader_path)
-endif()
-if(CMAKE_SYSTEM_NAME STREQUAL "Windows")
-    message( FATAL_ERROR "Windows is not supported." )
-endif()
-set_target_properties(_dlplan PROPERTIES BUILD_WITH_INSTALL_RPATH true)

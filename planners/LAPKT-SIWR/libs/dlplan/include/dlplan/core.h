@@ -4,10 +4,6 @@
 #ifndef DLPLAN_INCLUDE_DLPLAN_CORE_H_
 #define DLPLAN_INCLUDE_DLPLAN_CORE_H_
 
-#include "phmap/phmap.h"
-#include "utils/pimpl.h"
-#include "utils/dynamic_bitset.h"
-
 #include <memory>
 #include <string>
 #include <unordered_set>
@@ -15,15 +11,116 @@
 #include <vector>
 #include <iostream>
 
+#include "common/parsers/config.hpp"
+#include "utils/pimpl.h"
+#include "utils/dynamic_bitset.h"
 
+
+// Forward declarations of this header
 namespace dlplan::core {
-class SyntacticElementFactoryImpl;
-class InstanceInfo;
-class VocabularyInfo;
-class State;
 class ConceptDenotation;
 class RoleDenotation;
+class DenotationsCaches;
+class Constant;
+class Predicate;
+class VocabularyInfo;
+class Object;
+class Atom;
+class InstanceInfo;
+class State;
+class BaseElement;
+class Concept;
+class Role;
+class Boolean;
+class Numerical;
+class SyntacticElementFactory;
+class SyntacticElementFactoryImpl;
+}
 
+
+
+// Forward declarations of template spezializations for serialization
+namespace boost::serialization {
+    class access;
+
+    template <typename Archive>
+    void serialize(Archive& ar, dlplan::core::ConceptDenotation& t, const unsigned int version);
+
+    template <typename Archive>
+    void serialize(Archive& ar, dlplan::core::RoleDenotation& t, const unsigned int version);
+
+    template <typename Archive>
+    void serialize(Archive& ar, dlplan::core::DenotationsCaches& t, const unsigned int version);
+
+    template <typename Archive>
+    void serialize(Archive& ar, dlplan::core::Constant& t, const unsigned int version);
+
+    template <typename Archive>
+    void serialize(Archive& ar, dlplan::core::Predicate& t, const unsigned int version);
+
+    template <typename Archive>
+    void serialize(Archive& ar, dlplan::core::Object& t, const unsigned int version);
+
+    template <typename Archive>
+    void serialize(Archive& ar, dlplan::core::Atom& t, const unsigned int version);
+
+    template <typename Archive>
+    void serialize(Archive& ar, dlplan::core::State& t, const unsigned int version);
+
+    template <typename Archive>
+    void serialize(Archive& ar, std::pair<const int, dlplan::core::State>& t, const unsigned int version);
+    template<class Archive>
+    void save_construct_data(Archive& ar, const std::pair<const int, dlplan::core::State>* t, const unsigned int version);
+    template<class Archive>
+    void load_construct_data(Archive& ar, std::pair<const int, dlplan::core::State>* t, const unsigned int version);
+
+    template <typename Archive>
+    void serialize(Archive& ar, dlplan::core::VocabularyInfo& t, const unsigned int version);
+
+    template <typename Archive>
+    void serialize(Archive& ar, dlplan::core::InstanceInfo& t, const unsigned int version);
+
+    template <typename Archive>
+    void serialize(Archive& ar, dlplan::core::BaseElement& t, const unsigned int version);
+    template<class Archive>
+    void save_construct_data(Archive& ar, const dlplan::core::BaseElement* t, const unsigned int version);
+    template<class Archive>
+    void load_construct_data(Archive& ar, dlplan::core::BaseElement* t, const unsigned int version);
+
+    template <typename Archive>
+    void serialize(Archive& ar, dlplan::core::Concept& t, const unsigned int version);
+    template<class Archive>
+    void save_construct_data(Archive& ar, const dlplan::core::Concept* t, const unsigned int version);
+    template<class Archive>
+    void load_construct_data(Archive& ar, dlplan::core::Concept* t, const unsigned int version);
+
+    template <typename Archive>
+    void serialize(Archive& ar, dlplan::core::Role& t, const unsigned int version);
+    template<class Archive>
+    void save_construct_data(Archive& ar, const dlplan::core::Role* t, const unsigned int version);
+    template<class Archive>
+    void load_construct_data(Archive& ar, dlplan::core::Role* t, const unsigned int version);
+
+    template <typename Archive>
+    void serialize(Archive& ar, dlplan::core::Boolean& t, const unsigned int version);
+    template<class Archive>
+    void save_construct_data(Archive& ar, const dlplan::core::Boolean* t, const unsigned int version);
+    template<class Archive>
+    void load_construct_data(Archive& ar, dlplan::core::Boolean* t, const unsigned int version);
+
+    template <typename Archive>
+    void serialize(Archive& ar, dlplan::core::Numerical& t, const unsigned int version);
+    template<class Archive>
+    void save_construct_data(Archive& ar, const dlplan::core::Numerical* t, const unsigned int version);
+    template<class Archive>
+    void load_construct_data(Archive& ar, dlplan::core::Numerical* t, const unsigned int version);
+
+    template<typename Archive>
+    void serialize(Archive& ar, dlplan::core::SyntacticElementFactory& t, const unsigned int version);
+}
+
+
+namespace dlplan::core {
 using ConceptDenotations = std::vector<const ConceptDenotation*>;
 using RoleDenotations = std::vector<const RoleDenotation*>;
 using BooleanDenotations = std::vector<bool>;
@@ -116,6 +213,13 @@ private:
     int m_num_objects;
     dlplan::utils::DynamicBitset<unsigned> m_data;
 
+    /// @brief Constructor for serialization.
+    ConceptDenotation();
+
+    friend class boost::serialization::access;
+    template<typename Archive>
+    friend void boost::serialization::serialize(Archive& ar, ConceptDenotation& t, const unsigned int version);
+
 public:
     explicit ConceptDenotation(int num_objects);
     ConceptDenotation(const ConceptDenotation& other);
@@ -182,6 +286,13 @@ private:
     int m_num_objects;
     dlplan::utils::DynamicBitset<unsigned> m_data;
 
+    /// @brief Constructor for serialization.
+    RoleDenotation();
+
+    friend class boost::serialization::access;
+    template<typename Archive>
+    friend void boost::serialization::serialize(Archive& ar, RoleDenotation& t, const unsigned int version);
+
 public:
     explicit RoleDenotation(int num_objects);
     RoleDenotation(const RoleDenotation& other);
@@ -239,7 +350,9 @@ public:
 /// @brief Encapsulates caches for denotations and provides functionality to
 ///        insert and retrieve denotations into and respectively from the cache.
 class DenotationsCaches {
-private:
+public:
+    // We would prefer to keep this private but non-intrusive serialization
+    // with private members requires a forward declaration which we were not able to add.
     struct Key {
         ElementIndex element;
         InstanceIndex instance;
@@ -268,14 +381,14 @@ private:
         };
 
         // We use unique_ptr such that other raw pointers do not become invalid.
-        std::unordered_set<std::unique_ptr<const T>, UniquePtrHash, UniquePtrEqual> m_uniqueness;
-        std::unordered_map<Key, const T*, KeyHash> m_per_element_instance_state_mapping;
+        std::unordered_set<std::unique_ptr<const T>, UniquePtrHash, UniquePtrEqual> uniqueness;
+        std::unordered_map<Key, const T*, KeyHash> per_element_instance_state_mapping;
 
         /// @brief Inserts denotation uniquely and returns it raw pointer.
         /// @param denotation
         /// @return
         const T* insert_denotation(T&& denotation) {
-            return m_uniqueness.insert(std::unique_ptr<T>(new T(std::move(denotation)))).first->get();
+            return uniqueness.insert(std::unique_ptr<T>(new T(std::move(denotation)))).first->get();
         }
 
         /// @brief Inserts raw pointer of denotation into mapping from element, instance, and state.
@@ -285,49 +398,43 @@ private:
         /// @param denotation
         void insert_denotation(ElementIndex element, InstanceIndex instance, StateIndex state, const T* denotation) {
             Key key{element, instance, state};
-            m_per_element_instance_state_mapping.emplace(key, denotation);
+            per_element_instance_state_mapping.emplace(key, denotation);
         }
 
         const T* get_denotation(ElementIndex element, InstanceIndex instance, StateIndex state) const {
             Key key{element, instance, state};
-            auto iter = m_per_element_instance_state_mapping.find(key);
-            if (iter != m_per_element_instance_state_mapping.end()) {
+            auto iter = per_element_instance_state_mapping.find(key);
+            if (iter != per_element_instance_state_mapping.end()) {
                 return iter->second;
             }
             return nullptr;
         }
+
+        void erase_denotation(ElementIndex element, InstanceIndex instance, StateIndex state) {
+            Key key{element, instance, state};
+            per_element_instance_state_mapping.erase(key);
+        }
+
     };
 
-    /// @brief Cache single denotations
-    Cache<ConceptDenotation> m_concept_denotation_cache;
-    Cache<RoleDenotation> m_role_denotation_cache;
-    Cache<bool> m_boolean_denotation_cache;
-    Cache<int> m_numerical_denotation_cache;
-
-    /// @brief Cache collection of denotations
-    Cache<ConceptDenotations> m_concept_denotations_cache;
-    Cache<RoleDenotations> m_role_denotations_cache;
-    Cache<BooleanDenotations> m_boolean_denotations_cache;
-    Cache<NumericalDenotations> m_numerical_denotations_cache;
-
-    DenotationsCaches(const DenotationsCaches& other) = delete;
-    DenotationsCaches& operator=(const DenotationsCaches& other) = delete;
-
-public:
     DenotationsCaches();
     ~DenotationsCaches();
+    DenotationsCaches(const DenotationsCaches& other) = delete;
+    DenotationsCaches& operator=(const DenotationsCaches& other) = delete;
     DenotationsCaches(DenotationsCaches&& other);
     DenotationsCaches& operator=(DenotationsCaches&& other);
 
-    Cache<ConceptDenotation>& get_concept_denotation_cache();
-    Cache<RoleDenotation>& get_role_denotation_cache();
-    Cache<bool>& get_boolean_denotation_cache();
-    Cache<int>& get_numerical_denotation_cache();
+    /// @brief Cache single denotations
+    Cache<ConceptDenotation> concept_denotation_cache;
+    Cache<RoleDenotation> role_denotation_cache;
+    Cache<bool> boolean_denotation_cache;
+    Cache<int> numerical_denotation_cache;
 
-    Cache<ConceptDenotations>& get_concept_denotations_cache();
-    Cache<RoleDenotations>& get_role_denotations_cache();
-    Cache<BooleanDenotations>& get_boolean_denotations_cache();
-    Cache<NumericalDenotations>& get_numerical_denotations_cache();
+    /// @brief Cache collection of denotations
+    Cache<ConceptDenotations> concept_denotations_cache;
+    Cache<RoleDenotations> role_denotations_cache;
+    Cache<BooleanDenotations> boolean_denotations_cache;
+    Cache<NumericalDenotations> numerical_denotations_cache;
 };
 
 
@@ -349,11 +456,17 @@ private:
     ///< The index of the constant.
     ConstantIndex m_index;
 
+    /// @brief Constructor for serialization.
+    Constant();
+
     Constant(const std::string& name, ConstantIndex index);
+
     friend class VocabularyInfo;
+    friend class boost::serialization::access;
+    template<typename Archive>
+    friend void boost::serialization::serialize(Archive& ar, Constant& t, const unsigned int version);
 
 public:
-    Constant() = delete;
     Constant(const Constant& other);
     Constant& operator=(const Constant& other);
     Constant(Constant&& other);
@@ -409,8 +522,15 @@ private:
     int m_arity;
     bool m_is_static;
 
+    /// @brief Constructor for serialization.
+    Predicate();
+
     Predicate(const std::string& name, PredicateIndex index, int arity, bool is_static=false);
+
     friend class VocabularyInfo;
+    friend class boost::serialization::access;
+    template<typename Archive>
+    friend void boost::serialization::serialize(Archive& ar, Predicate& t, const unsigned int version);
 
 public:
     Predicate(const Predicate& other);
@@ -461,6 +581,9 @@ private:
     std::unordered_map<std::string, ConstantIndex> m_constant_name_to_index;
     std::vector<Constant> m_constants;
 
+    template<typename Archive>
+    friend void boost::serialization::serialize(Archive& ar, VocabularyInfo& t, const unsigned int version);
+
 public:
     VocabularyInfo();
     VocabularyInfo(const VocabularyInfo& other);
@@ -471,6 +594,9 @@ public:
 
     const Predicate& add_predicate(const std::string &name, int arity, bool is_static=false);
     const Constant& add_constant(const std::string& name);
+
+    const std::unordered_map<std::string, PredicateIndex>& get_predicates_mapping() const;
+    const std::unordered_map<std::string, ConstantIndex>& get_constants_mapping() const;
 
     const std::vector<Predicate>& get_predicates() const;
     const std::vector<Constant>& get_constants() const;
@@ -502,8 +628,15 @@ private:
     std::string m_name;
     ObjectIndex m_index;
 
+    /// @brief Constructor for serialization.
+    Object();
+
     Object(const std::string& name, int index);
+
     friend class InstanceInfo;
+    friend class boost::serialization::access;
+    template<typename Archive>
+    friend void boost::serialization::serialize(Archive& ar, Object& t, const unsigned int version);
 
 public:
     Object(const Object& other);
@@ -545,12 +678,19 @@ private:
     ObjectIndices m_object_indices;
     bool m_is_static;
 
+    /// @brief Constructor for serialization.
+    Atom();
+
     Atom(const std::string& name,
         AtomIndex index,
         PredicateIndex predicate_index,
         const ObjectIndices &object_indices,
         bool is_static=false);
+
     friend class InstanceInfo;
+    friend class boost::serialization::access;
+    template<typename Archive>
+    friend void boost::serialization::serialize(Archive& ar, Atom& t, const unsigned int version);
 
 public:
     Atom(const Atom& other);
@@ -589,7 +729,7 @@ public:
 ///        to access it.
 class InstanceInfo {
 private:
-    std::shared_ptr<const VocabularyInfo> m_vocabulary_info;
+    std::shared_ptr<VocabularyInfo> m_vocabulary_info;
     InstanceIndex m_index;
 
     std::unordered_map<std::string, AtomIndex> m_atom_name_to_index;
@@ -601,13 +741,19 @@ private:
     std::unordered_map<std::string, ObjectIndex> m_object_name_to_index;
     std::vector<Object> m_objects;
 
+    /// @brief Constructor for serialization.
+    InstanceInfo();
+
     const Atom& add_atom(PredicateIndex predicate_index, const ObjectIndices& object_indices, bool is_static);
     const Atom& add_atom(const Predicate& predicate, const std::vector<Object>& objects, bool is_static);
     const Atom& add_atom(const std::string& predicate_name, const std::vector<std::string>& object_names, bool is_static);
 
+    friend class boost::serialization::access;
+    template<typename Archive>
+    friend void boost::serialization::serialize(Archive& ar, InstanceInfo& t, const unsigned int version);
+
 public:
-    InstanceInfo() = delete;
-    InstanceInfo(std::shared_ptr<const VocabularyInfo> vocabulary_info, InstanceIndex index=-1);
+    InstanceInfo(std::shared_ptr<VocabularyInfo> vocabulary_info, InstanceIndex index=-1);
     InstanceInfo(const InstanceInfo& other);
     InstanceInfo& operator=(const InstanceInfo& other);
     InstanceInfo(InstanceInfo&& other);
@@ -653,8 +799,7 @@ public:
     /// @return A string representation of this instance.
     std::string str() const;
 
-    void set_index(InstanceIndex index);
-    std::shared_ptr<const VocabularyInfo> get_vocabulary_info() const;
+    std::shared_ptr<VocabularyInfo> get_vocabulary_info() const;
     InstanceIndex get_index() const;
     const std::vector<Atom>& get_atoms() const;
     const std::vector<Atom>& get_static_atoms() const;
@@ -668,13 +813,21 @@ public:
 ///        current situation and provides functionality to access it.
 class State {
 private:
-    std::shared_ptr<const InstanceInfo> m_instance_info;
+    std::shared_ptr<InstanceInfo> m_instance_info;
     AtomIndices m_atom_indices;
     int m_index;
 
+    /// @brief Constructor for serialization.
+    State();
+
+    friend class boost::serialization::access;
+    template<typename Archive>
+    friend void boost::serialization::serialize(Archive& ar, State& t, const unsigned int version);
+
 public:
-    State(std::shared_ptr<const InstanceInfo> instance_info, const std::vector<Atom>& atoms, StateIndex index=-1);
-    State(std::shared_ptr<const InstanceInfo> instance_info, const AtomIndices& atom_indices, StateIndex index=-1);
+    State(std::shared_ptr<InstanceInfo> instance_info, const std::vector<Atom>& atoms, StateIndex index=-1);
+    State(std::shared_ptr<InstanceInfo> instance_info, const AtomIndices& atom_indices, StateIndex index=-1);
+    State(std::shared_ptr<InstanceInfo> instance_info, AtomIndices&& atom_indices, StateIndex index=-1);
     State(const State& other);
     State& operator=(const State& other);
     State(State&& other);
@@ -706,8 +859,7 @@ public:
     std::string str() const;
 
     size_t hash() const;
-    void set_index(StateIndex index);
-    std::shared_ptr<const InstanceInfo> get_instance_info() const;
+    std::shared_ptr<InstanceInfo> get_instance_info() const;
     const AtomIndices& get_atom_indices() const;
     StateIndex get_index() const;
 };
@@ -717,16 +869,22 @@ public:
 ///        for computing string representations and its complexity.
 class BaseElement {
 protected:
-    std::shared_ptr<const VocabularyInfo> m_vocabulary_info;
-
+    std::shared_ptr<VocabularyInfo> m_vocabulary_info;
     ElementIndex m_index;
     /**
      * if true then element is evaluated per instance rather than per state.
      */
     bool m_is_static;
 
+    template <typename Archive>
+    friend void boost::serialization::serialize(Archive& ar, BaseElement& t, const unsigned int version);
+    template<class Archive>
+    friend void boost::serialization::save_construct_data(Archive & ar, const BaseElement* t, const unsigned int version);
+    template<class Archive>
+    friend void boost::serialization::load_construct_data(Archive & ar, BaseElement* t, const unsigned int version);
+
 protected:
-    explicit BaseElement(std::shared_ptr<const VocabularyInfo> vocabulary_info, bool is_static);
+    BaseElement(std::shared_ptr<VocabularyInfo> vocabulary_info, ElementIndex index, bool is_static);
 
 public:
     virtual ~BaseElement();
@@ -740,7 +898,7 @@ public:
     /// @brief Compute the canonical string representation of this element.
     /// @return The canonical string representation of this element.
     std::string compute_repr() const;
-    virtual void compute_repr(std::stringstream& out) const = 0;
+    virtual void compute_repr(std::stringstream& ) const = 0;
 
     /// @brief Computes a time score for evaluating this element relative to other elements.
     ///        The scoring assumes evaluation that uses caching.
@@ -758,9 +916,8 @@ public:
     /// @return A string representation of this element.
     std::string str() const;
 
-    void set_index(ElementIndex index);
     ElementIndex get_index() const;
-    std::shared_ptr<const VocabularyInfo> get_vocabulary_info() const;
+    std::shared_ptr<VocabularyInfo> get_vocabulary_info() const;
     bool is_static() const;
 };
 
@@ -769,11 +926,17 @@ public:
 ///        on a given state. It can also make use of a cache during evaluation.
 class Concept : public BaseElement {
 protected:
-    Concept(std::shared_ptr<const VocabularyInfo> vocabulary_info, bool is_static);
-    friend class SyntacticElementFactoryImpl;
+    Concept(std::shared_ptr<VocabularyInfo> vocabulary_info, ElementIndex index, bool is_static);
 
-    virtual ConceptDenotation evaluate_impl(const State& state, DenotationsCaches& caches) const = 0;
-    virtual ConceptDenotations evaluate_impl(const States& states, DenotationsCaches& caches) const = 0;
+    virtual ConceptDenotation evaluate_impl(const State& , DenotationsCaches& ) const = 0;
+    virtual ConceptDenotations evaluate_impl(const States& , DenotationsCaches& ) const = 0;
+
+    template <typename Archive>
+    friend void boost::serialization::serialize(Archive& ar, Concept& t, const unsigned int version);
+    template<class Archive>
+    friend void boost::serialization::save_construct_data(Archive & ar, const Concept* t, const unsigned int version);
+    template<class Archive>
+    friend void boost::serialization::load_construct_data(Archive & ar, Concept* t, const unsigned int version);
 
 public:
     Concept(const Concept& other);
@@ -782,7 +945,7 @@ public:
     Concept& operator=(Concept&& other);
     ~Concept() override;
 
-    virtual ConceptDenotation evaluate(const State& state) const = 0;
+    virtual ConceptDenotation evaluate(const State& ) const = 0;
     const ConceptDenotation* evaluate(const State& state, DenotationsCaches& caches) const;
     const ConceptDenotations* evaluate(const States& states, DenotationsCaches& caches) const;
 };
@@ -792,11 +955,17 @@ public:
 ///        on a given state. It can also make use of a cache during evaluation.
 class Role : public BaseElement {
 protected:
-    Role(std::shared_ptr<const VocabularyInfo> vocabulary_info, bool is_static);
-    friend class SyntacticElementFactoryImpl;
+    Role(std::shared_ptr<VocabularyInfo> vocabulary_info, ElementIndex index, bool is_static);
 
-    virtual RoleDenotation evaluate_impl(const State& state, DenotationsCaches& caches) const = 0;
-    virtual RoleDenotations evaluate_impl(const States& states, DenotationsCaches& caches) const = 0;
+    virtual RoleDenotation evaluate_impl(const State& , DenotationsCaches& ) const = 0;
+    virtual RoleDenotations evaluate_impl(const States& , DenotationsCaches& ) const = 0;
+
+    template <typename Archive>
+    friend void boost::serialization::serialize(Archive& ar, Role& t, const unsigned int version);
+    template<class Archive>
+    friend void boost::serialization::save_construct_data(Archive & ar, const Role* t, const unsigned int version);
+    template<class Archive>
+    friend void boost::serialization::load_construct_data(Archive & ar, Role* t, const unsigned int version);
 
 public:
     Role(const Role& other);
@@ -805,7 +974,7 @@ public:
     Role& operator=(Role&& other);
     ~Role() override;
 
-    virtual RoleDenotation evaluate(const State& state) const = 0;
+    virtual RoleDenotation evaluate(const State& ) const = 0;
     const RoleDenotation* evaluate(const State& state, DenotationsCaches& caches) const;
     const RoleDenotations* evaluate(const States& states, DenotationsCaches& caches) const;
 };
@@ -815,11 +984,17 @@ public:
 ///        on a given state. It can also make use of a cache during evaluation.
 class Numerical : public BaseElement {
 protected:
-    Numerical(std::shared_ptr<const VocabularyInfo> vocabulary_info, bool is_static);
-    friend class SyntacticElementFactoryImpl;
+    Numerical(std::shared_ptr<VocabularyInfo> vocabulary_info, ElementIndex index, bool is_static);
 
-    virtual int evaluate_impl(const State& state, DenotationsCaches& caches) const = 0;
-    virtual NumericalDenotations evaluate_impl(const States& states, DenotationsCaches& caches) const = 0;
+    virtual int evaluate_impl(const State& , DenotationsCaches& ) const = 0;
+    virtual NumericalDenotations evaluate_impl(const States& , DenotationsCaches& ) const = 0;
+
+    template <typename Archive>
+    friend void boost::serialization::serialize(Archive& ar, Numerical& t, const unsigned int version);
+    template<class Archive>
+    friend void boost::serialization::save_construct_data(Archive & ar, const Numerical* t, const unsigned int version);
+    template<class Archive>
+    friend void boost::serialization::load_construct_data(Archive & ar, Numerical* t, const unsigned int version);
 
 public:
     Numerical(const Numerical& other);
@@ -828,7 +1003,7 @@ public:
     Numerical& operator=(Numerical&& other);
     ~Numerical() override;
 
-    virtual int evaluate(const State& state) const = 0;
+    virtual int evaluate(const State& ) const = 0;
     int evaluate(const State& state, DenotationsCaches& caches) const;
     const NumericalDenotations* evaluate(const States& states, DenotationsCaches& caches) const;
 };
@@ -838,11 +1013,17 @@ public:
 ///        on a given state. It can also make use of a cache during evaluation.
 class Boolean : public BaseElement {
 protected:
-    Boolean(std::shared_ptr<const VocabularyInfo> vocabulary_info, bool is_static);
-    friend class SyntacticElementFactoryImpl;
+    Boolean(std::shared_ptr<VocabularyInfo> vocabulary_info, ElementIndex index, bool is_static);
 
-    virtual bool evaluate_impl(const State& state, DenotationsCaches& caches) const = 0;
-    virtual BooleanDenotations evaluate_impl(const States& states, DenotationsCaches& caches) const = 0;
+    virtual bool evaluate_impl(const State& , DenotationsCaches& ) const = 0;
+    virtual BooleanDenotations evaluate_impl(const States& , DenotationsCaches& ) const = 0;
+
+    template <typename Archive>
+    friend void boost::serialization::serialize(Archive& ar, Boolean& t, const unsigned int version);
+    template<class Archive>
+    friend void boost::serialization::save_construct_data(Archive & ar, const Boolean* t, const unsigned int version);
+    template<class Archive>
+    friend void boost::serialization::load_construct_data(Archive & ar, Boolean* t, const unsigned int version);
 
 public:
     Boolean(const Boolean& other);
@@ -851,7 +1032,7 @@ public:
     Boolean& operator=(Boolean&& other);
     ~Boolean() override;
 
-    virtual bool evaluate(const State& state) const = 0;
+    virtual bool evaluate(const State& ) const = 0;
     bool evaluate(const State& state, DenotationsCaches& caches) const;
     const BooleanDenotations* evaluate(const States& states, DenotationsCaches& caches) const;
 };
@@ -862,39 +1043,62 @@ class SyntacticElementFactory {
 private:
     dlplan::utils::pimpl<SyntacticElementFactoryImpl> m_pImpl;
 
+    /// @brief Constructor for serialization
+    SyntacticElementFactory();
+
+    friend class boost::serialization::access;
+    template<typename Archive>
+    friend void boost::serialization::serialize(Archive& ar, SyntacticElementFactory& t, const unsigned int version);
+
 public:
-    SyntacticElementFactory(std::shared_ptr<const VocabularyInfo> vocabulary_info);
+    SyntacticElementFactory(std::shared_ptr<VocabularyInfo> vocabulary_info);
     SyntacticElementFactory(const SyntacticElementFactory& other);
     SyntacticElementFactory& operator=(const SyntacticElementFactory& other);
     SyntacticElementFactory(SyntacticElementFactory&& other);
     SyntacticElementFactory& operator=(SyntacticElementFactory&& other);
     ~SyntacticElementFactory();
 
-    std::shared_ptr<const VocabularyInfo> get_vocabulary_info() const;
+    std::shared_ptr<VocabularyInfo> get_vocabulary_info() const;
 
     /**
      * Returns a Concept if the description is correct.
      * If description is incorrect, throw an error with human readable information.
      */
-    std::shared_ptr<const Concept> parse_concept(const std::string &description);
+    std::shared_ptr<const Concept> parse_concept(
+        const std::string &description, const std::string& filename="");
+
+    std::shared_ptr<const Concept> parse_concept(
+        common::parsers::iterator_type& iter, common::parsers::iterator_type end, const std::string& filename="");
 
     /**
      * Returns a Role if the description is correct.
      * If description is incorrect, throw an error with human readable information.
      */
-    std::shared_ptr<const Role> parse_role(const std::string &description);
+    std::shared_ptr<const Role> parse_role(
+        const std::string &description, const std::string& filename="");
+
+    std::shared_ptr<const Role> parse_role(
+        common::parsers::iterator_type& iter, common::parsers::iterator_type end, const std::string& filename="");
 
     /**
      * Returns a Numerical if the description is correct.
      * If description is incorrect, throw an error with human readable information.
      */
-    std::shared_ptr<const Numerical> parse_numerical(const std::string &description);
+    std::shared_ptr<const Numerical> parse_numerical(
+        const std::string &description, const std::string& filename="");
+
+    std::shared_ptr<const Numerical> parse_numerical(
+        common::parsers::iterator_type& iter, common::parsers::iterator_type end, const std::string& filename="");
 
     /**
      * Returns a Boolean if the description is correct.
      * If description is incorrect, throw an error with human readable information.
      */
-    std::shared_ptr<const Boolean> parse_boolean(const std::string &description);
+    std::shared_ptr<const Boolean> parse_boolean(
+        const std::string &description, const std::string& filename="");
+
+    std::shared_ptr<const Boolean> parse_boolean(
+        common::parsers::iterator_type& iter, common::parsers::iterator_type end, const std::string& filename="");
 
     std::shared_ptr<const Boolean> make_empty_boolean(const std::shared_ptr<const Concept>& concept);
     std::shared_ptr<const Boolean> make_empty_boolean(const std::shared_ptr<const Role>& role);

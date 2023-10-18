@@ -1,15 +1,20 @@
-#include "../../include/dlplan/core.h"
-
-#include "../utils/collections.h"
-#include "../utils/logging.h"
+#include "include/dlplan/core.h"
 
 #include <sstream>
 #include <cassert>
+
+#include <boost/archive/text_oarchive.hpp>
+#include <boost/archive/text_iarchive.hpp>
+
+#include "src/utils/collections.h"
+#include "src/utils/logging.h"
 
 using namespace std::string_literals;
 
 
 namespace dlplan::core {
+
+Atom::Atom() : m_name(""), m_index(-1), m_predicate_index(-1), m_object_indices(ObjectIndices()), m_is_static(false) { }
 
 Atom::Atom(
     const std::string& name,
@@ -81,4 +86,21 @@ bool Atom::is_static() const {
     return m_is_static;
 }
 
+}
+
+
+namespace boost::serialization {
+template<typename Archive>
+void serialize(Archive& ar, dlplan::core::Atom& t, const unsigned int /* version */) {
+    ar & t.m_name;
+    ar & t.m_index;
+    ar & t.m_predicate_index;
+    ar & t.m_object_indices;
+    ar & t.m_is_static;
+}
+
+template void serialize(boost::archive::text_iarchive& ar,
+    dlplan::core::Atom& t, const unsigned int version);
+template void serialize(boost::archive::text_oarchive& ar,
+    dlplan::core::Atom& t, const unsigned int version);
 }

@@ -2,12 +2,14 @@
 import os
 import sys
 import subprocess
+import multiprocessing
+
 from pathlib import Path
 
 from setuptools import setup, find_packages, Extension
 from setuptools.command.build_ext import build_ext
 
-__version__ = "0.2.19"
+__version__ = "0.3.0"
 HERE = Path(__file__).resolve().parent
 
 
@@ -48,7 +50,7 @@ class CMakeBuild(build_ext):
             ["cmake", ext.sourcedir] + cmake_args, cwd=self.build_temp
         )
         subprocess.check_call(
-            ["cmake", "--build", "."] + build_args, cwd=self.build_temp
+            ["cmake", "--build", ".", f"-j{multiprocessing.cpu_count()}"] + build_args, cwd=self.build_temp
         )
 
 

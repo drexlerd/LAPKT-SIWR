@@ -3,26 +3,58 @@
 #ifndef DLPLAN_INCLUDE_DLPLAN_POLICY_H_
 #define DLPLAN_INCLUDE_DLPLAN_POLICY_H_
 
-#include "core.h"
-#include "utils/pimpl.h"
-
 #include <unordered_set>
 #include <memory>
 #include <set>
 #include <string>
 #include <vector>
 
+#include "include/dlplan/common/parsers/config.hpp"
+#include "core.h"
+#include "utils/pimpl.h"
 
+
+// Forward declarations of this header
 namespace dlplan::policy {
-class PolicyBuilderImpl;
-class PolicyReaderImpl;
-class PolicyWriterImpl;
+class PolicyFactoryImpl;
 class BaseCondition;
 class BaseEffect;
 class Rule;
 class Policy;
+class PolicyFactory;
+}
 
 
+// Forward declarations of template spezializations for serialization
+namespace boost::serialization {
+    class access;
+
+    template <typename Archive>
+    void serialize(Archive& ar, dlplan::policy::BaseCondition& t, const unsigned int version);
+    template<class Archive>
+    void save_construct_data(Archive& ar, const dlplan::policy::BaseCondition* t, const unsigned int version);
+    template<class Archive>
+    void load_construct_data(Archive& ar, dlplan::policy::BaseCondition* t, const unsigned int version);
+
+    template <typename Archive>
+    void serialize(Archive& ar, dlplan::policy::BaseEffect& t, const unsigned int version);
+    template<class Archive>
+    void save_construct_data(Archive& ar, const dlplan::policy::BaseEffect* t, const unsigned int version);
+    template<class Archive>
+    void load_construct_data(Archive& ar, dlplan::policy::BaseEffect* t, const unsigned int version);
+
+    template <typename Archive>
+    void serialize(Archive& ar, dlplan::policy::Rule& t, const unsigned int version);
+
+    template <typename Archive>
+    void serialize(Archive& ar, dlplan::policy::Policy& t, const unsigned int version);
+
+    template <typename Archive>
+    void serialize(Archive& ar, dlplan::policy::PolicyFactory& t, const unsigned int version);
+}
+
+
+namespace dlplan::policy {
 /// @brief Sort elements in policy by their evaluate time score.
 /// @tparam T
 template<typename T>
@@ -57,13 +89,18 @@ using PolicyIndex = int;
 ///        provides functionality to access its underlying data and for
 ///        the evaluation on a state.
 class BaseCondition {
-private:
+protected:
     int m_index;
 
-protected:
-    BaseCondition();
+    template<typename Archive>
+    friend void boost::serialization::serialize(Archive& ar, BaseCondition& t, const unsigned int version);
+    template<class Archive>
+    friend void boost::serialization::save_construct_data(Archive& ar, const BaseCondition* t, const unsigned int version);
+    template<class Archive>
+    friend void boost::serialization::load_construct_data(Archive& ar, BaseCondition* t, const unsigned int version);
 
 public:
+    explicit BaseCondition(ConditionIndex index);
     BaseCondition(const BaseCondition& other) = delete;
     BaseCondition& operator=(const BaseCondition& other) = delete;
     BaseCondition(BaseCondition&& other) = delete;
@@ -81,7 +118,6 @@ public:
     /// @return An integer that represents the score.
     virtual int compute_evaluate_time_score() const = 0;
 
-    void set_index(ConditionIndex index);
     virtual std::shared_ptr<const core::Boolean> get_boolean() const = 0;
     virtual std::shared_ptr<const core::Numerical> get_numerical() const = 0;
     ConditionIndex get_index() const;
@@ -92,13 +128,18 @@ public:
 ///        provides functionality to access its underlying data and for
 ///        the evaluation on a pair of states.
 class BaseEffect {
-private:
+protected:
     int m_index;
 
-protected:
-    BaseEffect();
+    template<typename Archive>
+    friend void boost::serialization::serialize(Archive& ar, BaseEffect& t, const unsigned int version);
+    template<class Archive>
+    friend void boost::serialization::save_construct_data(Archive& ar, const BaseEffect* t, const unsigned int version);
+    template<class Archive>
+    friend void boost::serialization::load_construct_data(Archive& ar, BaseEffect* t, const unsigned int version);
 
 public:
+    explicit BaseEffect(EffectIndex index);
     BaseEffect(const BaseEffect& other) = delete;
     BaseEffect& operator=(const BaseEffect& other) = delete;
     BaseEffect(BaseEffect&& other) = delete;
@@ -116,7 +157,6 @@ public:
     /// @return An integer that represents the score.
     virtual int compute_evaluate_time_score() const = 0;
 
-    void set_index(EffectIndex index);
     EffectIndex get_index() const;
     virtual std::shared_ptr<const core::Boolean> get_boolean() const = 0;
     virtual std::shared_ptr<const core::Numerical> get_numerical() const = 0;
@@ -133,9 +173,15 @@ private:
     Effects m_effects;
     RuleIndex m_index;
 
-private:
-    Rule(Conditions&& conditions, Effects&& effects);
-    friend class PolicyBuilderImpl;
+    /// @brief Constructor for serialization.
+    Rule();
+
+    Rule(const Conditions& conditions, const Effects& effects, RuleIndex index);
+
+    friend class PolicyFactoryImpl;
+    friend class boost::serialization::access;
+    template<typename Archive>
+    friend void boost::serialization::serialize(Archive& ar, Rule& t, const unsigned int version);
 
 public:
     Rule(const Rule& other) = delete;
@@ -157,7 +203,6 @@ public:
     /// @return An integer that represents the score.
     int compute_evaluate_time_score() const;
 
-    void set_index(RuleIndex index);
     RuleIndex get_index() const;
     const Conditions& get_conditions() const;
     const Effects& get_effects() const;
@@ -175,12 +220,17 @@ private:
     Rules m_rules;
     int m_index;
 
-private:
-    explicit Policy(Rules&& rules);
-    friend class PolicyBuilderImpl;
+    /// @brief Constructor for serialization.
+    Policy();
+
+    Policy(const Rules& rules, PolicyIndex index);
+
+    friend class PolicyFactoryImpl;
+    friend class boost::serialization::access;
+    template<typename Archive>
+    friend void boost::serialization::serialize(Archive& ar, Policy& t, const unsigned int version);
 
 public:
-    Policy();
     Policy(const Policy& other);
     Policy& operator=(const Policy& other);
     Policy(Policy&& other);
@@ -209,7 +259,6 @@ public:
     /// @return An integer that represents the score.
     int compute_evaluate_time_score() const;
 
-    void set_index(PolicyIndex index);
     PolicyIndex get_index() const;
     const Booleans& get_booleans() const;
     const Numericals& get_numericals() const;
@@ -219,44 +268,64 @@ public:
 
 /// @brief Provides functionality for the syntactically unique creation of
 ///        conditions, effects, rules, and policies.
-class PolicyBuilder {
+class PolicyFactory {
 private:
-    dlplan::utils::pimpl<PolicyBuilderImpl> m_pImpl;
+    dlplan::utils::pimpl<PolicyFactoryImpl> m_pImpl;
+
+    /// @brief Constructor for serialization.
+    PolicyFactory();
+
+    friend class boost::serialization::access;
+    template<typename Archive>
+    friend void boost::serialization::serialize(Archive& ar, PolicyFactory& t, const unsigned int version);
 
 public:
-    PolicyBuilder();
-    PolicyBuilder(const PolicyBuilder& other);
-    PolicyBuilder& operator=(const PolicyBuilder& other);
-    PolicyBuilder(PolicyBuilder&& other);
-    PolicyBuilder& operator=(PolicyBuilder&& other);
-    ~PolicyBuilder();
+    explicit PolicyFactory(std::shared_ptr<core::SyntacticElementFactory> element_factory);
+    PolicyFactory(const PolicyFactory& other);
+    PolicyFactory& operator=(const PolicyFactory& other);
+    PolicyFactory(PolicyFactory&& other);
+    PolicyFactory& operator=(PolicyFactory&& other);
+    ~PolicyFactory();
+
+    /**
+     * Parses a policy from its textual description
+     */
+    std::shared_ptr<const Policy> parse_policy(
+        const std::string& description,
+        const std::string& filename="");
+
+    std::shared_ptr<const Policy> parse_policy(
+        common::parsers::iterator_type& iter, common::parsers::iterator_type end,
+        const std::string& filename="");
 
     /**
      * Uniquely adds a condition (resp. effect) and returns it.
      */
-    std::shared_ptr<const BaseCondition> add_pos_condition(const std::shared_ptr<const core::Boolean>& boolean);
-    std::shared_ptr<const BaseCondition> add_neg_condition(const std::shared_ptr<const core::Boolean>& boolean);
-    std::shared_ptr<const BaseCondition> add_gt_condition(const std::shared_ptr<const core::Numerical>& numerical);
-    std::shared_ptr<const BaseCondition> add_eq_condition(const std::shared_ptr<const core::Numerical>& numerical);
-    std::shared_ptr<const BaseEffect> add_pos_effect(const std::shared_ptr<const core::Boolean>& boolean);
-    std::shared_ptr<const BaseEffect> add_neg_effect(const std::shared_ptr<const core::Boolean>& boolean);
-    std::shared_ptr<const BaseEffect> add_bot_effect(const std::shared_ptr<const core::Boolean>& boolean);
-    std::shared_ptr<const BaseEffect> add_inc_effect(const std::shared_ptr<const core::Numerical>& numerical);
-    std::shared_ptr<const BaseEffect> add_dec_effect(const std::shared_ptr<const core::Numerical>& numerical);
-    std::shared_ptr<const BaseEffect> add_bot_effect(const std::shared_ptr<const core::Numerical>& numerical);
+    std::shared_ptr<const BaseCondition> make_pos_condition(const std::shared_ptr<const core::Boolean>& boolean);
+    std::shared_ptr<const BaseCondition> make_neg_condition(const std::shared_ptr<const core::Boolean>& boolean);
+    std::shared_ptr<const BaseCondition> make_gt_condition(const std::shared_ptr<const core::Numerical>& numerical);
+    std::shared_ptr<const BaseCondition> make_eq_condition(const std::shared_ptr<const core::Numerical>& numerical);
+    std::shared_ptr<const BaseEffect> make_pos_effect(const std::shared_ptr<const core::Boolean>& boolean);
+    std::shared_ptr<const BaseEffect> make_neg_effect(const std::shared_ptr<const core::Boolean>& boolean);
+    std::shared_ptr<const BaseEffect> make_bot_effect(const std::shared_ptr<const core::Boolean>& boolean);
+    std::shared_ptr<const BaseEffect> make_inc_effect(const std::shared_ptr<const core::Numerical>& numerical);
+    std::shared_ptr<const BaseEffect> make_dec_effect(const std::shared_ptr<const core::Numerical>& numerical);
+    std::shared_ptr<const BaseEffect> make_bot_effect(const std::shared_ptr<const core::Numerical>& numerical);
 
     /**
      * Uniquely adds a rule and returns it.
      */
-    std::shared_ptr<const Rule> add_rule(
-        Conditions&& conditions,
-        Effects&& effects);
+    std::shared_ptr<const Rule> make_rule(
+        const Conditions& conditions,
+        const Effects& effects);
 
     /**
      * Uniquely adds a policy and returns it.
      */
-    std::shared_ptr<const Policy> add_policy(
-        Rules&& rules);
+    std::shared_ptr<const Policy> make_policy(
+        const Rules& rules);
+
+    std::shared_ptr<core::SyntacticElementFactory> get_element_factory() const;
 };
 
 
@@ -273,48 +342,14 @@ public:
 
     std::shared_ptr<const Policy> minimize(
         const std::shared_ptr<const Policy>& policy,
-        PolicyBuilder& builder) const;
+        PolicyFactory& policy_factory) const;
     std::shared_ptr<const Policy> minimize(
         const std::shared_ptr<const Policy>& policy,
         const StatePairs& true_state_pairs,
         const StatePairs& false_state_pairs,
-        PolicyBuilder& builder) const;
+        PolicyFactory& policy_factory) const;
 };
 
-
-/// @brief Provides functionality for reading the output of the policy writer
-///        into a policy.
-class PolicyReader {
-private:
-    dlplan::utils::pimpl<PolicyReaderImpl> m_pImpl;
-
-public:
-    PolicyReader();
-    PolicyReader(const PolicyReader& other);
-    PolicyReader& operator=(const PolicyReader& other);
-    PolicyReader(PolicyReader&& other);
-    PolicyReader& operator=(PolicyReader&& other);
-    ~PolicyReader();
-
-    std::shared_ptr<const Policy> read(const std::string& data, PolicyBuilder& builder, core::SyntacticElementFactory& factory) const;
-};
-
-
-/// @brief Provides functionality for creating string representation that
-///        the reader can translate back into a policy.
-class PolicyWriter {
-    dlplan::utils::pimpl<PolicyWriterImpl> m_pImpl;
-
-public:
-    PolicyWriter();
-    PolicyWriter(const PolicyWriter& other);
-    PolicyWriter& operator=(const PolicyWriter& other);
-    PolicyWriter(PolicyWriter&& other);
-    PolicyWriter& operator=(PolicyWriter&& other);
-    ~PolicyWriter();
-
-    std::string write(const Policy& policy) const;
-};
 
 }
 

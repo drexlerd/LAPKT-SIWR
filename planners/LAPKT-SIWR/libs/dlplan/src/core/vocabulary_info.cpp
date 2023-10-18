@@ -1,11 +1,13 @@
-#include "../../include/dlplan/core.h"
-
-#include "element_factory.h"
-
-#include "../utils/collections.h"
-#include "../utils/logging.h"
+#include "include/dlplan/core.h"
 
 #include <sstream>
+
+#include <boost/archive/text_oarchive.hpp>
+#include <boost/archive/text_iarchive.hpp>
+#include <boost/serialization/unordered_map.hpp>
+
+#include "src/utils/collections.h"
+#include "src/utils/logging.h"
 
 using namespace std::string_literals;
 
@@ -42,6 +44,16 @@ const Constant& VocabularyInfo::add_constant(const std::string& constant_name) {
     }
     m_constants.push_back(std::move(constant));
     return m_constants.back();
+}
+
+const std::unordered_map<std::string, PredicateIndex>&
+VocabularyInfo::get_predicates_mapping() const {
+    return m_predicate_name_to_index;
+}
+
+const std::unordered_map<std::string, ConstantIndex>&
+VocabularyInfo::get_constants_mapping() const {
+    return m_constant_name_to_index;
 }
 
 const std::vector<Predicate>& VocabularyInfo::get_predicates() const {
@@ -84,4 +96,21 @@ std::string VocabularyInfo::str() const {
     return compute_repr();
 }
 
+}
+
+
+namespace boost::serialization {
+template<typename Archive>
+void serialize( Archive& ar, dlplan::core::VocabularyInfo& t, const unsigned int /* version */ )
+{
+    ar & t.m_constants;
+    ar & t.m_constant_name_to_index;
+    ar & t.m_predicates;
+    ar & t.m_predicate_name_to_index;
+}
+
+template void serialize(boost::archive::text_iarchive& ar,
+    dlplan::core::VocabularyInfo& t, const unsigned int version);
+template void serialize(boost::archive::text_oarchive& ar,
+    dlplan::core::VocabularyInfo& t, const unsigned int version);
 }
