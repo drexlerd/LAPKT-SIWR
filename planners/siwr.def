@@ -38,8 +38,7 @@ From: ubuntu:22.04
     ./b2 cxxflags="$CXXFLAGS" link=static
     export BOOST_ROOT="/boost_1_82_0"
     export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/boost_1_82_0/stage/lib"
-    export CPLUS_INCLUDE_PATH="$CPLUS_INCLUDE_PATH:/boost_1_82_0_install/include"
-
+    export CPLUS_INCLUDE_PATH="$CPLUS_INCLUDE_PATH:/boost_1_82_0/include"
 
     cd /LAPKT-SIWR/libs/dlplan
     rm -rf builds

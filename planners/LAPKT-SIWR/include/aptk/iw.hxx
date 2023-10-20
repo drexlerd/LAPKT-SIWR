@@ -28,6 +28,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <vector>
 #include <algorithm>
 #include <iostream>
+#include <random>
 
 // #define CUSTOMDEBUG
 
@@ -48,7 +49,7 @@ public:
 	typedef 	Closed_List< Search_Node >			Closed_List_Type;
 
 	IW( 	const Search_Model& search_problem )
-	: BRFS< Search_Model >(search_problem), m_pruned_B_count(0), m_B( infty ), m_verbose( true ) {
+	: BRFS< Search_Model >(search_problem), m_pruned_B_count(0), m_B( infty ), m_verbose( true ), random_engine(0) {
 		m_novelty = new Abstract_Novelty( search_problem );
 	}
 
@@ -123,6 +124,9 @@ protected:
 	virtual Search_Node*   	process(  Search_Node *head ) {
 		std::vector< aptk::Action_Idx > app_set;
 		this->problem().applicable_set_v2( *(head->state()), app_set );
+
+        // Dominik(20.10.2023): randomization can helps to get more robust runtimes.
+		std::shuffle(app_set.begin(), app_set.end(), random_engine);
 
 		for (unsigned i = 0; i < app_set.size(); ++i ) {
 			int a = app_set[i];
@@ -213,6 +217,7 @@ protected:
 	unsigned				m_pruned_B_count;
 	float					m_B;
 	bool					m_verbose;
+	std::default_random_engine random_engine;
 };
 
 }
