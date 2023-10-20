@@ -3,7 +3,7 @@ import os
 debug = ARGUMENTS.get( 'debug', 0 )
 common_env = Environment(ENV = os.environ)
 
-common_env.Append( CCFLAGS = [ '-Wall', '-std=c++11', '-fPIC' ] )
+common_env.Append( CCFLAGS = [ '-Wall', '-std=c++17', '-fPIC' ] )
 
 include_paths = ['../../libs/dlplan/installs/release/dlplan/', '../../libs/dlplan/installs/release/dlplan/include/']
 
