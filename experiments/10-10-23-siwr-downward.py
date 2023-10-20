@@ -55,7 +55,7 @@ ATTRIBUTES = [
 
 DIR = Path(__file__).resolve().parent
 BENCHMARKS_DIR = Path(os.environ["BENCHMARKS_PDDL_DOWNWARD"])
-SKETCHES_DIR = Path(os.environ["BENCHMARKS_SKETCHES_KR2021_OLD_SYNTAX"])
+SKETCHES_DIR = Path(os.environ["BENCHMARKS_SKETCHES_KR2021"])
 TIME_LIMIT = 1800
 MEMORY_LIMIT = 8000
 IMAGES_DIR = DIR.parent / "planners"
@@ -99,7 +99,8 @@ for planner, _ in IMAGES:
             sketch_filename = SKETCHES_DIR / task.domain / f"width_{arity}" / "sketch_str.txt"
             if task.domain == "grid-no-exchange":
                 sketch_filename = SKETCHES_DIR / "grid" / f"width_{arity}" / "sketch_str.txt"
-            if not sketch_filename.is_file(): continue
+            if not sketch_filename.is_file(): 
+                continue
             run = exp.add_run()
             run.add_resource("domain", task.domain_file, "domain.pddl")
             run.add_resource("problem", task.problem_file, "problem.pddl")
