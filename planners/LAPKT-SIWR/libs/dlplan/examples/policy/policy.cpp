@@ -53,30 +53,6 @@ static std::shared_ptr<InstanceInfo> construct_instance_info(
 }
 
 
-/// @brief Writes string to a file.
-/// @param filename the name of the file to be written to.
-/// @param content the content to be written.
-static void write_to_file(const std::string& filename, const std::string& content) {
-    std::ofstream ofs;
-    ofs.open(filename, std::ofstream::out);
-    ofs << content;
-    ofs.close();
-}
-
-
-/// @brief Reads string from a file.
-/// @param filename the name of the file to be read from.
-/// @return the contents of the file.
-static std::string read_from_file(const std::string& filename) {
-    std::ifstream ifs;
-    ifs.open(filename, std::ifstream::in);
-    std::stringstream ss;
-    ss << ifs.rdbuf();
-    ifs.close();
-    return ss.str();
-}
-
-
 /// @brief Example illustrating the policy component on a fragment of a planning
 ///        problem over the Blocks domain.
 ///
@@ -85,8 +61,9 @@ static std::string read_from_file(const std::string& filename) {
 int main() {
     auto vocabulary = construct_vocabulary_info();
     auto instance = construct_instance_info(vocabulary);
-
     auto element_factory = std::make_shared<dlplan::core::SyntacticElementFactory>(vocabulary);
+
+    std::cout << "Constructing policy:" << std::endl;
     // boolean_1 represents whether the hand is empty or not
     auto boolean_1 = element_factory->parse_boolean("b_nullary(arm-empty)");
     // numerical_1 representes the number of blocks on top of another block
@@ -122,22 +99,17 @@ int main() {
     assert(!policy->evaluate(state_2, state_0, caches));
     assert(!policy->evaluate(state_2, state_1, caches));
 
-    std::cout << "Write policy:" << std::endl;
     std::cout << policy->compute_repr() << std::endl << std::endl;
     std::cout << policy->str() << std::endl << std::endl;
 
-    write_to_file("policy.txt", policy->str());
-
-    std::string pol = 
+    std::cout << "Parsing policy:" << std::endl;
+    std::string policy_str =
         "(:policy\n"
-        "(:booleans )\n"
-        "(:numericals (n0 \"n_count(c_primitive(holding,0))\") (n1 \"n_count(c_equal(r_primitive(at,0,1),r_primitive(at_g,0,1)))\") (n2 \"n_count(r_and(r_primitive(at,0,1),r_primitive(at_g,0,1)))\"))\n"
-        "(:rule (:conditions (:c_n_gt n0) (:c_n_gt n1) (:c_n_gt n2)) (:effects (:e_n_inc n0) (:e_n_bot n1) (:e_n_bot n2)))\n"
+        "(:booleans (b0 \"b_nullary(arm-empty)\"))\n"
+        "(:numericals (n0 \"n_count(r_primitive(on,0,1))\"))\n"
+        "(:rule (:conditions (:c_b_pos b0) (:c_n_gt n0)) (:effects (:e_b_bot b0) (:e_n_dec n0)))\n"
         ")";
-   // auto policy_in = policy_factory.parse_policy(read_from_file("policy.txt"));
-    auto policy_in = policy_factory.parse_policy(pol);
-
-    std::cout << "Read policy:" << std::endl;
+    auto policy_in = policy_factory.parse_policy(policy_str);
     std::cout << policy_in->compute_repr() << std::endl << std::endl;
     std::cout << policy_in->str() << std::endl << std::endl;
 
