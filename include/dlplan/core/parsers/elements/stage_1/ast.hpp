@@ -66,11 +66,15 @@ namespace dlplan::core::parsers::elements::stage_1::ast
         Name name;
     };
 
-    struct Position : x3::position_tagged {
+    struct Integer : x3::position_tagged {
         int value;
     };
 
-    struct BooleanInner : x3::position_tagged, x3::variant<
+    struct Position : x3::position_tagged {
+        Integer integer;
+    };
+
+    struct Boolean : x3::position_tagged, x3::variant<
         x3::forward_ast<EmptyBoolean>,
         x3::forward_ast<InclusionBoolean>,
         x3::forward_ast<NullaryBoolean>> {
@@ -78,11 +82,7 @@ namespace dlplan::core::parsers::elements::stage_1::ast
         using base_type::operator=;
     };
 
-    struct Boolean : x3::position_tagged {
-        BooleanInner boolean;
-    };
-
-    struct ConceptInner : x3::position_tagged, x3::variant<
+    struct Concept : x3::position_tagged, x3::variant<
         x3::forward_ast<PrimitiveConcept>,
         x3::forward_ast<AllConcept>,
         x3::forward_ast<AndConcept>,
@@ -100,11 +100,7 @@ namespace dlplan::core::parsers::elements::stage_1::ast
         using base_type::operator=;
     };
 
-    struct Concept : x3::position_tagged {
-        ConceptInner concept;
-    };
-
-    struct NumericalInner : x3::position_tagged, x3::variant<
+    struct Numerical : x3::position_tagged, x3::variant<
         x3::forward_ast<ConceptDistanceNumerical>,
         x3::forward_ast<CountNumerical>,
         x3::forward_ast<RoleDistanceNumerical>,
@@ -114,11 +110,7 @@ namespace dlplan::core::parsers::elements::stage_1::ast
         using base_type::operator=;
     };
 
-    struct Numerical : x3::position_tagged {
-        NumericalInner numerical;
-    };
-
-    struct RoleInner : x3::position_tagged, x3::variant<
+    struct Role : x3::position_tagged, x3::variant<
         x3::forward_ast<PrimitiveRole>,
         x3::forward_ast<AndRole>,
         x3::forward_ast<ComposeRole>,
@@ -135,32 +127,22 @@ namespace dlplan::core::parsers::elements::stage_1::ast
         using base_type::operator=;
     };
 
-    struct Role : x3::position_tagged {
-        RoleInner role;
-    };
 
-    struct ElementInner : x3::position_tagged, x3::variant<
-        x3::forward_ast<ConceptInner>,
-        x3::forward_ast<RoleInner>,
-        x3::forward_ast<BooleanInner>,
-        x3::forward_ast<NumericalInner>> {
+    struct Element : x3::position_tagged, x3::variant<
+        x3::forward_ast<Concept>,
+        x3::forward_ast<Role>,
+        x3::forward_ast<Boolean>,
+        x3::forward_ast<Numerical>> {
         using base_type::base_type;
         using base_type::operator=;
     };
 
-    struct Element : x3::position_tagged {
-        ElementInner element;
-    };
 
-    struct ConceptOrRoleInner : x3::position_tagged, x3::variant<
-        x3::forward_ast<ConceptInner>,
-        x3::forward_ast<RoleInner>> {
+    struct ConceptOrRole : x3::position_tagged, x3::variant<
+        x3::forward_ast<Concept>,
+        x3::forward_ast<Role>> {
         using base_type::base_type;
         using base_type::operator=;
-    };
-
-    struct ConceptOrRole : x3::position_tagged {
-        ConceptOrRoleInner inner;
     };
 
     struct EmptyBoolean : x3::position_tagged {
